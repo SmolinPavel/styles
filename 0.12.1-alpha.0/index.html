@@ -94,8 +94,6 @@
 									<option value="display">Display</option>
 									<option value="flex">Flex</option>
 									<option value="font">Font</option>
-									<option value="font-size">Font Size</option>
-									<option value="font-weight">Font Weight</option>
 									<option value="justify-content">Justify Content</option>
 									<option value="margin">Margin</option>
 									<option value="overflow">Overflow</option>
@@ -18412,19 +18410,56 @@ screen <a href="/#screen">prefixes</a> :</p>
 		<span class="theme-content-element-source-label">Source:</span>
 		<span class="theme-content-element-source-path">utils/font/font.md</span>
 	</span>
-	<div class="theme-content-element-description"><div id="syntax" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#syntax" class="icon-link i-section__link -heading"></a>Syntax</h2></div><p><code>olt-u-[sm-|md-|lg-|xl-]font{Sans|Mono}</code></p>
-<div id="description" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#description" class="icon-link i-section__link -heading"></a>Description</h2></div><p>Font utility sets <code>font-family</code> CSS properties to match our pre-defined fonts. </p>
-<table class="table"><thead><tr>
+	<div class="theme-content-element-description"><div id="syntax" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#syntax" class="icon-link i-section__link -heading"></a>Syntax</h2></div><p><code>olt-u-[H100 ... H500|Content|Description|Support|Code]</code></p>
+<div id="description" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#description" class="icon-link i-section__link -heading"></a>Description</h2></div><table class="table"><thead><tr>
 <th style="text-align:left">Class name</th>
-<th style="text-align:left">Sets the font to                 </th>
+<th style="text-align:left">Reponsive</th>
+<th style="text-align:left">Sets the font to</th>
 </tr>
 </thead><tbody><tr>
-<td style="text-align:left"><code>olt-u-fontSans</code></td>
-<td style="text-align:left"><div class="olt-u-fontSans">Sans-Serif Font</div></td>
+<td style="text-align:left"><code>olt-u-H500</code></td>
+<td style="text-align:left">x</td>
+<td style="text-align:left"><div class="olt-u-H500">Page Title</div></td>
 </tr>
 <tr>
-<td style="text-align:left"><code>olt-u-fontMono</code></td>
-<td style="text-align:left"><div class="olt-u-fontMono">Monospaced font</div></td>
+<td style="text-align:left"><code>olt-u-H400</code></td>
+<td style="text-align:left">x</td>
+<td style="text-align:left"><div class="olt-u-H400">Card Title</div></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>olt-u-H300</code></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"><div class="olt-u-H300">Subtitle</div></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>olt-u-H200</code></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"><div class="olt-u-H200">Content Title</div></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>olt-u-H100</code></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"><div class="olt-u-H100">Stepper Title</div></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>olt-u-content</code></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"><div class="olt-u-content">Content</div></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>olt-u-description</code></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"><div class="olt-u-description">Description</div></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>olt-u-support</code></td>
+<td style="text-align:left"></td>
+<td style="text-align:left"><div class="olt-u-support">Support</div></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>olt-u-code</code></td>
+<td style="text-align:left">x</td>
+<td style="text-align:left"><div class="olt-u-code">Code</div></td>
 </tr>
 </tbody></table><div class="i-example">
                     <h5 class="i-example__heading">
@@ -18455,334 +18490,48 @@ screen <a href="/#screen">prefixes</a> :</p>
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;olt-u-fontSans&quot;&gt;Sans&lt;/div&gt;
-&lt;div class=&quot;olt-u-fontMono&quot;&gt;Mono&lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;olt-u-fontSans&quot;&gt;Sans&lt;/div&gt;
-&lt;div class=&quot;olt-u-fontMono&quot;&gt;Mono&lt;/div&gt;</code></pre>
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;olt-u-H500&quot;&gt;Page Title&lt;/div&gt;
+&lt;div class=&quot;olt-u-H400&quot;&gt;Card Title&lt;/div&gt;
+&lt;div class=&quot;olt-u-H300&quot;&gt;Subtitle&lt;/div&gt;
+&lt;div class=&quot;olt-u-H200&quot;&gt;Content Title&lt;/div&gt;
+&lt;div class=&quot;olt-u-H100&quot;&gt;Stepper Title&lt;/div&gt;
+&lt;div class=&quot;olt-u-content&quot;&gt;Content&lt;/div&gt;
+&lt;div class=&quot;olt-u-description&quot;&gt;Description&lt;/div&gt;
+&lt;div class=&quot;olt-u-support&quot;&gt;Support&lt;/div&gt;
+&lt;div class=&quot;olt-u-code&quot;&gt;Code&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;olt-u-H500&quot;&gt;Page Title&lt;/div&gt;
+&lt;div class=&quot;olt-u-H400&quot;&gt;Card Title&lt;/div&gt;
+&lt;div class=&quot;olt-u-H300&quot;&gt;Subtitle&lt;/div&gt;
+&lt;div class=&quot;olt-u-H200&quot;&gt;Content Title&lt;/div&gt;
+&lt;div class=&quot;olt-u-H100&quot;&gt;Stepper Title&lt;/div&gt;
+&lt;div class=&quot;olt-u-content&quot;&gt;Content&lt;/div&gt;
+&lt;div class=&quot;olt-u-description&quot;&gt;Description&lt;/div&gt;
+&lt;div class=&quot;olt-u-support&quot;&gt;Support&lt;/div&gt;
+&lt;div class=&quot;olt-u-code&quot;&gt;Code&lt;/div&gt;</code></pre>
 	</div>
-</div><div id="responsive" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#responsive" class="icon-link i-section__link -heading"></a>Responsive</h2></div><p>Font utility can be used with a responsive modifier by adding a screen 
-<a href="/#screen">prefixes</a> :</p>
-<table class="table"><thead><tr>
-<th style="text-align:center">Prefix</th>
-<th style="text-align:left">Example</th>
-<th style="text-align:left">Description</th>
+</div><div id="responsiveness" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#responsiveness" class="icon-link i-section__link -heading"></a>Responsiveness</h2></div><table class="table"><thead><tr>
+<th style="text-align:left">Font</th>
+<th style="text-align:left">L</th>
+<th style="text-align:left">M</th>
+<th style="text-align:left">S</th>
 </tr>
 </thead><tbody><tr>
-<td style="text-align:center">xs</td>
-<td style="text-align:left"><code>olt-u-xs-fontSans</code></td>
-<td style="text-align:left">Will set the font to Sans-Serif on the element when rendered on extra small screen</td>
+<td style="text-align:left"><div class="olt-u-H500">Page Title (H500)</div></td>
+<td style="text-align:left">24px, bold, 32px line height</td>
+<td style="text-align:left">22px, bold, 26px line height</td>
+<td style="text-align:left">20px, bold, 24px line height</td>
 </tr>
 <tr>
-<td style="text-align:center">sm</td>
-<td style="text-align:left"><code>olt-u-sm-fontMono</code></td>
-<td style="text-align:left">Will set the font to Monospaced on the element when rendered on a small screen</td>
+<td style="text-align:left"><div class="olt-u-H400">Card Title (H400)</div></td>
+<td style="text-align:left">20px, bold, 24px line height</td>
+<td style="text-align:left">20px, bold, 24px line height</td>
+<td style="text-align:left">18px, bold, 20px line height</td>
 </tr>
 <tr>
-<td style="text-align:center">md</td>
-<td style="text-align:left"><code>olt-u-md-fontMono</code></td>
-<td style="text-align:left">Will set the font to Monospaced on the element when rendered on a medium sized screen</td>
-</tr>
-<tr>
-<td style="text-align:center">lg</td>
-<td style="text-align:left"><code>olt-u-lg-fontSans</code></td>
-<td style="text-align:left">Will set the font to Sans-Serif on the element when rendered on a large screen</td>
-</tr>
-<tr>
-<td style="text-align:center">xl</td>
-<td style="text-align:left"><code>olt-u-xl-fontMono</code></td>
-<td style="text-align:left">Will set the font to Monospaced on the element when rendered on extra large screen</td>
-</tr>
-</tbody></table></div>
-</div>
-
-						<div id="font-size" class="i-library theme-content-element">
-	<h1 class="display-4 theme-content-element-title">Font Size</h1>
-	<span class="theme-content-element-source">
-		<span class="theme-content-element-source-label">Source:</span>
-		<span class="theme-content-element-source-path">utils/fontSize/fontSize.md</span>
-	</span>
-	<div class="theme-content-element-description"><div id="syntax" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#syntax" class="icon-link i-section__link -heading"></a>Syntax</h2></div><p><code>olt-u-[sm-|md-|lg-|xl-]fontSize{XxSmall|XSmall|Small|Medium|Large|XLarge|XxLarge|Smaller|Larger}</code></p>
-<div id="description" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#description" class="icon-link i-section__link -heading"></a>Description</h2></div><p>Font Size utility sets <code>font-size</code> CSS property to match our pre-defined 
-sizes. </p>
-<table class="table"><thead><tr>
-<th style="text-align:left">Class name</th>
-<th style="text-align:left">CSS properties</th>
-</tr>
-</thead><tbody><tr>
-<td style="text-align:left"><code>olt-u-fontSizeXxSmall</code></td>
-<td style="text-align:left"><code>font-size: 10.4px</code></td>
-</tr>
-<tr>
-<td style="text-align:left"><code>olt-u-fontSizeXSmall</code></td>
-<td style="text-align:left"><code>font-size: 12px</code></td>
-</tr>
-<tr>
-<td style="text-align:left"><code>olt-u-fontSizeSmall</code></td>
-<td style="text-align:left"><code>font-size: 12.8px</code></td>
-</tr>
-<tr>
-<td style="text-align:left"><code>olt-u-fontSizeMedium</code></td>
-<td style="text-align:left"><code>font-size: 16px</code></td>
-</tr>
-<tr>
-<td style="text-align:left"><code>olt-u-fontSizeLarge</code></td>
-<td style="text-align:left"><code>font-size: 24px</code></td>
-</tr>
-<tr>
-<td style="text-align:left"><code>olt-u-fontSizeXLarge</code></td>
-<td style="text-align:left"><code>font-size: 28.8px</code></td>
-</tr>
-<tr>
-<td style="text-align:left"><code>olt-u-fontSizeXxLarge</code></td>
-<td style="text-align:left"><code>font-size: 35.2px</code></td>
-</tr>
-<tr>
-<td style="text-align:left"><code>olt-u-fontSizeSmaller</code></td>
-<td style="text-align:left"><code>font-size: 80%;</code></td>
-</tr>
-<tr>
-<td style="text-align:left"><code>olt-u-fontSizeLarger</code></td>
-<td style="text-align:left"><code>font-size: 150%;</code></td>
-</tr>
-</tbody></table><div class="i-example">
-                    <h5 class="i-example__heading">
-                        <a
-                            href="font-size-example.html"
-                            target="_blank"
-                            class="plain-link"
-                            data-toggle="tooltip"
-                            data-placement="top"
-                            title="Open in a new window"
-                        >
-                            <i class="fa fa-external-link-square fa-fw"></i>
-                            Example
-                        </a>
-                    </h5>
-                    <div class="i-example__body">
-                        <div
-                            class="i-example__iframe"
-                            lazyframe
-                            data-src="font-size-example.html"
-                            data-initinview="true"
-                            data-title="Loading..." 
-                        ></div>
-                    </div>
-                </div>
-
-
-<div class="i-code-block">
-	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
-	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;olt-u-fontSizeXxSmall&quot;&gt;XxSmall&lt;/div&gt;
-&lt;div class=&quot;olt-u-fontSizeXSmall&quot;&gt;XSmall&lt;/div&gt;
-&lt;div class=&quot;olt-u-fontSizeSmall&quot;&gt;Small&lt;/div&gt;
-&lt;div class=&quot;olt-u-fontSizeMedium&quot;&gt;Medium&lt;/div&gt;
-&lt;div class=&quot;olt-u-fontSizeLarge&quot;&gt;Large&lt;/div&gt;
-&lt;div class=&quot;olt-u-fontSizeXLarge&quot;&gt;XLarge&lt;/div&gt;
-&lt;div class=&quot;olt-u-fontSizeXxLarge&quot;&gt;XxLarge&lt;/div&gt;
-&lt;div class=&quot;olt-u-fontSizeSmaller&quot;&gt;Smaller&lt;/div&gt;
-&lt;div class=&quot;olt-u-fontSizeLarger&quot;&gt;Larger&lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;olt-u-fontSizeXxSmall&quot;&gt;XxSmall&lt;/div&gt;
-&lt;div class=&quot;olt-u-fontSizeXSmall&quot;&gt;XSmall&lt;/div&gt;
-&lt;div class=&quot;olt-u-fontSizeSmall&quot;&gt;Small&lt;/div&gt;
-&lt;div class=&quot;olt-u-fontSizeMedium&quot;&gt;Medium&lt;/div&gt;
-&lt;div class=&quot;olt-u-fontSizeLarge&quot;&gt;Large&lt;/div&gt;
-&lt;div class=&quot;olt-u-fontSizeXLarge&quot;&gt;XLarge&lt;/div&gt;
-&lt;div class=&quot;olt-u-fontSizeXxLarge&quot;&gt;XxLarge&lt;/div&gt;
-&lt;div class=&quot;olt-u-fontSizeSmaller&quot;&gt;Smaller&lt;/div&gt;
-&lt;div class=&quot;olt-u-fontSizeLarger&quot;&gt;Larger&lt;/div&gt;</code></pre>
-	</div>
-</div><div id="responsive" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#responsive" class="icon-link i-section__link -heading"></a>Responsive</h2></div><p>Font size utility becomes very handy, when used in a combination with the 
-default screen <a href="/#screen">prefixes</a> :</p>
-<table class="table"><thead><tr>
-<th style="text-align:center">Prefix</th>
-<th style="text-align:left">Example</th>
-<th style="text-align:left">Description</th>
-</tr>
-</thead><tbody><tr>
-<td style="text-align:center">xs</td>
-<td style="text-align:left"><code>olt-u-xs-fontSizeXxSmall</code></td>
-<td style="text-align:left">Will set <code>font-size: 10.4px</code> on the element when rendered on extra small screen</td>
-</tr>
-<tr>
-<td style="text-align:center">sm</td>
-<td style="text-align:left"><code>olt-u-sm-fontSizeXSmall</code></td>
-<td style="text-align:left">Will set <code>font-size: 12px</code> on the element when rendered on a small screen</td>
-</tr>
-<tr>
-<td style="text-align:center">md</td>
-<td style="text-align:left"><code>olt-u-md-fontSizeMedium</code></td>
-<td style="text-align:left">Will set <code>font-size: 16px</code> on the element when rendered on a medium sized screen</td>
-</tr>
-<tr>
-<td style="text-align:center">lg</td>
-<td style="text-align:left"><code>olt-u-lg-fontSizeLarge</code></td>
-<td style="text-align:left">Will set <code>font-size: 24px</code> on the element when rendered on a large screen</td>
-</tr>
-<tr>
-<td style="text-align:center">xl</td>
-<td style="text-align:left"><code>olt-u-xl-fontSizeXLarge</code></td>
-<td style="text-align:left">Will set <code>font-size: 28.8px</code> on the element when rendered on extra large screen</td>
-</tr>
-</tbody></table></div>
-</div>
-
-						<div id="font-weight" class="i-library theme-content-element">
-	<h1 class="display-4 theme-content-element-title">Font Weight</h1>
-	<span class="theme-content-element-source">
-		<span class="theme-content-element-source-label">Source:</span>
-		<span class="theme-content-element-source-path">utils/fontWeight/fontWeight.md</span>
-	</span>
-	<div class="theme-content-element-description"><div id="syntax" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#syntax" class="icon-link i-section__link -heading"></a>Syntax</h2></div><p><code>olt-u-[sm-|md-|lg-|xl-]fontWeight{Lighter|Normal|Bold|Bolder|Initial|100-900}</code></p>
-<div id="description" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#description" class="icon-link i-section__link -heading"></a>Description</h2></div><p>Font Weight utility sets <code>font-weight</code> CSS property.</p>
-<table class="table"><thead><tr>
-<th style="text-align:left">Class name</th>
-<th style="text-align:left">CSS properties</th>
-<th style="text-align:left">Will render</th>
-</tr>
-</thead><tbody><tr>
-<td style="text-align:left"><code>olt-u-fontWeightLighter</code></td>
-<td style="text-align:left"><code>font-weight: lighter;</code></td>
-<td style="text-align:left"><div class="olt-u-fontWeightLighter">Lighter</div></td>
-</tr>
-<tr>
-<td style="text-align:left"><code>olt-u-fontWeightNormal</code></td>
-<td style="text-align:left"><code>font-weight: 400;</code></td>
-<td style="text-align:left"><div class="olt-u-fontWeightNormal">Normal</div></td>
-</tr>
-<tr>
-<td style="text-align:left"><code>olt-u-fontWeightBold</code></td>
-<td style="text-align:left"><code>font-weight: 700;</code></td>
-<td style="text-align:left"><div class="olt-u-fontWeightBold">Bold</div></td>
-</tr>
-<tr>
-<td style="text-align:left"><code>olt-u-fontWeightBolder</code></td>
-<td style="text-align:left"><code>font-weight: bolder;</code></td>
-<td style="text-align:left"><div class="olt-u-fontWeightBolder">Bolder</div></td>
-</tr>
-<tr>
-<td style="text-align:left"><code>olt-u-fontWeightInitial</code></td>
-<td style="text-align:left"><code>font-weight: 400;</code></td>
-<td style="text-align:left"><div class="olt-u-fontWeightInitial">Initial</div></td>
-</tr>
-<tr>
-<td style="text-align:left"><code>olt-u-fontWeight100</code></td>
-<td style="text-align:left"><code>font-weight: 100;</code></td>
-<td style="text-align:left"><div class="olt-u-fontWeight100">100</div></td>
-</tr>
-<tr>
-<td style="text-align:left"><code>olt-u-fontWeight200</code></td>
-<td style="text-align:left"><code>font-weight: 200;</code></td>
-<td style="text-align:left"><div class="olt-u-fontWeight200">200</div></td>
-</tr>
-<tr>
-<td style="text-align:left"><code>olt-u-fontWeight300</code></td>
-<td style="text-align:left"><code>font-weight: 300;</code></td>
-<td style="text-align:left"><div class="olt-u-fontWeight300">300</div></td>
-</tr>
-<tr>
-<td style="text-align:left"><code>olt-u-fontWeight400</code></td>
-<td style="text-align:left"><code>font-weight: 400;</code></td>
-<td style="text-align:left"><div class="olt-u-fontWeight400">400</div></td>
-</tr>
-<tr>
-<td style="text-align:left"><code>olt-u-fontWeight500</code></td>
-<td style="text-align:left"><code>font-weight: 500;</code></td>
-<td style="text-align:left"><div class="olt-u-fontWeight500">500</div></td>
-</tr>
-<tr>
-<td style="text-align:left"><code>olt-u-fontWeight600</code></td>
-<td style="text-align:left"><code>font-weight: 600;</code></td>
-<td style="text-align:left"><div class="olt-u-fontWeight600">600</div></td>
-</tr>
-<tr>
-<td style="text-align:left"><code>olt-u-fontWeight700</code></td>
-<td style="text-align:left"><code>font-weight: 700;</code></td>
-<td style="text-align:left"><div class="olt-u-fontWeight700">700</div></td>
-</tr>
-<tr>
-<td style="text-align:left"><code>olt-u-fontWeight800</code></td>
-<td style="text-align:left"><code>font-weight: 800;</code></td>
-<td style="text-align:left"><div class="olt-u-fontWeight800">800</div></td>
-</tr>
-<tr>
-<td style="text-align:left"><code>olt-u-fontWeight900</code></td>
-<td style="text-align:left"><code>font-weight: 900;</code></td>
-<td style="text-align:left"><div class="olt-u-fontWeight900">900</div></td>
-</tr>
-</tbody></table><div class="i-example">
-                    <h5 class="i-example__heading">
-                        <a
-                            href="font-weight-example.html"
-                            target="_blank"
-                            class="plain-link"
-                            data-toggle="tooltip"
-                            data-placement="top"
-                            title="Open in a new window"
-                        >
-                            <i class="fa fa-external-link-square fa-fw"></i>
-                            Example
-                        </a>
-                    </h5>
-                    <div class="i-example__body">
-                        <div
-                            class="i-example__iframe"
-                            lazyframe
-                            data-src="font-weight-example.html"
-                            data-initinview="true"
-                            data-title="Loading..." 
-                        ></div>
-                    </div>
-                </div>
-
-
-<div class="i-code-block">
-	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
-	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;p class=&quot;olt-Paragraph olt-u-fontWeightBold&quot;&gt;
-  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-&lt;p&gt;
-&lt;p class=&quot;olt-Paragraph olt-u-fontWeightLighter&quot;&gt;
-  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-&lt;p&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;p class=&quot;olt-Paragraph olt-u-fontWeightBold&quot;&gt;
-  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-&lt;p&gt;
-&lt;p class=&quot;olt-Paragraph olt-u-fontWeightLighter&quot;&gt;
-  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-&lt;p&gt;</code></pre>
-	</div>
-</div><div id="responsive" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#responsive" class="icon-link i-section__link -heading"></a>Responsive</h2></div><p>Font size utility becomes very handy, when used in a combination with the 
-default screen <a href="/#screen">prefixes</a> :</p>
-<table class="table"><thead><tr>
-<th style="text-align:center">Prefix</th>
-<th style="text-align:left">Example</th>
-<th style="text-align:left">Description</th>
-</tr>
-</thead><tbody><tr>
-<td style="text-align:center">xs</td>
-<td style="text-align:left"><code>olt-u-xs-fontWeightLighter</code></td>
-<td style="text-align:left">Will set <code>font-weight: lighter</code> on the element when rendered on extra small screen</td>
-</tr>
-<tr>
-<td style="text-align:center">sm</td>
-<td style="text-align:left"><code>olt-u-sm-fontWeightBold</code></td>
-<td style="text-align:left">Will set <code>font-weight: 700</code> on the element when rendered on a small screen</td>
-</tr>
-<tr>
-<td style="text-align:center">md</td>
-<td style="text-align:left"><code>olt-u-md-fontWeight700</code></td>
-<td style="text-align:left">Will set <code>font-weight: 700</code> on the element when rendered on a medium sized screen</td>
-</tr>
-<tr>
-<td style="text-align:center">lg</td>
-<td style="text-align:left"><code>olt-u-lg-fontWeightBolder</code></td>
-<td style="text-align:left">Will set <code>font-weight: bolder</code> on the element when rendered on a large screen</td>
-</tr>
-<tr>
-<td style="text-align:center">xl</td>
-<td style="text-align:left"><code>olt-u-xl-fontWeight200</code></td>
-<td style="text-align:left">Will set <code>font-weight: 200</code> on the element when rendered on extra large screen</td>
+<td style="text-align:left"><div class="olt-u-code">Code</div></td>
+<td style="text-align:left">14px, 22px line height</td>
+<td style="text-align:left">14px, 22px line height</td>
+<td style="text-align:left">18px, 24px line height</td>
 </tr>
 </tbody></table></div>
 </div>
@@ -20084,7 +19833,7 @@ it can be very handy :</p>
 			
 						<h5
 							class="pt-4 mb-1 theme-sidebar-category-title"
-							data-filter-value=" Align Items  Background Color  Border  Border Color  Color  Display  Flex  Font  Font Size  Font Weight  Justify Content  Margin  Overflow  Padding  Text Align "
+							data-filter-value=" Align Items  Background Color  Border  Border Color  Color  Display  Flex  Font  Justify Content  Margin  Overflow  Padding  Text Align "
 						>
 							<a href="#category-utilities" class="i-sidebar-list-item">
 								<b>Utilities</b>
@@ -20147,20 +19896,6 @@ it can be very handy :</p>
 									data-filter-value="Font"
 								>
 									<span>Font</span>
-								</a>
-								<a
-									href="#font-size"
-									class="i-sidebar-list-item theme-sidebar-element"
-									data-filter-value="Font Size"
-								>
-									<span>Font Size</span>
-								</a>
-								<a
-									href="#font-weight"
-									class="i-sidebar-list-item theme-sidebar-element"
-									data-filter-value="Font Weight"
-								>
-									<span>Font Weight</span>
 								</a>
 								<a
 									href="#justify-content"
