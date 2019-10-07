@@ -52,34 +52,12 @@
 		
 	</head>
 
-	<body>					<div class='olt-Frame'><span class="olt-Chip olt-Chip-icon-left olt-Icon-action-add-default olt-Icon--small">Default</span>
-<span class="olt-Chip olt-Chip--dark olt-Chip-icon-left olt-Icon-action-add-default olt-Icon--small">Dark</span>
-<span class="olt-Chip olt-Chip--primary olt-Chip-icon-left olt-Icon-action-add-default olt-Icon--small">Primary</span>
-<span class="olt-Chip olt-Chip--error olt-Chip-icon-left olt-Icon-action-add-default olt-Icon--small">Error</span>
-<span class="olt-Chip olt-Chip--success olt-Chip-icon-left olt-Icon-action-add-default olt-Icon--small">Success</span>
-<span class="olt-Chip olt-Chip--info olt-Chip-icon-left olt-Icon-action-add-default olt-Icon--small">Info</span>
-<br />
-<br />
-<span class="olt-Chip olt-Chip-icon-right olt-Icon-action-add-default olt-Icon--small">Default</span>
-<span class="olt-Chip olt-Chip--dark olt-Chip-icon-right olt-Icon-action-add-default olt-Icon--small">Dark</span>
-<span class="olt-Chip olt-Chip--primary olt-Chip-icon-right olt-Icon-action-add-default olt-Icon--small">Primary</span>
-<span class="olt-Chip olt-Chip--error olt-Chip-icon-right olt-Icon-action-add-default olt-Icon--small">Error</span>
-<span class="olt-Chip olt-Chip--success olt-Chip-icon-right olt-Icon-action-add-default olt-Icon--small">Success</span>
-<span class="olt-Chip olt-Chip--info olt-Chip-icon-right olt-Icon-action-add-default olt-Icon--small">Info</span></div>
-			<script type="text/x-stylemark" data-language="html"><span class="olt-Chip olt-Chip-icon-left olt-Icon-action-add-default olt-Icon--small">Default</span>
-<span class="olt-Chip olt-Chip--dark olt-Chip-icon-left olt-Icon-action-add-default olt-Icon--small">Dark</span>
-<span class="olt-Chip olt-Chip--primary olt-Chip-icon-left olt-Icon-action-add-default olt-Icon--small">Primary</span>
-<span class="olt-Chip olt-Chip--error olt-Chip-icon-left olt-Icon-action-add-default olt-Icon--small">Error</span>
-<span class="olt-Chip olt-Chip--success olt-Chip-icon-left olt-Icon-action-add-default olt-Icon--small">Success</span>
-<span class="olt-Chip olt-Chip--info olt-Chip-icon-left olt-Icon-action-add-default olt-Icon--small">Info</span>
-<br />
-<br />
-<span class="olt-Chip olt-Chip-icon-right olt-Icon-action-add-default olt-Icon--small">Default</span>
-<span class="olt-Chip olt-Chip--dark olt-Chip-icon-right olt-Icon-action-add-default olt-Icon--small">Dark</span>
-<span class="olt-Chip olt-Chip--primary olt-Chip-icon-right olt-Icon-action-add-default olt-Icon--small">Primary</span>
-<span class="olt-Chip olt-Chip--error olt-Chip-icon-right olt-Icon-action-add-default olt-Icon--small">Error</span>
-<span class="olt-Chip olt-Chip--success olt-Chip-icon-right olt-Icon-action-add-default olt-Icon--small">Success</span>
-<span class="olt-Chip olt-Chip--info olt-Chip-icon-right olt-Icon-action-add-default olt-Icon--small">Info</span></script>
+	<body>					<div class='olt-Frame'><div class="olt-Copyable">
+  I can easily copy this to the clipboard
+</div></div>
+			<script type="text/x-stylemark" data-language="html"><div class="olt-Copyable">
+  I can easily copy this to the clipboard
+</div></script>
 
 		<!--
 			Vanilla JS
@@ -112,10 +90,10 @@
 					}
 					else {
 						// Creates a new module
-						module = angular.module('stylemark-chip-icons', []);
+						module = angular.module('stylemark-copyable-clipboard', []);
 					}
 
-					module.controller('stylemark-chip-icons-' + index, function($scope) {
+					module.controller('stylemark-copyable-clipboard-' + index, function($scope) {
 						$scope.$eval(block);
 					});
 				});

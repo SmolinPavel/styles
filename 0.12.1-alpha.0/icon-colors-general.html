@@ -52,34 +52,46 @@
 		
 	</head>
 
-	<body>					<div class='olt-Frame'><span class="olt-Chip olt-Chip-icon-left olt-Icon-action-add-default olt-Icon--small">Default</span>
-<span class="olt-Chip olt-Chip--dark olt-Chip-icon-left olt-Icon-action-add-default olt-Icon--small">Dark</span>
-<span class="olt-Chip olt-Chip--primary olt-Chip-icon-left olt-Icon-action-add-default olt-Icon--small">Primary</span>
-<span class="olt-Chip olt-Chip--error olt-Chip-icon-left olt-Icon-action-add-default olt-Icon--small">Error</span>
-<span class="olt-Chip olt-Chip--success olt-Chip-icon-left olt-Icon-action-add-default olt-Icon--small">Success</span>
-<span class="olt-Chip olt-Chip--info olt-Chip-icon-left olt-Icon-action-add-default olt-Icon--small">Info</span>
-<br />
-<br />
-<span class="olt-Chip olt-Chip-icon-right olt-Icon-action-add-default olt-Icon--small">Default</span>
-<span class="olt-Chip olt-Chip--dark olt-Chip-icon-right olt-Icon-action-add-default olt-Icon--small">Dark</span>
-<span class="olt-Chip olt-Chip--primary olt-Chip-icon-right olt-Icon-action-add-default olt-Icon--small">Primary</span>
-<span class="olt-Chip olt-Chip--error olt-Chip-icon-right olt-Icon-action-add-default olt-Icon--small">Error</span>
-<span class="olt-Chip olt-Chip--success olt-Chip-icon-right olt-Icon-action-add-default olt-Icon--small">Success</span>
-<span class="olt-Chip olt-Chip--info olt-Chip-icon-right olt-Icon-action-add-default olt-Icon--small">Info</span></div>
-			<script type="text/x-stylemark" data-language="html"><span class="olt-Chip olt-Chip-icon-left olt-Icon-action-add-default olt-Icon--small">Default</span>
-<span class="olt-Chip olt-Chip--dark olt-Chip-icon-left olt-Icon-action-add-default olt-Icon--small">Dark</span>
-<span class="olt-Chip olt-Chip--primary olt-Chip-icon-left olt-Icon-action-add-default olt-Icon--small">Primary</span>
-<span class="olt-Chip olt-Chip--error olt-Chip-icon-left olt-Icon-action-add-default olt-Icon--small">Error</span>
-<span class="olt-Chip olt-Chip--success olt-Chip-icon-left olt-Icon-action-add-default olt-Icon--small">Success</span>
-<span class="olt-Chip olt-Chip--info olt-Chip-icon-left olt-Icon-action-add-default olt-Icon--small">Info</span>
-<br />
-<br />
-<span class="olt-Chip olt-Chip-icon-right olt-Icon-action-add-default olt-Icon--small">Default</span>
-<span class="olt-Chip olt-Chip--dark olt-Chip-icon-right olt-Icon-action-add-default olt-Icon--small">Dark</span>
-<span class="olt-Chip olt-Chip--primary olt-Chip-icon-right olt-Icon-action-add-default olt-Icon--small">Primary</span>
-<span class="olt-Chip olt-Chip--error olt-Chip-icon-right olt-Icon-action-add-default olt-Icon--small">Error</span>
-<span class="olt-Chip olt-Chip--success olt-Chip-icon-right olt-Icon-action-add-default olt-Icon--small">Success</span>
-<span class="olt-Chip olt-Chip--info olt-Chip-icon-right olt-Icon-action-add-default olt-Icon--small">Info</span></script>
+	<body>					<div class='olt-Frame'><div class="olt-Grid olt-u-alignItemsCenter">
+  <div class="olt-Grid-item olt-Grid-item--3">
+    <b>primary</b><br>
+    interactive icons
+  </div>
+  <div class="olt-Grid-item olt-Grid-item--9">
+    <i class="olt-Icon olt-Icon--primary olt-Icon-zoom-in"></i>
+    <i class="olt-Icon olt-Icon--primary olt-Icon-zoom-out"></i>
+    <i class="olt-Icon olt-Icon--primary olt-Icon-zoom-resize"></i>
+  </div>
+  <div class="olt-Grid-item olt-Grid-item--3">
+    <b>gray 500</b><br>
+    used for decorations
+  </div>
+  <div class="olt-Grid-item olt-Grid-item--9">
+    <i class="olt-Icon olt-u-colorGray500 olt-Icon-data-emission"></i>
+    <i class="olt-Icon olt-u-colorGray500 olt-Icon-data-humidity"></i>
+    <i class="olt-Icon olt-u-colorGray500 olt-Icon-data-power"></i>
+  </div>
+</div></div>
+			<script type="text/x-stylemark" data-language="html"><div class="olt-Grid olt-u-alignItemsCenter">
+  <div class="olt-Grid-item olt-Grid-item--3">
+    <b>primary</b><br>
+    interactive icons
+  </div>
+  <div class="olt-Grid-item olt-Grid-item--9">
+    <i class="olt-Icon olt-Icon--primary olt-Icon-zoom-in"></i>
+    <i class="olt-Icon olt-Icon--primary olt-Icon-zoom-out"></i>
+    <i class="olt-Icon olt-Icon--primary olt-Icon-zoom-resize"></i>
+  </div>
+  <div class="olt-Grid-item olt-Grid-item--3">
+    <b>gray 500</b><br>
+    used for decorations
+  </div>
+  <div class="olt-Grid-item olt-Grid-item--9">
+    <i class="olt-Icon olt-u-colorGray500 olt-Icon-data-emission"></i>
+    <i class="olt-Icon olt-u-colorGray500 olt-Icon-data-humidity"></i>
+    <i class="olt-Icon olt-u-colorGray500 olt-Icon-data-power"></i>
+  </div>
+</div></script>
 
 		<!--
 			Vanilla JS
@@ -112,10 +124,10 @@
 					}
 					else {
 						// Creates a new module
-						module = angular.module('stylemark-chip-icons', []);
+						module = angular.module('stylemark-icon-colors-general', []);
 					}
 
-					module.controller('stylemark-chip-icons-' + index, function($scope) {
+					module.controller('stylemark-icon-colors-general-' + index, function($scope) {
 						$scope.$eval(block);
 					});
 				});

@@ -38,6 +38,7 @@
 									<option value="menu">Menu</option>
 									<option value="modal">Modal</option>
 									<option value="navbar">Navbar</option>
+									<option value="notification">Notification</option>
 									<option value="snackbar">Snackbar</option>
 									<option value="spinner">Spinner</option>
 									<option value="stepper">Stepper</option>
@@ -45,6 +46,7 @@
 									<option value="tag">Tag</option>
 									<option value="tooltip">Tooltip</option>
 									<option value="v-2-button">V2Button</option>
+									<option value="v-2-tabs">V2Tabs</option>
 							</optgroup>
 							<optgroup label="Content">
 									<option value="data-cards">Data Cards</option>
@@ -58,6 +60,7 @@
 							</optgroup>
 							<optgroup label="Controls">
 									<option value="checkbox">Checkbox</option>
+									<option value="copyable">Copyable</option>
 									<option value="form-field">FormField</option>
 									<option value="input">Input</option>
 									<option value="label">Label</option>
@@ -238,37 +241,42 @@ omitting trigger elements and control state classes via Javascript.</p>
 <th style="text-align:left">Utility Class</th>
 </tr>
 </thead><tbody><tr>
-<td style="text-align:center"><button data-icon="" class="olt-Button olt-Button--primary"></button></td>
+<td style="text-align:center"><button class="olt-Button olt-Button--icon olt-Button--primary"></button></td>
 <td style="text-align:left">Primary</td>
 <td style="text-align:left"><code>olt-u-colorPrimary</code></td>
 </tr>
 <tr>
-<td style="text-align:center"><button data-icon="" class="olt-Button olt-Button--secondary"></button></td>
+<td style="text-align:center"><button class="olt-Button olt-Button--icon olt-Button--secondary"></button></td>
 <td style="text-align:left">Secondary</td>
 <td style="text-align:left"><code>olt-u-colorSecondary</code></td>
 </tr>
 <tr>
-<td style="text-align:center"><button data-icon="" class="olt-Button olt-Button--info"></button></td>
+<td style="text-align:center"><button class="olt-Button olt-Button--icon olt-Button--info"></button></td>
 <td style="text-align:left">Info</td>
 <td style="text-align:left"><code>olt-u-colorInfo</code></td>
 </tr>
 <tr>
-<td style="text-align:center"><button data-icon="" class="olt-Button olt-Button--error"></button></td>
+<td style="text-align:center"><button class="olt-Button olt-Button--icon olt-Button--warning"></button></td>
+<td style="text-align:left">Warning</td>
+<td style="text-align:left"><code>olt-u-colorWarning</code></td>
+</tr>
+<tr>
+<td style="text-align:center"><button class="olt-Button olt-Button--icon olt-Button--error"></button></td>
 <td style="text-align:left">Error</td>
 <td style="text-align:left"><code>olt-u-colorError</code></td>
 </tr>
 <tr>
-<td style="text-align:center"><button data-icon="" class="olt-Button olt-Button--success"></button></td>
+<td style="text-align:center"><button class="olt-Button olt-Button--icon olt-Button--success"></button></td>
 <td style="text-align:left">Success</td>
 <td style="text-align:left"><code>olt-u-colorSuccess</code></td>
 </tr>
 <tr>
-<td style="text-align:center"><button data-icon="" class="olt-Button olt-Button--light olt-u-border"></button></td>
+<td style="text-align:center"><button class="olt-Button olt-Button--icon olt-Button--light olt-u-border"></button></td>
 <td style="text-align:left">Light ( White )</td>
 <td style="text-align:left"><code>olt-u-colorLight</code></td>
 </tr>
 <tr>
-<td style="text-align:center"><button data-icon="" class="olt-Button olt-Button--dark"></button></td>
+<td style="text-align:center"><button class="olt-Button olt-Button--icon olt-Button--dark"></button></td>
 <td style="text-align:left">Dark</td>
 <td style="text-align:left"><code>olt-u-colorDark</code></td>
 </tr>
@@ -919,7 +927,7 @@ into a border, instead of a background.</p>
 &lt;button class=&quot;olt-Button olt-Button--outline olt-Button--error&quot;&gt;Outline&lt;/button&gt;
 &lt;button class=&quot;olt-Button olt-Button--outline olt-Button--success&quot;&gt;Outline&lt;/button&gt;</code></pre>
 	</div>
-</div><div id="icon" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#icon" class="icon-link i-section__link -heading"></a>Icon</h2></div><p>Make use of <code>data-icon</code> attribute in order to apply an icon to a button. Please 
+</div><div id="icon" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#icon" class="icon-link i-section__link -heading"></a>Icon</h2></div><p>Make use of the <code>olt-Button--icon</code> class in order to apply an icon to a button. Please 
 note that this doesn&#39;t work with inputs of button type.</p>
 <div class="i-example">
                     <h5 class="i-example__heading">
@@ -950,14 +958,14 @@ note that this doesn&#39;t work with inputs of button type.</p>
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;a data-icon=&quot;close&quot; class=&quot;olt-Button&quot;&gt;&lt;/a&gt;
-&lt;a data-icon=&quot;close&quot; class=&quot;olt-Button olt-Button--outline&quot;&gt;&lt;/a&gt;
-&lt;button data-icon=&quot;close&quot; class=&quot;olt-Button olt-Button--primary&quot;&gt;&lt;/button&gt;
-&lt;button data-icon=&quot;close&quot; class=&quot;olt-Button olt-Button--primary olt-Button--outline&quot;&gt;&lt;/button&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;a data-icon=&quot;close&quot; class=&quot;olt-Button&quot;&gt;&lt;/a&gt;
-&lt;a data-icon=&quot;close&quot; class=&quot;olt-Button olt-Button--outline&quot;&gt;&lt;/a&gt;
-&lt;button data-icon=&quot;close&quot; class=&quot;olt-Button olt-Button--primary&quot;&gt;&lt;/button&gt;
-&lt;button data-icon=&quot;close&quot; class=&quot;olt-Button olt-Button--primary olt-Button--outline&quot;&gt;&lt;/button&gt;</code></pre>
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;a class=&quot;olt-Button olt-Button--icon olt-Icon-navigation-close olt-Icon--small&quot;&gt;&lt;/a&gt;
+&lt;a class=&quot;olt-Button olt-Button--outline olt-Button--icon olt-Icon-navigation-close olt-Icon--small&quot;&gt;&lt;/a&gt;
+&lt;button class=&quot;olt-Button olt-Button--primary olt-Button--icon olt-Icon-navigation-close olt-Icon--small&quot;&gt;&lt;/button&gt;
+&lt;button class=&quot;olt-Button olt-Button--primary olt-Button--outline olt-Button--icon olt-Icon-navigation-close olt-Icon--small&quot;&gt;&lt;/button&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;a class=&quot;olt-Button olt-Button--icon olt-Icon-navigation-close olt-Icon--small&quot;&gt;&lt;/a&gt;
+&lt;a class=&quot;olt-Button olt-Button--outline olt-Button--icon olt-Icon-navigation-close olt-Icon--small&quot;&gt;&lt;/a&gt;
+&lt;button class=&quot;olt-Button olt-Button--primary olt-Button--icon olt-Icon-navigation-close olt-Icon--small&quot;&gt;&lt;/button&gt;
+&lt;button class=&quot;olt-Button olt-Button--primary olt-Button--outline olt-Button--icon olt-Icon-navigation-close olt-Icon--small&quot;&gt;&lt;/button&gt;</code></pre>
 	</div>
 </div><div id="states" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#states" class="icon-link i-section__link -heading"></a>States</h2></div><p>The buttons have the standard <code>:hover</code> and <code>:focus</code> states, which doesn&#39;t have
 corresponding CSS class names. For states <code>:active</code> and <code>:disabled</code> we can
@@ -1392,7 +1400,7 @@ for drop down menu or additional context actions.</p>
       Description
     &lt;/h6&gt;
     &lt;div class=&quot;olt-Card-action&quot;&gt;
-      &lt;i class=&quot;olt-Icon&quot; data-icon=&quot;more_vert&quot;&gt;&lt;/i&gt;
+      &lt;i class=&quot;olt-Icon olt-Icon-navigation-more olt-Icon--large&quot;&gt;&lt;/i&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;">Copy</button>
@@ -1405,7 +1413,7 @@ for drop down menu or additional context actions.</p>
       Description
     &lt;/h6&gt;
     &lt;div class=&quot;olt-Card-action&quot;&gt;
-      &lt;i class=&quot;olt-Icon&quot; data-icon=&quot;more_vert&quot;&gt;&lt;/i&gt;
+      &lt;i class=&quot;olt-Icon olt-Icon-navigation-more olt-Icon--large&quot;&gt;&lt;/i&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
@@ -1450,7 +1458,7 @@ provided.</p>
       Description
     &lt;/h6&gt;
     &lt;div class=&quot;olt-Card-action&quot;&gt;
-      &lt;i class=&quot;olt-Icon&quot; data-icon=&quot;more_vert&quot;&gt;&lt;/i&gt;
+      &lt;i class=&quot;olt-Icon olt-Icon-navigation-more olt-Icon--large&quot;&gt;&lt;/i&gt;
     &lt;/div&gt;
   &lt;/div&gt;
   &lt;div class=&quot;olt-Card-content&quot;&gt;
@@ -1466,7 +1474,7 @@ provided.</p>
       Description
     &lt;/h6&gt;
     &lt;div class=&quot;olt-Card-action&quot;&gt;
-      &lt;i class=&quot;olt-Icon&quot; data-icon=&quot;more_vert&quot;&gt;&lt;/i&gt;
+      &lt;i class=&quot;olt-Icon olt-Icon-navigation-more olt-Icon--large&quot;&gt;&lt;/i&gt;
     &lt;/div&gt;
   &lt;/div&gt;
   &lt;div class=&quot;olt-Card-content&quot;&gt;
@@ -1725,10 +1733,10 @@ names.</p>
               <span class="olt-Chip">Label</span>
             </div>
             <div class="demo-content">
-              <span class="olt-Chip" data-icon-left="add">Label</span>
+              <span class="olt-Chip olt-Chip-icon-left olt-Icon-action-add-default olt-Icon--small">Label</span>
             </div>
             <div class="demo-content">
-              <span class="olt-Chip" data-icon-right="add">Label</span>
+              <span class="olt-Chip olt-Chip-icon-right olt-Icon-action-add-default olt-Icon--small">Label</span>
             </div>
             <div class="demo-content">
               <span class="olt-Chip olt-Chip--withBubble">
@@ -1737,7 +1745,7 @@ names.</p>
               </span>
             </div>
             <div class="demo-content">
-              <span class="olt-Chip olt-Chip--withBubble" data-icon-left="add">
+              <span class="olt-Chip olt-Chip--withBubble olt-Chip-icon-left olt-Icon-action-add-default olt-Icon--small">
                 Label
                 <span class="olt-Chip-bubble">42</span>
               </span>
@@ -1768,10 +1776,10 @@ names.</p>
               <span class="olt-Chip olt-Chip--dark">Label</span>
             </div>
             <div class="demo-content">
-              <span class="olt-Chip olt-Chip--dark" data-icon-left="add">Label</span>
+              <span class="olt-Chip olt-Chip--dark olt-Chip-icon-left olt-Icon-action-add-default olt-Icon--small">Label</span>
             </div>
             <div class="demo-content">
-              <span class="olt-Chip olt-Chip--dark" data-icon-right="add">Label</span>
+              <span class="olt-Chip olt-Chip--dark olt-Chip-icon-right olt-Icon-action-add-default olt-Icon--small">Label</span>
             </div>
             <div class="demo-content">
               <span class="olt-Chip olt-Chip--dark olt-Chip--withBubble">
@@ -1780,7 +1788,7 @@ names.</p>
               </span>
             </div>
             <div class="demo-content">
-              <span class="olt-Chip olt-Chip--dark olt-Chip--withBubble" data-icon-left="add">
+              <span class="olt-Chip olt-Chip--dark olt-Chip--withBubble olt-Chip-icon-left olt-Icon-action-add-default olt-Icon--small">
                 Label
                 <span class="olt-Chip-bubble">42</span>
               </span>
@@ -1811,10 +1819,10 @@ names.</p>
               <span class="olt-Chip olt-Chip--light">Label</span>
             </div>
             <div class="demo-content">
-              <span class="olt-Chip olt-Chip--light" data-icon-left="add">Label</span>
+              <span class="olt-Chip olt-Chip--light olt-Chip-icon-left olt-Icon-action-add-default olt-Icon--small">Label</span>
             </div>
             <div class="demo-content">
-              <span class="olt-Chip olt-Chip--light" data-icon-right="add">Label</span>
+              <span class="olt-Chip olt-Chip--light olt-Chip-icon-right olt-Icon-action-add-default olt-Icon--small">Label</span>
             </div>
             <div class="demo-content">
               <span class="olt-Chip olt-Chip--light olt-Chip--withBubble">
@@ -1823,7 +1831,7 @@ names.</p>
               </span>
             </div>
             <div class="demo-content">
-              <span class="olt-Chip olt-Chip--light olt-Chip--withBubble" data-icon-left="add">
+              <span class="olt-Chip olt-Chip--light olt-Chip--withBubble olt-Chip-icon-left olt-Icon-action-add-default olt-Icon--small">
                 Label
                 <span class="olt-Chip-bubble">42</span>
               </span>
@@ -1854,10 +1862,10 @@ names.</p>
               <span class="olt-Chip olt-Chip--primary">Label</span>
             </div>
             <div class="demo-content">
-              <span class="olt-Chip olt-Chip--primary" data-icon-left="add">Label</span>
+              <span class="olt-Chip olt-Chip--primary olt-Chip-icon-left olt-Icon-action-add-default olt-Icon--small">Label</span>
             </div>
             <div class="demo-content">
-              <span class="olt-Chip olt-Chip--primary" data-icon-right="add">Label</span>
+              <span class="olt-Chip olt-Chip--primary olt-Chip-icon-right olt-Icon-action-add-default olt-Icon--small">Label</span>
             </div>
             <div class="demo-content">
               <span class="olt-Chip olt-Chip--primary olt-Chip--withBubble">
@@ -1866,7 +1874,7 @@ names.</p>
               </span>
             </div>
             <div class="demo-content">
-              <span class="olt-Chip olt-Chip--primary olt-Chip--withBubble" data-icon-left="add">
+              <span class="olt-Chip olt-Chip--primary olt-Chip--withBubble olt-Chip-icon-left olt-Icon-action-add-default olt-Icon--small">
                 Label
                 <span class="olt-Chip-bubble">42</span>
               </span>
@@ -1927,7 +1935,7 @@ names.</p>
               <span class="olt-Chip olt-Chip--error">Label</span>
             </div>
             <div class="demo-content">
-              <span class="olt-Chip olt-Chip--error" data-icon-left="close">Label</span>
+              <span class="olt-Chip olt-Chip--error olt-Chip-icon-left olt-Icon-navigation-close olt-Icon--small">Label</span>
             </div>
             <div class="demo-content">
               <span class="olt-Chip olt-Chip--error olt-Chip--withBubble">
@@ -1936,7 +1944,7 @@ names.</p>
               </span>
             </div>
             <div class="demo-content">
-              <span class="olt-Chip olt-Chip--error olt-Chip--withBubble" data-icon-left="close">
+              <span class="olt-Chip olt-Chip--error olt-Chip--withBubble olt-Chip-icon-left olt-Icon-navigation-close olt-Icon--small">
                 Label
                 <span class="olt-Chip-bubble">42</span>
               </span>
@@ -1960,7 +1968,7 @@ names.</p>
               <span class="olt-Chip olt-Chip--success">Label</span>
             </div>
             <div class="demo-content">
-              <span class="olt-Chip olt-Chip--success" data-icon-left="check">Label</span>
+              <span class="olt-Chip olt-Chip--success olt-Chip-icon-left olt-Icon-feedback-check-default olt-Icon--small">Label</span>
             </div>
             <div class="demo-content">
               <span class="olt-Chip olt-Chip--success olt-Chip--withBubble">
@@ -1969,7 +1977,7 @@ names.</p>
               </span>
             </div>
             <div class="demo-content">
-              <span class="olt-Chip olt-Chip--success olt-Chip--withBubble" data-icon-left="check">
+              <span class="olt-Chip olt-Chip--success olt-Chip--withBubble olt-Chip-icon-left olt-Icon-feedback-check-default olt-Icon--small">
                 Label
                 <span class="olt-Chip-bubble">42</span>
               </span>
@@ -1993,7 +2001,7 @@ names.</p>
               <span class="olt-Chip olt-Chip--info">Label</span>
             </div>
             <div class="demo-content">
-              <span class="olt-Chip olt-Chip--info" data-icon-left="info">Label</span>
+              <span class="olt-Chip olt-Chip--info olt-Chip-icon-left olt-Icon-feedback-info-filled olt-Icon--small">Label</span>
             </div>
             <div class="demo-content">
               <span class="olt-Chip olt-Chip--info olt-Chip--withBubble">
@@ -2002,7 +2010,7 @@ names.</p>
               </span>
             </div>
             <div class="demo-content">
-              <span class="olt-Chip olt-Chip--info olt-Chip--withBubble" data-icon-left="info">
+              <span class="olt-Chip olt-Chip--info olt-Chip--withBubble olt-Chip-icon-left olt-Icon-feedback-info-filled olt-Icon--small">
                 Label
                 <span class="olt-Chip-bubble">42</span>
               </span>
@@ -2201,7 +2209,7 @@ modifier which will make them selectable</p>
 &lt;span class=&quot;olt-Chip olt-Chip--primary olt-Chip--selectable&quot;&gt;Primary Selectable&lt;/span&gt;</code></pre>
 	</div>
 </div><div id="decorations" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#decorations" class="icon-link i-section__link -heading"></a>Decorations</h2></div><h3>Icons</h3><p>Each <em>Chip</em> can have an icon rendered on the left or on the right side by adding
-<code>data-icon-left</code> or <code>data-icon-right</code> attribute to the component&#39;s class names.</p>
+<code>olt-Chip-icon-left</code> or <code>olt-Chip-icon-right</code> and the desired Icon class to the component&#39;s classes.</p>
 <div class="i-example">
                     <h5 class="i-example__heading">
                         <a
@@ -2231,34 +2239,34 @@ modifier which will make them selectable</p>
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;span class=&quot;olt-Chip&quot; data-icon-left=&quot;add&quot;&gt;Default&lt;/span&gt;
-&lt;span class=&quot;olt-Chip olt-Chip--dark&quot; data-icon-left=&quot;add&quot;&gt;Dark&lt;/span&gt;
-&lt;span class=&quot;olt-Chip olt-Chip--primary&quot; data-icon-left=&quot;add&quot;&gt;Primary&lt;/span&gt;
-&lt;span class=&quot;olt-Chip olt-Chip--error&quot; data-icon-left=&quot;add&quot;&gt;Error&lt;/span&gt;
-&lt;span class=&quot;olt-Chip olt-Chip--success&quot; data-icon-left=&quot;add&quot;&gt;Success&lt;/span&gt;
-&lt;span class=&quot;olt-Chip olt-Chip--info&quot; data-icon-left=&quot;add&quot;&gt;Info&lt;/span&gt;
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;span class=&quot;olt-Chip olt-Chip-icon-left olt-Icon-action-add-default olt-Icon--small&quot;&gt;Default&lt;/span&gt;
+&lt;span class=&quot;olt-Chip olt-Chip--dark olt-Chip-icon-left olt-Icon-action-add-default olt-Icon--small&quot;&gt;Dark&lt;/span&gt;
+&lt;span class=&quot;olt-Chip olt-Chip--primary olt-Chip-icon-left olt-Icon-action-add-default olt-Icon--small&quot;&gt;Primary&lt;/span&gt;
+&lt;span class=&quot;olt-Chip olt-Chip--error olt-Chip-icon-left olt-Icon-action-add-default olt-Icon--small&quot;&gt;Error&lt;/span&gt;
+&lt;span class=&quot;olt-Chip olt-Chip--success olt-Chip-icon-left olt-Icon-action-add-default olt-Icon--small&quot;&gt;Success&lt;/span&gt;
+&lt;span class=&quot;olt-Chip olt-Chip--info olt-Chip-icon-left olt-Icon-action-add-default olt-Icon--small&quot;&gt;Info&lt;/span&gt;
 &lt;br /&gt;
 &lt;br /&gt;
-&lt;span class=&quot;olt-Chip&quot; data-icon-right=&quot;add&quot;&gt;Default&lt;/span&gt;
-&lt;span class=&quot;olt-Chip olt-Chip--dark&quot; data-icon-right=&quot;add&quot;&gt;Dark&lt;/span&gt;
-&lt;span class=&quot;olt-Chip olt-Chip--primary&quot; data-icon-right=&quot;add&quot;&gt;Primary&lt;/span&gt;
-&lt;span class=&quot;olt-Chip olt-Chip--error&quot; data-icon-right=&quot;add&quot;&gt;Error&lt;/span&gt;
-&lt;span class=&quot;olt-Chip olt-Chip--success&quot; data-icon-right=&quot;add&quot;&gt;Success&lt;/span&gt;
-&lt;span class=&quot;olt-Chip olt-Chip--info&quot; data-icon-right=&quot;add&quot;&gt;Info&lt;/span&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;span class=&quot;olt-Chip&quot; data-icon-left=&quot;add&quot;&gt;Default&lt;/span&gt;
-&lt;span class=&quot;olt-Chip olt-Chip--dark&quot; data-icon-left=&quot;add&quot;&gt;Dark&lt;/span&gt;
-&lt;span class=&quot;olt-Chip olt-Chip--primary&quot; data-icon-left=&quot;add&quot;&gt;Primary&lt;/span&gt;
-&lt;span class=&quot;olt-Chip olt-Chip--error&quot; data-icon-left=&quot;add&quot;&gt;Error&lt;/span&gt;
-&lt;span class=&quot;olt-Chip olt-Chip--success&quot; data-icon-left=&quot;add&quot;&gt;Success&lt;/span&gt;
-&lt;span class=&quot;olt-Chip olt-Chip--info&quot; data-icon-left=&quot;add&quot;&gt;Info&lt;/span&gt;
+&lt;span class=&quot;olt-Chip olt-Chip-icon-right olt-Icon-action-add-default olt-Icon--small&quot;&gt;Default&lt;/span&gt;
+&lt;span class=&quot;olt-Chip olt-Chip--dark olt-Chip-icon-right olt-Icon-action-add-default olt-Icon--small&quot;&gt;Dark&lt;/span&gt;
+&lt;span class=&quot;olt-Chip olt-Chip--primary olt-Chip-icon-right olt-Icon-action-add-default olt-Icon--small&quot;&gt;Primary&lt;/span&gt;
+&lt;span class=&quot;olt-Chip olt-Chip--error olt-Chip-icon-right olt-Icon-action-add-default olt-Icon--small&quot;&gt;Error&lt;/span&gt;
+&lt;span class=&quot;olt-Chip olt-Chip--success olt-Chip-icon-right olt-Icon-action-add-default olt-Icon--small&quot;&gt;Success&lt;/span&gt;
+&lt;span class=&quot;olt-Chip olt-Chip--info olt-Chip-icon-right olt-Icon-action-add-default olt-Icon--small&quot;&gt;Info&lt;/span&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;span class=&quot;olt-Chip olt-Chip-icon-left olt-Icon-action-add-default olt-Icon--small&quot;&gt;Default&lt;/span&gt;
+&lt;span class=&quot;olt-Chip olt-Chip--dark olt-Chip-icon-left olt-Icon-action-add-default olt-Icon--small&quot;&gt;Dark&lt;/span&gt;
+&lt;span class=&quot;olt-Chip olt-Chip--primary olt-Chip-icon-left olt-Icon-action-add-default olt-Icon--small&quot;&gt;Primary&lt;/span&gt;
+&lt;span class=&quot;olt-Chip olt-Chip--error olt-Chip-icon-left olt-Icon-action-add-default olt-Icon--small&quot;&gt;Error&lt;/span&gt;
+&lt;span class=&quot;olt-Chip olt-Chip--success olt-Chip-icon-left olt-Icon-action-add-default olt-Icon--small&quot;&gt;Success&lt;/span&gt;
+&lt;span class=&quot;olt-Chip olt-Chip--info olt-Chip-icon-left olt-Icon-action-add-default olt-Icon--small&quot;&gt;Info&lt;/span&gt;
 &lt;br /&gt;
 &lt;br /&gt;
-&lt;span class=&quot;olt-Chip&quot; data-icon-right=&quot;add&quot;&gt;Default&lt;/span&gt;
-&lt;span class=&quot;olt-Chip olt-Chip--dark&quot; data-icon-right=&quot;add&quot;&gt;Dark&lt;/span&gt;
-&lt;span class=&quot;olt-Chip olt-Chip--primary&quot; data-icon-right=&quot;add&quot;&gt;Primary&lt;/span&gt;
-&lt;span class=&quot;olt-Chip olt-Chip--error&quot; data-icon-right=&quot;add&quot;&gt;Error&lt;/span&gt;
-&lt;span class=&quot;olt-Chip olt-Chip--success&quot; data-icon-right=&quot;add&quot;&gt;Success&lt;/span&gt;
-&lt;span class=&quot;olt-Chip olt-Chip--info&quot; data-icon-right=&quot;add&quot;&gt;Info&lt;/span&gt;</code></pre>
+&lt;span class=&quot;olt-Chip olt-Chip-icon-right olt-Icon-action-add-default olt-Icon--small&quot;&gt;Default&lt;/span&gt;
+&lt;span class=&quot;olt-Chip olt-Chip--dark olt-Chip-icon-right olt-Icon-action-add-default olt-Icon--small&quot;&gt;Dark&lt;/span&gt;
+&lt;span class=&quot;olt-Chip olt-Chip--primary olt-Chip-icon-right olt-Icon-action-add-default olt-Icon--small&quot;&gt;Primary&lt;/span&gt;
+&lt;span class=&quot;olt-Chip olt-Chip--error olt-Chip-icon-right olt-Icon-action-add-default olt-Icon--small&quot;&gt;Error&lt;/span&gt;
+&lt;span class=&quot;olt-Chip olt-Chip--success olt-Chip-icon-right olt-Icon-action-add-default olt-Icon--small&quot;&gt;Success&lt;/span&gt;
+&lt;span class=&quot;olt-Chip olt-Chip--info olt-Chip-icon-right olt-Icon-action-add-default olt-Icon--small&quot;&gt;Info&lt;/span&gt;</code></pre>
 	</div>
 </div><h3>Bubble</h3><p>Each <em>Chip</em> can have an additional bubble rendered on the top right side by
 adding <code>--withBubble</code> modifier and a descendant <code>-bubble</code> component inside the
@@ -2341,8 +2349,8 @@ adding <code>--withBubble</code> modifier and a descendant <code>-bubble</code> 
   &lt;span class=&quot;olt-Chip-bubble&quot;&gt;42&lt;/span&gt;
 &lt;/span&gt;</code></pre>
 	</div>
-</div><p>The <em>Chip</em>&#39;s bubble can also be an icon by adding <code>data-icon</code> to the bubble
-element.</p>
+</div><p>The <em>Chip</em>&#39;s bubble can also be an icon by adding <code>olt-Chip-bubble-icon</code> 
+and the desired icon class to the bubble element.</p>
 <div class="i-example">
                     <h5 class="i-example__heading">
                         <a
@@ -2374,51 +2382,51 @@ element.</p>
 	<div class="i-code-block__content hidden">
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;span class=&quot;olt-Chip olt-Chip--withBubble&quot;&gt;
   Default
-  &lt;span class=&quot;olt-Chip-bubble&quot; data-icon=&quot;add&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;olt-Chip-bubble olt-Chip-bubble-icon olt-Icon-action-add-default olt-Icon--small&quot;&gt;&lt;/span&gt;
 &lt;/span&gt;
 &lt;span class=&quot;olt-Chip olt-Chip--dark olt-Chip--withBubble&quot;&gt;
   Dark
-  &lt;span class=&quot;olt-Chip-bubble&quot; data-icon=&quot;add&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;olt-Chip-bubble olt-Chip-bubble-icon olt-Icon-action-add-default olt-Icon--small&quot;&gt;&lt;/span&gt;
 &lt;/span&gt;
 &lt;span class=&quot;olt-Chip olt-Chip--primary olt-Chip--withBubble&quot;&gt;
   Primary
-  &lt;span class=&quot;olt-Chip-bubble&quot; data-icon=&quot;add&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;olt-Chip-bubble olt-Chip-bubble-icon olt-Icon-action-add-default olt-Icon--small&quot;&gt;&lt;/span&gt;
 &lt;/span&gt;
 &lt;span class=&quot;olt-Chip olt-Chip--error olt-Chip--withBubble&quot;&gt;
   Error
-  &lt;span class=&quot;olt-Chip-bubble&quot; data-icon=&quot;add&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;olt-Chip-bubble olt-Chip-bubble-icon olt-Icon-action-add-default olt-Icon--small&quot;&gt;&lt;/span&gt;
 &lt;/span&gt;
 &lt;span class=&quot;olt-Chip olt-Chip--success olt-Chip--withBubble&quot;&gt;
   Success
-  &lt;span class=&quot;olt-Chip-bubble&quot; data-icon=&quot;add&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;olt-Chip-bubble olt-Chip-bubble-icon olt-Icon-action-add-default olt-Icon--small&quot;&gt;&lt;/span&gt;
 &lt;/span&gt;
 &lt;span class=&quot;olt-Chip olt-Chip--info olt-Chip--withBubble&quot;&gt;
   Info
-  &lt;span class=&quot;olt-Chip-bubble&quot; data-icon=&quot;add&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;olt-Chip-bubble olt-Chip-bubble-icon olt-Icon-action-add-default olt-Icon--small&quot;&gt;&lt;/span&gt;
 &lt;/span&gt;">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;span class=&quot;olt-Chip olt-Chip--withBubble&quot;&gt;
   Default
-  &lt;span class=&quot;olt-Chip-bubble&quot; data-icon=&quot;add&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;olt-Chip-bubble olt-Chip-bubble-icon olt-Icon-action-add-default olt-Icon--small&quot;&gt;&lt;/span&gt;
 &lt;/span&gt;
 &lt;span class=&quot;olt-Chip olt-Chip--dark olt-Chip--withBubble&quot;&gt;
   Dark
-  &lt;span class=&quot;olt-Chip-bubble&quot; data-icon=&quot;add&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;olt-Chip-bubble olt-Chip-bubble-icon olt-Icon-action-add-default olt-Icon--small&quot;&gt;&lt;/span&gt;
 &lt;/span&gt;
 &lt;span class=&quot;olt-Chip olt-Chip--primary olt-Chip--withBubble&quot;&gt;
   Primary
-  &lt;span class=&quot;olt-Chip-bubble&quot; data-icon=&quot;add&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;olt-Chip-bubble olt-Chip-bubble-icon olt-Icon-action-add-default olt-Icon--small&quot;&gt;&lt;/span&gt;
 &lt;/span&gt;
 &lt;span class=&quot;olt-Chip olt-Chip--error olt-Chip--withBubble&quot;&gt;
   Error
-  &lt;span class=&quot;olt-Chip-bubble&quot; data-icon=&quot;add&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;olt-Chip-bubble olt-Chip-bubble-icon olt-Icon-action-add-default olt-Icon--small&quot;&gt;&lt;/span&gt;
 &lt;/span&gt;
 &lt;span class=&quot;olt-Chip olt-Chip--success olt-Chip--withBubble&quot;&gt;
   Success
-  &lt;span class=&quot;olt-Chip-bubble&quot; data-icon=&quot;add&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;olt-Chip-bubble olt-Chip-bubble-icon olt-Icon-action-add-default olt-Icon--small&quot;&gt;&lt;/span&gt;
 &lt;/span&gt;
 &lt;span class=&quot;olt-Chip olt-Chip--info olt-Chip--withBubble&quot;&gt;
   Info
-  &lt;span class=&quot;olt-Chip-bubble&quot; data-icon=&quot;add&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;olt-Chip-bubble olt-Chip-bubble-icon olt-Icon-action-add-default olt-Icon--small&quot;&gt;&lt;/span&gt;
 &lt;/span&gt;</code></pre>
 	</div>
 </div><p>Bubble&#39;s colors can also be fixed with one of the additional modifier for the
@@ -2460,7 +2468,7 @@ bubble&#39;s element. They only work with the default <em>Chip</em>.</p>
 	<div class="i-code-block__content hidden">
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;span class=&quot;olt-Chip olt-Chip--withBubble&quot;&gt;
   Info with icon
-  &lt;span class=&quot;olt-Chip-bubble olt-Chip-bubble--info&quot; data-icon=&quot;add&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;olt-Chip-bubble olt-Chip-bubble--info olt-Chip-bubble-icon olt-Icon-action-add-default olt-Icon--small&quot;&gt;&lt;/span&gt;
 &lt;/span&gt;
 &lt;span class=&quot;olt-Chip olt-Chip--withBubble&quot;&gt;
   Success with counter
@@ -2468,15 +2476,15 @@ bubble&#39;s element. They only work with the default <em>Chip</em>.</p>
 &lt;/span&gt;
 &lt;span class=&quot;olt-Chip olt-Chip--withBubble&quot;&gt;
   Warning with icon
-  &lt;span class=&quot;olt-Chip-bubble olt-Chip-bubble--warning&quot; data-icon=&quot;add&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;olt-Chip-bubble olt-Chip-bubble--warning olt-Chip-bubble-icon olt-Icon-action-add-default olt-Icon--small&quot;&gt;&lt;/span&gt;
 &lt;/span&gt;
 &lt;span class=&quot;olt-Chip olt-Chip--withBubble&quot;&gt;
   Error with icon
-  &lt;span class=&quot;olt-Chip-bubble olt-Chip-bubble--error&quot; data-icon=&quot;add&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;olt-Chip-bubble olt-Chip-bubble--error olt-Chip-bubble-icon olt-Icon-action-add-default olt-Icon--small&quot;&gt;&lt;/span&gt;
 &lt;/span&gt;">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;span class=&quot;olt-Chip olt-Chip--withBubble&quot;&gt;
   Info with icon
-  &lt;span class=&quot;olt-Chip-bubble olt-Chip-bubble--info&quot; data-icon=&quot;add&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;olt-Chip-bubble olt-Chip-bubble--info olt-Chip-bubble-icon olt-Icon-action-add-default olt-Icon--small&quot;&gt;&lt;/span&gt;
 &lt;/span&gt;
 &lt;span class=&quot;olt-Chip olt-Chip--withBubble&quot;&gt;
   Success with counter
@@ -2484,11 +2492,11 @@ bubble&#39;s element. They only work with the default <em>Chip</em>.</p>
 &lt;/span&gt;
 &lt;span class=&quot;olt-Chip olt-Chip--withBubble&quot;&gt;
   Warning with icon
-  &lt;span class=&quot;olt-Chip-bubble olt-Chip-bubble--warning&quot; data-icon=&quot;add&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;olt-Chip-bubble olt-Chip-bubble--warning olt-Chip-bubble-icon olt-Icon-action-add-default olt-Icon--small&quot;&gt;&lt;/span&gt;
 &lt;/span&gt;
 &lt;span class=&quot;olt-Chip olt-Chip--withBubble&quot;&gt;
   Error with icon
-  &lt;span class=&quot;olt-Chip-bubble olt-Chip-bubble--error&quot; data-icon=&quot;add&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;olt-Chip-bubble olt-Chip-bubble--error olt-Chip-bubble-icon olt-Icon-action-add-default olt-Icon--small&quot;&gt;&lt;/span&gt;
 &lt;/span&gt;</code></pre>
 	</div>
 </div></div>
@@ -2942,14 +2950,520 @@ bubble&#39;s element. They only work with the default <em>Chip</em>.</p>
 		<span class="theme-content-element-source-label">Source:</span>
 		<span class="theme-content-element-source-path">components/Icon/Icon.md</span>
 	</span>
-	<div class="theme-content-element-description"><div id="description" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#description" class="icon-link i-section__link -heading"></a>Description</h2></div><p>The <em>Icon</em> component is an interface for 
-<a href="https://jossef.github.io/material-design-icons-iconfont/">material icons</a>. This
+	<div class="theme-content-element-description"><div id="description" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#description" class="icon-link i-section__link -heading"></a>Description</h2></div><p>The <em>Icon</em> component is an interface for the official OLT Icons. This
 component occupies <code>olt-Icon*</code> class names and can be used with <code>&lt;i&gt;</code> element.</p>
-<p>Per default, icons adjust to current color and font-size.</p>
+<div class="olt-DataCards olt-DataCards--useFlexLayout olt-u-marginBottom3">
+  <div class="olt-DataCards-frame">
+    <div class="olt-DataCards-head">
+      <div class="olt-DataCards-headItem olt-DataCards--tableCellWidth10">
+        Category
+      </div>
+      <div class="olt-DataCards-headItem olt-DataCards--tableCellWidth90">
+        Icons
+      </div>
+    </div>
+  </div>
+  <div class="olt-DataCards-body">
+    <!-- Action -->
+    <div class="olt-DataCards-card">
+      <div class="olt-DataCards-cardItem olt-DataCards--tableCellWidth10">
+        <div class="olt-DataCards-content">
+          Action
+        </div>
+      </div>
+      <div class="olt-DataCards-cardItem olt-DataCards--tableCellWidth90">
+        <div class="olt-DataCards-title">Icons</div>
+        <div class="olt-DataCards-content">
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-action-add-circle" title="action-add-circle"></i>
+            <span>action-add-circle</span>
+          </div>
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-action-add-default" title="action-add-default"></i>
+            <span>action-add-default</span>
+          </div>
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-action-cart" title="action-cart"></i>
+            <span>action-cart</span>
+          </div>
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-action-copy" title="action-copy"></i>
+            <span>action-copy</span>
+          </div>
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-action-delete" title="action-delete"></i>
+            <span>action-delete</span>
+          </div>
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-action-download" title="action-download"></i>
+            <span>action-download</span>
+          </div>
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-action-duplicate" title="action-duplicate"></i>
+            <span>action-duplicate</span>
+          </div>
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-action-edit" title="action-edit"></i>
+            <span>action-edit</span>
+          </div>
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-action-enter" title="action-enter"></i>
+            <span>action-enter</span>
+          </div>
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-action-favorite-default" title="action-favorite-default"></i>
+            <span>action-favorite-default</span>
+          </div>
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-action-fill" title="action-fill"></i>
+            <span>action-fill</span>
+          </div>
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-action-message" title="action-message"></i>
+            <span>action-message</span>
+          </div>
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-action-move" title="action-move"></i>
+            <span>action-move</span>
+          </div>
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-action-refresh" title="action-refresh"></i>
+            <span>action-refresh</span>
+          </div>
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-action-remove-circle" title="action-remove-circle"></i>
+            <span>action-remove-circle</span>
+          </div>
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-action-save" title="action-save"></i>
+            <span>action-save</span>
+          </div>
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-action-search" title="action-search"></i>
+            <span>action-search</span>
+          </div>
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-action-settings" title="action-settings"></i>
+            <span>action-settings</span>
+          </div>
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-action-upload" title="action-upload"></i>
+            <span>action-upload</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Arrows -->
+    <div class="olt-DataCards-card">
+      <div class="olt-DataCards-cardItem olt-DataCards--tableCellWidth10">
+        <div class="olt-DataCards-content">
+          Arrows
+        </div>
+      </div>
+      <div class="olt-DataCards-cardItem olt-DataCards--tableCellWidth90">
+        <div class="olt-DataCards-title">Icons</div>
+        <div class="olt-DataCards-content">
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-arrows-arrow-down" title="arrows-arrow-down"></i>
+            <span>arrows-arrow-down</span>
+          </div>
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-arrows-arrow-left" title="arrows-arrow-left"></i>
+            <span>arrows-arrow-left</span>
+          </div>
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-arrows-arrow-right" title="arrows-arrow-right"></i>
+            <span>arrows-arrow-right</span>
+          </div>
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-arrows-arrow-up" title="arrows-arrow-up"></i>
+            <span>arrows-arrow-up</span>
+          </div>
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-arrows-chevron-down" title="arrows-chevron-down"></i>
+            <span>arrows-chevron-down</span>
+          </div>
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-arrows-chevron-left" title="arrows-chevron-left"></i>
+            <span>arrows-chevron-left</span>
+          </div>
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-arrows-chevron-right" title="arrows-chevron-right"></i>
+            <span>arrows-chevron-right</span>
+          </div>
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-arrows-chevron-up" title="arrows-chevron-up"></i>
+            <span>arrows-chevron-up</span>
+          </div>
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-arrows-trending-falling" title="arrows-trending-falling"></i>
+            <span>arrows-trending-falling</span>
+          </div>
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-arrows-trending-raising" title="arrows-trending-raising"></i>
+            <span>arrows-trending-raising</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Data -->
+    <div class="olt-DataCards-card">
+      <div class="olt-DataCards-cardItem olt-DataCards--tableCellWidth10">
+        <div class="olt-DataCards-content">
+          Data
+        </div>
+      </div>
+      <div class="olt-DataCards-cardItem olt-DataCards--tableCellWidth90">
+        <div class="olt-DataCards-title">Icons</div>
+        <div class="olt-DataCards-content">
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-data-brightness" title="data-brightness"></i>
+            <span>data-brightness</span>
+          </div>
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-data-document" title="data-document"></i>
+            <span>data-document</span>
+          </div>
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-data-emission" title="data-emission"></i>
+            <span>data-emission</span>
+          </div>
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-data-humidity" title="data-humidity"></i>
+            <span>data-humidity</span>
+          </div>
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-data-lifetime" title="data-lifetime"></i>
+            <span>data-lifetime</span>
+          </div>
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-data-light" title="data-light"></i>
+            <span>data-light</span>
+          </div>
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-data-live" title="data-live"></i>
+            <span>data-live</span>
+          </div>
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-data-power" title="data-power"></i>
+            <span>data-power</span>
+          </div>
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-data-savings" title="data-savings"></i>
+            <span>data-savings</span>
+          </div>
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-data-temperature" title="data-temperature"></i>
+            <span>data-temperature</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Sensor -->
+    <div class="olt-DataCards-card">
+      <div class="olt-DataCards-cardItem olt-DataCards--tableCellWidth10">
+        <div class="olt-DataCards-content">
+          Sensor
+        </div>
+      </div>
+      <div class="olt-DataCards-cardItem olt-DataCards--tableCellWidth90">
+        <div class="olt-DataCards-title">Icons</div>
+        <div class="olt-DataCards-content">
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-devices-device" title="devices-device"></i>
+            <span>devices-device</span>
+          </div>
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-devices-led" title="devices-led"></i>
+            <span>devices-led</span>
+          </div>
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-devices-sensor" title="devices-sensor"></i>
+            <span>devices-sensor</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Feedback -->
+    <div class="olt-DataCards-card">
+      <div class="olt-DataCards-cardItem olt-DataCards--tableCellWidth10">
+        <div class="olt-DataCards-content">
+          Feedback
+        </div>
+      </div>
+      <div class="olt-DataCards-cardItem olt-DataCards--tableCellWidth90">
+        <div class="olt-DataCards-title">Icons</div>
+        <div class="olt-DataCards-content">
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-feedback-check-circle" title="feedback-check-circle"></i>
+            <span>feedback-check-circle</span>
+          </div>
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-feedback-check-default" title="feedback-check-default"></i>
+            <span>feedback-check-default</span>
+          </div>
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-feedback-help-circle" title="feedback-help-circle"></i>
+            <span>feedback-help-circle</span>
+          </div>
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-feedback-info-circle" title="feedback-info-circle"></i>
+            <span>feedback-info-circle</span>
+          </div>
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-feedback-notification-active" title="feedback-notification-active"></i>
+            <span>feedback-notification-active</span>
+          </div>
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-feedback-notification-default" title="feedback-notification-default"></i>
+            <span>feedback-notification-default</span>
+          </div>
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-feedback-report-failure" title="feedback-report-failure"></i>
+            <span>feedback-report-failure</span>
+          </div>
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-feedback-report-success" title="feedback-report-success"></i>
+            <span>feedback-report-success</span>
+          </div>
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-feedback-restricted" title="feedback-restricted"></i>
+            <span>feedback-restricted</span>
+          </div>
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-feedback-warning-critical-circle" title="feedback-warning-critical-circle"></i>
+            <span>feedback-warning-critical-circle</span>
+          </div>
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-feedback-warning-low-circle" title="feedback-warning-low-circle"></i>
+            <span>feedback-warning-low-circle</span>
+          </div>
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-feedback-warning-medium-circle" title="feedback-warning-medium-circle"></i>
+            <span>feedback-warning-medium-circle</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Actions / Feedback filled -->
+    <div class="olt-DataCards-card">
+      <div class="olt-DataCards-cardItem olt-DataCards--tableCellWidth10">
+        <div class="olt-DataCards-content">
+          Actions / Feedback filled
+        </div>
+      </div>
+      <div class="olt-DataCards-cardItem olt-DataCards--tableCellWidth90">
+        <div class="olt-DataCards-title">Icons</div>
+        <div class="olt-DataCards-content">
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-action-favorite-filled" title="action-favorite-filled"></i>
+            <span>action-favorite-filled</span>
+          </div>
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-action-remove-filled" title="action-remove-filled"></i>
+            <span>action-remove-filled</span>
+          </div>
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-feedback-check-filled" title="feedback-check-filled"></i>
+            <span>feedback-check-filled</span>
+          </div>
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-feedback-help-filled" title="feedback-help-filled"></i>
+            <span>feedback-help-filled</span>
+          </div>
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-feedback-info-filled" title="feedback-info-filled"></i>
+            <span>feedback-info-filled</span>
+          </div>
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-feedback-warning-critical-filled" title="feedback-warning-critical-filled"></i>
+            <span>feedback-warning-critical-filled</span>
+          </div>
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-feedback-warning-low-filled" title="feedback-warning-low-filled"></i>
+            <span>feedback-warning-low-filled</span>
+          </div>
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-feedback-warning-medium-filled" title="feedback-warning-medium-filled"></i>
+            <span>feedback-warning-medium-filled</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Linking -->
+    <div class="olt-DataCards-card">
+      <div class="olt-DataCards-cardItem olt-DataCards--tableCellWidth10">
+        <div class="olt-DataCards-content">
+          Linking
+        </div>
+      </div>
+      <div class="olt-DataCards-cardItem olt-DataCards--tableCellWidth90">
+        <div class="olt-DataCards-title">Icons</div>
+        <div class="olt-DataCards-content">
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-link-attachment" title="link-attachment"></i>
+            <span>link-attachment</span>
+          </div>
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-link-external" title="link-external"></i>
+            <span>link-external</span>
+          </div>
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-link-redirect" title="link-redirect"></i>
+            <span>link-redirect</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Location / Date -->
+    <div class="olt-DataCards-card">
+      <div class="olt-DataCards-cardItem olt-DataCards--tableCellWidth10">
+        <div class="olt-DataCards-content">
+          Location / Date
+        </div>
+      </div>
+      <div class="olt-DataCards-cardItem olt-DataCards--tableCellWidth90">
+        <div class="olt-DataCards-title">Icons</div>
+        <div class="olt-DataCards-content">
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-location" title="location"></i>
+            <span>location</span>
+          </div>
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-time-calendar" title="time-calendar"></i>
+            <span>time-calendar</span>
+          </div>
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-time-clock" title="time-clock"></i>
+            <span>time-clock</span>
+          </div>
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-time-hourglass" title="time-hourglass"></i>
+            <span>time-hourglass</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Navigation -->
+    <div class="olt-DataCards-card">
+      <div class="olt-DataCards-cardItem olt-DataCards--tableCellWidth10">
+        <div class="olt-DataCards-content">
+          Navigation
+        </div>
+      </div>
+      <div class="olt-DataCards-cardItem olt-DataCards--tableCellWidth90">
+        <div class="olt-DataCards-title">Icons</div>
+        <div class="olt-DataCards-content">
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-navigation-close" title="navigation-close"></i>
+            <span>navigation-close</span>
+          </div>
+         <!--<div class="demo-icon">
+            <i class="olt-Icon olt-Icon-navigation-filter" title="navigation-filter"></i>
+            <span>navigation-filter</span>
+          </div>
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-navigation-handle" title="navigation-handle"></i>
+            <span>navigation-handle</span>
+          </div>
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-navigation-menu" title="navigation-menu"></i>
+            <span>navigation-menu</span>
+          </div>
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-navigation-more" title="navigation-more"></i>
+            <span>navigation-more</span>
+          </div>-->
+        </div>
+      </div>
+    </div>
+    <!-- Security -->
+    <div class="olt-DataCards-card">
+      <div class="olt-DataCards-cardItem olt-DataCards--tableCellWidth10">
+        <div class="olt-DataCards-content">
+          Security
+        </div>
+      </div>
+      <div class="olt-DataCards-cardItem olt-DataCards--tableCellWidth90">
+        <div class="olt-DataCards-title">Icons</div>
+        <div class="olt-DataCards-content">
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-security-locked" title="security-locked"></i>
+            <span>security-locked</span>
+          </div>
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-security-unlocked" title="security-unlocked"></i>
+            <span>security-unlocked</span>
+          </div>
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-security-visibility" title="security-visibility"></i>
+            <span>security-visibility</span>
+          </div>
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-security-visibility-hidden" title="security-visibility-hidden"></i>
+            <span>security-visibility-hidden</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Users -->
+    <div class="olt-DataCards-card">
+      <div class="olt-DataCards-cardItem olt-DataCards--tableCellWidth10">
+        <div class="olt-DataCards-content">
+          Users
+        </div>
+      </div>
+      <div class="olt-DataCards-cardItem olt-DataCards--tableCellWidth90">
+        <div class="olt-DataCards-title">Icons</div>
+        <div class="olt-DataCards-content">
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-user-add" title="user-add"></i>
+            <span>user-add</span>
+          </div>
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-user-default" title="user-default"></i>
+            <span>user-default</span>
+          </div>
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-user-filled" title="user-filled"></i>
+            <span>user-filled</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Zoom -->
+    <div class="olt-DataCards-card">
+      <div class="olt-DataCards-cardItem olt-DataCards--tableCellWidth10">
+        <div class="olt-DataCards-content">
+          Zoom
+        </div>
+      </div>
+      <div class="olt-DataCards-cardItem olt-DataCards--tableCellWidth90">
+        <div class="olt-DataCards-title">Icons</div>
+        <div class="olt-DataCards-content">
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-zoom-in" title="zoom-in"></i>
+            <span>zoom-in</span>
+          </div>
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-zoom-out" title="zoom-out"></i>
+            <span>zoom-out</span>
+          </div>
+          <div class="demo-icon">
+            <i class="olt-Icon olt-Icon-zoom-resize" title="zoom-resize"></i>
+            <span>zoom-resize</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p>Per default, icons adjust to current color and font-size:</p>
 <div class="i-example">
                     <h5 class="i-example__heading">
                         <a
-                            href="icon-example.html"
+                            href="icon-icons.html"
                             target="_blank"
                             class="plain-link"
                             data-toggle="tooltip"
@@ -2964,7 +3478,7 @@ component occupies <code>olt-Icon*</code> class names and can be used with <code
                         <div
                             class="i-example__iframe"
                             lazyframe
-                            data-src="icon-example.html"
+                            data-src="icon-icons.html"
                             data-initinview="true"
                             data-title="Loading..." 
                         ></div>
@@ -2975,27 +3489,21 @@ component occupies <code>olt-Icon*</code> class names and can be used with <code
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;i class=&quot;olt-Icon&quot; data-icon=&quot;close&quot;&gt;&lt;/i&gt;
-&lt;i class=&quot;olt-Icon&quot; data-icon=&quot;chevron_left&quot;&gt;&lt;/i&gt;
-&lt;i class=&quot;olt-Icon&quot; data-icon=&quot;chevron_right&quot;&gt;&lt;/i&gt;
-&lt;i class=&quot;olt-Icon&quot; data-icon=&quot;check&quot;&gt;&lt;/i&gt;
-&lt;i class=&quot;olt-Icon&quot; data-icon=&quot;directions_walk&quot;&gt;&lt;/i&gt;
-&lt;i class=&quot;olt-Icon&quot; data-icon=&quot;insert_emoticon&quot;&gt;&lt;/i&gt;
-&lt;i class=&quot;olt-Icon&quot; data-icon=&quot;account_box&quot;&gt;&lt;/i&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;i class=&quot;olt-Icon&quot; data-icon=&quot;close&quot;&gt;&lt;/i&gt;
-&lt;i class=&quot;olt-Icon&quot; data-icon=&quot;chevron_left&quot;&gt;&lt;/i&gt;
-&lt;i class=&quot;olt-Icon&quot; data-icon=&quot;chevron_right&quot;&gt;&lt;/i&gt;
-&lt;i class=&quot;olt-Icon&quot; data-icon=&quot;check&quot;&gt;&lt;/i&gt;
-&lt;i class=&quot;olt-Icon&quot; data-icon=&quot;directions_walk&quot;&gt;&lt;/i&gt;
-&lt;i class=&quot;olt-Icon&quot; data-icon=&quot;insert_emoticon&quot;&gt;&lt;/i&gt;
-&lt;i class=&quot;olt-Icon&quot; data-icon=&quot;account_box&quot;&gt;&lt;/i&gt;</code></pre>
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;i class=&quot;olt-Icon olt-Icon-security-locked&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;olt-Icon olt-Icon-time-calendar olt-u-colorInfo&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;olt-Icon olt-Icon-user-add olt-u-fontSizeLarge olt-u-colorPrimary&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;olt-Icon olt-Icon-zoom-in olt-u-fontSizeXLarge&quot;&gt;&lt;/i&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;i class=&quot;olt-Icon olt-Icon-security-locked&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;olt-Icon olt-Icon-time-calendar olt-u-colorInfo&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;olt-Icon olt-Icon-user-add olt-u-fontSizeLarge olt-u-colorPrimary&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;olt-Icon olt-Icon-zoom-in olt-u-fontSizeXLarge&quot;&gt;&lt;/i&gt;</code></pre>
 	</div>
-</div><div id="colors" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#colors" class="icon-link i-section__link -heading"></a>Colors</h2></div><p>The <em>Icon</em> can be rendered with 
-<a href="/#concepts-colors">any of our conceptual colors</a> :</p>
+</div><div id="colors" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#colors" class="icon-link i-section__link -heading"></a>Colors</h2></div><h3>General</h3><p>Interactive icons should be used with the primary color.
+For decorative and non-interactive icons (e.g. input fields) the default is gray 500.</p>
 <div class="i-example">
                     <h5 class="i-example__heading">
                         <a
-                            href="icon-colors.html"
+                            href="icon-colors-general.html"
                             target="_blank"
                             class="plain-link"
                             data-toggle="tooltip"
@@ -3010,7 +3518,7 @@ component occupies <code>olt-Icon*</code> class names and can be used with <code
                         <div
                             class="i-example__iframe"
                             lazyframe
-                            data-src="icon-colors.html"
+                            data-src="icon-colors-general.html"
                             data-initinview="true"
                             data-title="Loading..." 
                         ></div>
@@ -3021,30 +3529,62 @@ component occupies <code>olt-Icon*</code> class names and can be used with <code
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;i class=&quot;olt-Icon olt-Icon--primary&quot; data-icon=&quot;grade&quot;&gt;&lt;/i&gt;
-&lt;i class=&quot;olt-Icon olt-Icon--secondary&quot; data-icon=&quot;grade&quot;&gt;&lt;/i&gt;
-&lt;i class=&quot;olt-Icon olt-Icon--error&quot; data-icon=&quot;error&quot;&gt;&lt;/i&gt;
-&lt;i class=&quot;olt-Icon olt-Icon--success&quot; data-icon=&quot;done&quot;&gt;&lt;/i&gt;
-&lt;i class=&quot;olt-Icon olt-Icon--info&quot; data-icon=&quot;info&quot;&gt;&lt;/i&gt;
-&lt;i class=&quot;olt-Icon olt-Icon--dark&quot; data-icon=&quot;grade&quot;&gt;&lt;/i&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;i class=&quot;olt-Icon olt-Icon--primary&quot; data-icon=&quot;grade&quot;&gt;&lt;/i&gt;
-&lt;i class=&quot;olt-Icon olt-Icon--secondary&quot; data-icon=&quot;grade&quot;&gt;&lt;/i&gt;
-&lt;i class=&quot;olt-Icon olt-Icon--error&quot; data-icon=&quot;error&quot;&gt;&lt;/i&gt;
-&lt;i class=&quot;olt-Icon olt-Icon--success&quot; data-icon=&quot;done&quot;&gt;&lt;/i&gt;
-&lt;i class=&quot;olt-Icon olt-Icon--info&quot; data-icon=&quot;info&quot;&gt;&lt;/i&gt;
-&lt;i class=&quot;olt-Icon olt-Icon--dark&quot; data-icon=&quot;grade&quot;&gt;&lt;/i&gt;</code></pre>
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;olt-Grid olt-u-alignItemsCenter&quot;&gt;
+  &lt;div class=&quot;olt-Grid-item olt-Grid-item--3&quot;&gt;
+    &lt;b&gt;primary&lt;/b&gt;&lt;br&gt;
+    interactive icons
+  &lt;/div&gt;
+  &lt;div class=&quot;olt-Grid-item olt-Grid-item--9&quot;&gt;
+    &lt;i class=&quot;olt-Icon olt-Icon--primary olt-Icon-zoom-in&quot;&gt;&lt;/i&gt;
+    &lt;i class=&quot;olt-Icon olt-Icon--primary olt-Icon-zoom-out&quot;&gt;&lt;/i&gt;
+    &lt;i class=&quot;olt-Icon olt-Icon--primary olt-Icon-zoom-resize&quot;&gt;&lt;/i&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;olt-Grid-item olt-Grid-item--3&quot;&gt;
+    &lt;b&gt;gray 500&lt;/b&gt;&lt;br&gt;
+    used for decorations
+  &lt;/div&gt;
+  &lt;div class=&quot;olt-Grid-item olt-Grid-item--9&quot;&gt;
+    &lt;i class=&quot;olt-Icon olt-u-colorGray500 olt-Icon-data-emission&quot;&gt;&lt;/i&gt;
+    &lt;i class=&quot;olt-Icon olt-u-colorGray500 olt-Icon-data-humidity&quot;&gt;&lt;/i&gt;
+    &lt;i class=&quot;olt-Icon olt-u-colorGray500 olt-Icon-data-power&quot;&gt;&lt;/i&gt;
+  &lt;/div&gt;
+&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;olt-Grid olt-u-alignItemsCenter&quot;&gt;
+  &lt;div class=&quot;olt-Grid-item olt-Grid-item--3&quot;&gt;
+    &lt;b&gt;primary&lt;/b&gt;&lt;br&gt;
+    interactive icons
+  &lt;/div&gt;
+  &lt;div class=&quot;olt-Grid-item olt-Grid-item--9&quot;&gt;
+    &lt;i class=&quot;olt-Icon olt-Icon--primary olt-Icon-zoom-in&quot;&gt;&lt;/i&gt;
+    &lt;i class=&quot;olt-Icon olt-Icon--primary olt-Icon-zoom-out&quot;&gt;&lt;/i&gt;
+    &lt;i class=&quot;olt-Icon olt-Icon--primary olt-Icon-zoom-resize&quot;&gt;&lt;/i&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;olt-Grid-item olt-Grid-item--3&quot;&gt;
+    &lt;b&gt;gray 500&lt;/b&gt;&lt;br&gt;
+    used for decorations
+  &lt;/div&gt;
+  &lt;div class=&quot;olt-Grid-item olt-Grid-item--9&quot;&gt;
+    &lt;i class=&quot;olt-Icon olt-u-colorGray500 olt-Icon-data-emission&quot;&gt;&lt;/i&gt;
+    &lt;i class=&quot;olt-Icon olt-u-colorGray500 olt-Icon-data-humidity&quot;&gt;&lt;/i&gt;
+    &lt;i class=&quot;olt-Icon olt-u-colorGray500 olt-Icon-data-power&quot;&gt;&lt;/i&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
 	</div>
-</div><div id="sizes" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#sizes" class="icon-link i-section__link -heading"></a>Sizes</h2></div><p>To change the size of the <em>Icon</em> you can use the size modifiers. For <em>Icon</em>
-the modifiers are : </p>
+</div><h3>Feedback</h3><p>The new <em>Icon</em> set has filled and outline icons for feedback.
+Three different versions indicate the importance of the warning.
+Depending on the use case the icon color changes - info / warning / error.
+To assign a color to the icon, use the <code>olt-Icon--*</code> classes as listed below.
+If the icon is placed on a matching background color it has to be white.</p>
 <ul>
-<li><code>small</code></li>
-<li><code>medium</code></li>
-<li><code>large</code></li>
+<li><span class="olt-u-colorInfo">Circle - low:</span> <code>olt-Icon--info</code></li>
+<li><span class="olt-u-colorWarning">Triangle - medium:</span> <code>olt-Icon--warning</code></li>
+<li><span class="olt-u-colorError">Rhomb - critical:</span> <code>olt-Icon--error</code></li>
+<li><span class="olt-u-colorSuccess">Circle - success:</span> <code>olt-Icon--success</code></li>
 </ul>
 <div class="i-example">
                     <h5 class="i-example__heading">
                         <a
-                            href="icon-sizes.html"
+                            href="icon-colors-feedback.html"
                             target="_blank"
                             class="plain-link"
                             data-toggle="tooltip"
@@ -3059,7 +3599,7 @@ the modifiers are : </p>
                         <div
                             class="i-example__iframe"
                             lazyframe
-                            data-src="icon-sizes.html"
+                            data-src="icon-colors-feedback.html"
                             data-initinview="true"
                             data-title="Loading..." 
                         ></div>
@@ -3070,15 +3610,90 @@ the modifiers are : </p>
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;i class=&quot;olt-Icon olt-Icon--small&quot; data-icon=&quot;done&quot;&gt;&lt;/i&gt;
-&lt;i class=&quot;olt-Icon olt-Icon--medium&quot; data-icon=&quot;done&quot;&gt;&lt;/i&gt;
-&lt;i class=&quot;olt-Icon olt-Icon--large&quot; data-icon=&quot;done&quot;&gt;&lt;/i&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;i class=&quot;olt-Icon olt-Icon--small&quot; data-icon=&quot;done&quot;&gt;&lt;/i&gt;
-&lt;i class=&quot;olt-Icon olt-Icon--medium&quot; data-icon=&quot;done&quot;&gt;&lt;/i&gt;
-&lt;i class=&quot;olt-Icon olt-Icon--large&quot; data-icon=&quot;done&quot;&gt;&lt;/i&gt;</code></pre>
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;i class=&quot;olt-Icon olt-Icon--info olt-Icon-feedback-help-circle&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;olt-Icon olt-Icon--info olt-Icon-feedback-info-circle&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;olt-Icon olt-Icon--warning olt-Icon-feedback-warning-low-circle&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;olt-Icon olt-Icon--warning olt-Icon-feedback-warning-medium-circle&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;olt-Icon olt-Icon--error olt-Icon-feedback-warning-critical-circle&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;olt-Icon olt-Icon--success olt-Icon-feedback-check-circle&quot;&gt;&lt;/i&gt;
+&lt;br/&gt;&lt;br/&gt;
+&lt;i class=&quot;olt-Icon olt-Icon--info olt-Icon-feedback-help-filled&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;olt-Icon olt-Icon--info olt-Icon-feedback-info-filled&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;olt-Icon olt-Icon--warning olt-Icon-feedback-warning-low-filled&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;olt-Icon olt-Icon--warning olt-Icon-feedback-warning-medium-filled&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;olt-Icon olt-Icon--error olt-Icon-feedback-warning-critical-filled&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;olt-Icon olt-Icon--success olt-Icon-feedback-check-filled&quot;&gt;&lt;/i&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;i class=&quot;olt-Icon olt-Icon--info olt-Icon-feedback-help-circle&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;olt-Icon olt-Icon--info olt-Icon-feedback-info-circle&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;olt-Icon olt-Icon--warning olt-Icon-feedback-warning-low-circle&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;olt-Icon olt-Icon--warning olt-Icon-feedback-warning-medium-circle&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;olt-Icon olt-Icon--error olt-Icon-feedback-warning-critical-circle&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;olt-Icon olt-Icon--success olt-Icon-feedback-check-circle&quot;&gt;&lt;/i&gt;
+&lt;br/&gt;&lt;br/&gt;
+&lt;i class=&quot;olt-Icon olt-Icon--info olt-Icon-feedback-help-filled&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;olt-Icon olt-Icon--info olt-Icon-feedback-info-filled&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;olt-Icon olt-Icon--warning olt-Icon-feedback-warning-low-filled&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;olt-Icon olt-Icon--warning olt-Icon-feedback-warning-medium-filled&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;olt-Icon olt-Icon--error olt-Icon-feedback-warning-critical-filled&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;olt-Icon olt-Icon--success olt-Icon-feedback-check-filled&quot;&gt;&lt;/i&gt;</code></pre>
 	</div>
-</div><p>You can also change the size of the icon with the 
-<a href="/#font-size">Font Size utility classes</a>. You can use : </p>
+</div><div id="sizes" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#sizes" class="icon-link i-section__link -heading"></a>Sizes</h2></div><p>The Icons exist in three different sizes - <strong>24 x 24 / 16 x 16 / 12 x 12</strong>.
+Depending on the use case the correct icon has to be used.</p>
+<ul>
+<li><code>olt-Icon--large</code>: <strong>24 x 24</strong> - icons that are used for decoration and standalone</li>
+<li><code>olt-Icon--medium</code>: <strong>16 x 16</strong> - for input fields and sometimes for decoration, standalone and the edit action button</li>
+<li><code>olt-Icon--small</code>: <strong>12 x 12</strong> - exclusively for buttons - primary, secondary and tertiary</li>
+</ul>
+<table class="olt-Table">
+  <thead class="olt-Table-head">
+    <tr class="olt-Table-row">
+      <th class="olt-Table-header">large (24 x 24)</th>
+      <th class="olt-Table-header">medium (16 x 16)</th>
+      <th class="olt-Table-header">small (12 x 12)</th>
+    </tr>
+  </thead>
+  <tbody class="olt-Table-body">
+    <tr class="olt-Table-row">
+      <td class="olt-Table-data"><i class="olt-Icon olt-Icon-feedback-notification-default olt-Icon--large"></i></td>
+      <td class="olt-Table-data"><i class="olt-Icon olt-Icon-feedback-notification-default olt-Icon--medium"></i></td>
+      <td class="olt-Table-data"><i class="olt-Icon olt-Icon-feedback-notification-default olt-Icon--small"></i></td>
+    </tr>
+    <tr class="olt-Table-row">
+      <td class="olt-Table-data"><i class="olt-Icon olt-Icon-action-delete olt-Icon--large"></i></td>
+      <td class="olt-Table-data"><i class="olt-Icon olt-Icon-action-delete olt-Icon--medium"></i></td>
+      <td class="olt-Table-data"><i class="olt-Icon olt-Icon-action-delete olt-Icon--small"></i></td>
+    </tr>
+    <tr class="olt-Table-row">
+      <td class="olt-Table-data"><i class="olt-Icon olt-Icon-action-edit olt-Icon--large"></i></td>
+      <td class="olt-Table-data"><i class="olt-Icon olt-Icon-action-edit olt-Icon--medium"></i></td>
+      <td class="olt-Table-data"><i class="olt-Icon olt-Icon-action-edit olt-Icon--small"></i></td>
+    </tr>
+    <tr class="olt-Table-row">
+      <td class="olt-Table-data"><i class="olt-Icon olt-Icon-action-save olt-Icon--large"></i></td>
+      <td class="olt-Table-data"><i class="olt-Icon olt-Icon-action-save olt-Icon--medium"></i></td>
+      <td class="olt-Table-data"><i class="olt-Icon olt-Icon-action-save olt-Icon--small"></i></td>
+    </tr>
+    <tr class="olt-Table-row">
+      <td class="olt-Table-data"><i class="olt-Icon olt-Icon-time-calendar olt-Icon--large"></i></td>
+      <td class="olt-Table-data"><i class="olt-Icon olt-Icon-time-calendar olt-Icon--medium"></i></td>
+      <td class="olt-Table-data"><i class="olt-Icon olt-Icon-time-calendar olt-Icon--small"></i></td>
+    </tr>
+    <tr class="olt-Table-row">
+      <td class="olt-Table-data"><i class="olt-Icon olt-Icon-devices-device olt-Icon--large"></i></td>
+      <td class="olt-Table-data"><i class="olt-Icon olt-Icon-devices-device olt-Icon--medium"></i></td>
+      <td class="olt-Table-data"><i class="olt-Icon olt-Icon-devices-device olt-Icon--small"></i></td>
+    </tr>
+    <tr class="olt-Table-row">
+      <td class="olt-Table-data"><i class="olt-Icon olt-Icon-feedback-report-success olt-Icon--large"></i></td>
+      <td class="olt-Table-data"><i class="olt-Icon olt-Icon-feedback-report-success olt-Icon--medium"></i></td>
+      <td class="olt-Table-data"><i class="olt-Icon olt-Icon-feedback-report-success olt-Icon--small"></i></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>You can also change the size of the icon with the <a href="/#font-size">Font Size utility classes</a>.
+This will resize the icon but without making any adjustments to account
+for smaller or bigger sizes. You can use:</p>
 <ul>
 <li><code>olt-u-fontSizeXxSmall</code></li>
 <li><code>olt-u-fontSizeXSmall</code></li>
@@ -3117,20 +3732,20 @@ the modifiers are : </p>
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;i class=&quot;olt-Icon olt-u-fontSizeXxSmall&quot; data-icon=&quot;done&quot;&gt;&lt;/i&gt;
-&lt;i class=&quot;olt-Icon olt-u-fontSizeXSmall&quot; data-icon=&quot;done&quot;&gt;&lt;/i&gt;
-&lt;i class=&quot;olt-Icon olt-u-fontSizeSmall&quot; data-icon=&quot;done&quot;&gt;&lt;/i&gt;
-&lt;i class=&quot;olt-Icon olt-u-fontSizeMedium&quot; data-icon=&quot;done&quot;&gt;&lt;/i&gt;
-&lt;i class=&quot;olt-Icon olt-u-fontSizeLarge&quot; data-icon=&quot;done&quot;&gt;&lt;/i&gt;
-&lt;i class=&quot;olt-Icon olt-u-fontSizeXLarge&quot; data-icon=&quot;done&quot;&gt;&lt;/i&gt;
-&lt;i class=&quot;olt-Icon olt-u-fontSizeXxLarge&quot; data-icon=&quot;done&quot;&gt;&lt;/i&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;i class=&quot;olt-Icon olt-u-fontSizeXxSmall&quot; data-icon=&quot;done&quot;&gt;&lt;/i&gt;
-&lt;i class=&quot;olt-Icon olt-u-fontSizeXSmall&quot; data-icon=&quot;done&quot;&gt;&lt;/i&gt;
-&lt;i class=&quot;olt-Icon olt-u-fontSizeSmall&quot; data-icon=&quot;done&quot;&gt;&lt;/i&gt;
-&lt;i class=&quot;olt-Icon olt-u-fontSizeMedium&quot; data-icon=&quot;done&quot;&gt;&lt;/i&gt;
-&lt;i class=&quot;olt-Icon olt-u-fontSizeLarge&quot; data-icon=&quot;done&quot;&gt;&lt;/i&gt;
-&lt;i class=&quot;olt-Icon olt-u-fontSizeXLarge&quot; data-icon=&quot;done&quot;&gt;&lt;/i&gt;
-&lt;i class=&quot;olt-Icon olt-u-fontSizeXxLarge&quot; data-icon=&quot;done&quot;&gt;&lt;/i&gt;</code></pre>
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;i class=&quot;olt-Icon olt-Icon-feedback-notification-default olt-u-fontSizeXxSmall&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;olt-Icon olt-Icon-feedback-notification-default olt-u-fontSizeXSmall&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;olt-Icon olt-Icon-feedback-notification-default olt-u-fontSizeSmall&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;olt-Icon olt-Icon-feedback-notification-default olt-u-fontSizeMedium&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;olt-Icon olt-Icon-feedback-notification-default olt-u-fontSizeLarge&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;olt-Icon olt-Icon-feedback-notification-default olt-u-fontSizeXLarge&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;olt-Icon olt-Icon-feedback-notification-default olt-u-fontSizeXxLarge&quot;&gt;&lt;/i&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;i class=&quot;olt-Icon olt-Icon-feedback-notification-default olt-u-fontSizeXxSmall&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;olt-Icon olt-Icon-feedback-notification-default olt-u-fontSizeXSmall&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;olt-Icon olt-Icon-feedback-notification-default olt-u-fontSizeSmall&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;olt-Icon olt-Icon-feedback-notification-default olt-u-fontSizeMedium&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;olt-Icon olt-Icon-feedback-notification-default olt-u-fontSizeLarge&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;olt-Icon olt-Icon-feedback-notification-default olt-u-fontSizeXLarge&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;olt-Icon olt-Icon-feedback-notification-default olt-u-fontSizeXxLarge&quot;&gt;&lt;/i&gt;</code></pre>
 	</div>
 </div></div>
 </div>
@@ -4271,7 +4886,7 @@ page and take a look at the example below.</p>
     &lt;ul class=&quot;olt-Navbar-menu olt-Menu&quot;&gt;
       &lt;li class=&quot;olt-Dropdown&quot;&gt;
         &lt;button class=&quot;olt-Dropdown-label&quot; data-toggle=&quot;dropdown&quot; tabindex=&quot;1&quot; &gt;
-          &lt;i class=&quot;olt-Icon olt-u-displayNone olt-u-xl-displayInline&quot; data-icon=&quot;person&quot;&gt;&lt;/i&gt;
+          &lt;i class=&quot;olt-Icon olt-u-displayNone olt-u-xl-displayInline olt-Icon-user-default&quot;&gt;&lt;/i&gt;
           &lt;span class=&quot;olt-u-xl-displayNone&quot;&gt;Account&lt;/span&gt;
           &lt;span tabindex=&quot;-1&quot;&gt;&lt;/span&gt;
         &lt;/button&gt;
@@ -4312,7 +4927,7 @@ page and take a look at the example below.</p>
     &lt;ul class=&quot;olt-Navbar-menu olt-Menu&quot;&gt;
       &lt;li class=&quot;olt-Dropdown&quot;&gt;
         &lt;button class=&quot;olt-Dropdown-label&quot; data-toggle=&quot;dropdown&quot; tabindex=&quot;1&quot; &gt;
-          &lt;i class=&quot;olt-Icon olt-u-displayNone olt-u-xl-displayInline&quot; data-icon=&quot;person&quot;&gt;&lt;/i&gt;
+          &lt;i class=&quot;olt-Icon olt-u-displayNone olt-u-xl-displayInline olt-Icon-user-default&quot;&gt;&lt;/i&gt;
           &lt;span class=&quot;olt-u-xl-displayNone&quot;&gt;Account&lt;/span&gt;
           &lt;span tabindex=&quot;-1&quot;&gt;&lt;/span&gt;
         &lt;/button&gt;
@@ -4333,6 +4948,366 @@ page and take a look at the example below.</p>
     &lt;/li&gt;
   &lt;/ul&gt;
 &lt;/nav&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="notification" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Notification</h1>
+	<span class="theme-content-element-source">
+		<span class="theme-content-element-source-label">Source:</span>
+		<span class="theme-content-element-source-path">components/Notification/Notification.md</span>
+	</span>
+	<div class="theme-content-element-description"><div id="description" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#description" class="icon-link i-section__link -heading"></a>Description</h2></div><p>The <em>Notification</em> is used to show a message on the bottom of the screen.
+It occupies the <code>olt-NotificationContainer</code> and <code>olt-Notification*</code> class names, with <code>olt-NotificationContainer</code> being the conatiner element holding the stack of notifications.</p>
+<p>On larger screens notifications are placed on the bottom right, on small devices only the header is displayed bottom-centered with full width. Notifications can stack up if they are not closed manually within a very short time. A notification that is not closed manually fades out automatically after a short time.</p>
+<div class="olt-Card olt-u-padding5">
+  <div class="olt-u-marginAuto">
+    <button class="olt-Button" onclick={showNotifications()}>Demo</button>
+ </div>
+</div>
+
+<div class="olt-NotificationContainer">
+    <div class="olt-Notification olt-Notification--error">
+        <div class="olt-Notification-dialog">
+            <header class="olt-Notification-header">An Error Occurred</header>
+            <div class="olt-Notification-content">
+                Everything went well ... and more. This is a long text to see how the notification grows, when the text gets longer ... and it looks good!
+            </div>
+        </div>
+        <button type='button' class="olt-Notification-close">
+            <i class="olt-Icon olt-Icon--medium olt-Icon-navigation-close"></i>
+        </button>
+    </div>
+    <div class="olt-Notification olt-Notification--success">
+        <div class="olt-Notification-dialog">
+            <header class="olt-Notification-header">This is a Notification</header>
+            <div class="olt-Notification-content">
+                Everything went well.
+            </div>
+        </div>
+        <button type='button' class="olt-Notification-close">
+            <i class="olt-Icon olt-Icon--medium olt-Icon-navigation-close"></i>
+        </button>
+    </div>
+</div>
+
+
+<div id="notification-types" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#notification-types" class="icon-link i-section__link -heading"></a>Notification Types</h2></div><p>Like the modals the notifications got different color themes for various use cases. Depending on the use case a fitting color and icon is used.</p>
+<ul>
+<li>Info - e.g. new information became available</li>
+<li>Success - e.g. an action has successfully been completed</li>
+<li>Warning - e.g. something has not been configured correctly</li>
+<li>Error - e.g. communication has been interrupted</li>
+</ul>
+<p>Respectively, we support the following modifiers :</p>
+<ul>
+<li><code>olt-Notification--info</code></li>
+<li><code>olt-Notification--success</code></li>
+<li><code>olt-Notification--warning</code></li>
+<li><code>olt-Notification--error</code></li>
+</ul>
+<p>These different types will look as follows:</p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="notification-types.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="notification-types.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;!-- style=&quot;...&quot; has only been added to make this example work in iframe.
+DON&#39;T USE IN PRODUCTION!! --&gt;
+&lt;div class=&quot;olt-NotificationContainer&quot; style=&quot;position: relative; margin: 10px;&quot;&gt;
+    &lt;div class=&quot;olt-Notification olt-Notification--info is-open&quot;&gt;
+        &lt;div class=&quot;olt-Notification-dialog&quot;&gt;
+            &lt;header class=&quot;olt-Notification-header&quot;&gt;Info Notification&lt;/header&gt;
+            &lt;div class=&quot;olt-Notification-content&quot;&gt;
+                Everything went well.
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;button type=&#39;button&#39; class=&quot;olt-Notification-close&quot;&gt;
+            &lt;i class=&quot;olt-Icon olt-Icon--medium olt-Icon-navigation-close&quot;&gt;&lt;/i&gt;
+        &lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;olt-Notification olt-Notification--success is-open&quot;&gt;
+        &lt;div class=&quot;olt-Notification-dialog&quot;&gt;
+            &lt;header class=&quot;olt-Notification-header&quot;&gt;Success Notification&lt;/header&gt;
+            &lt;div class=&quot;olt-Notification-content&quot;&gt;
+                It was a great success.
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;button type=&#39;button&#39; class=&quot;olt-Notification-close&quot;&gt;
+            &lt;i class=&quot;olt-Icon olt-Icon--medium olt-Icon-navigation-close&quot;&gt;&lt;/i&gt;
+        &lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;olt-Notification olt-Notification--warning is-open&quot;&gt;
+        &lt;div class=&quot;olt-Notification-dialog&quot;&gt;
+            &lt;header class=&quot;olt-Notification-header&quot;&gt;Warning Notification&lt;/header&gt;
+            &lt;div class=&quot;olt-Notification-content&quot;&gt;
+                I am warning you!
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;button type=&#39;button&#39; class=&quot;olt-Notification-close&quot;&gt;
+            &lt;i class=&quot;olt-Icon olt-Icon--medium olt-Icon-navigation-close&quot;&gt;&lt;/i&gt;
+        &lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;olt-Notification olt-Notification--error is-open&quot;&gt;
+        &lt;div class=&quot;olt-Notification-dialog&quot;&gt;
+            &lt;header class=&quot;olt-Notification-header&quot;&gt;Error Notification&lt;/header&gt;
+            &lt;div class=&quot;olt-Notification-content&quot;&gt;
+                Houston we have a problem.
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;button type=&#39;button&#39; class=&quot;olt-Notification-close&quot;&gt;
+            &lt;i class=&quot;olt-Icon olt-Icon--medium olt-Icon-navigation-close&quot;&gt;&lt;/i&gt;
+        &lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;!-- style=&quot;...&quot; has only been added to make this example work in iframe.
+DON&#39;T USE IN PRODUCTION!! --&gt;
+&lt;div class=&quot;olt-NotificationContainer&quot; style=&quot;position: relative; margin: 10px;&quot;&gt;
+    &lt;div class=&quot;olt-Notification olt-Notification--info is-open&quot;&gt;
+        &lt;div class=&quot;olt-Notification-dialog&quot;&gt;
+            &lt;header class=&quot;olt-Notification-header&quot;&gt;Info Notification&lt;/header&gt;
+            &lt;div class=&quot;olt-Notification-content&quot;&gt;
+                Everything went well.
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;button type=&#39;button&#39; class=&quot;olt-Notification-close&quot;&gt;
+            &lt;i class=&quot;olt-Icon olt-Icon--medium olt-Icon-navigation-close&quot;&gt;&lt;/i&gt;
+        &lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;olt-Notification olt-Notification--success is-open&quot;&gt;
+        &lt;div class=&quot;olt-Notification-dialog&quot;&gt;
+            &lt;header class=&quot;olt-Notification-header&quot;&gt;Success Notification&lt;/header&gt;
+            &lt;div class=&quot;olt-Notification-content&quot;&gt;
+                It was a great success.
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;button type=&#39;button&#39; class=&quot;olt-Notification-close&quot;&gt;
+            &lt;i class=&quot;olt-Icon olt-Icon--medium olt-Icon-navigation-close&quot;&gt;&lt;/i&gt;
+        &lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;olt-Notification olt-Notification--warning is-open&quot;&gt;
+        &lt;div class=&quot;olt-Notification-dialog&quot;&gt;
+            &lt;header class=&quot;olt-Notification-header&quot;&gt;Warning Notification&lt;/header&gt;
+            &lt;div class=&quot;olt-Notification-content&quot;&gt;
+                I am warning you!
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;button type=&#39;button&#39; class=&quot;olt-Notification-close&quot;&gt;
+            &lt;i class=&quot;olt-Icon olt-Icon--medium olt-Icon-navigation-close&quot;&gt;&lt;/i&gt;
+        &lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;olt-Notification olt-Notification--error is-open&quot;&gt;
+        &lt;div class=&quot;olt-Notification-dialog&quot;&gt;
+            &lt;header class=&quot;olt-Notification-header&quot;&gt;Error Notification&lt;/header&gt;
+            &lt;div class=&quot;olt-Notification-content&quot;&gt;
+                Houston we have a problem.
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;button type=&#39;button&#39; class=&quot;olt-Notification-close&quot;&gt;
+            &lt;i class=&quot;olt-Icon olt-Icon--medium olt-Icon-navigation-close&quot;&gt;&lt;/i&gt;
+        &lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+	</div>
+</div>
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang "> html</button>
+	<div class="i-code-block__content ">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;olt-NotificationContainer&quot;&gt;
+    &lt;div class=&quot;olt-Notification olt-Notification--info&quot;&gt;
+        &lt;div class=&quot;olt-Notification-dialog&quot;&gt;
+            &lt;header class=&quot;olt-Notification-header&quot;&gt;Info Notification&lt;/header&gt;
+            &lt;div class=&quot;olt-Notification-content&quot;&gt;
+                Everything went well.
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;button type=&#39;button&#39; class=&quot;olt-Notification-close&quot;&gt;
+            &lt;i class=&quot;olt-Icon olt-Icon--medium olt-Icon-navigation-close&quot;&gt;&lt;/i&gt;
+        &lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;olt-Notification olt-Notification--error&quot;&gt;
+        &lt;div class=&quot;olt-Notification-dialog&quot;&gt;
+            &lt;header class=&quot;olt-Notification-header&quot;&gt;Error Notification&lt;/header&gt;
+            &lt;div class=&quot;olt-Notification-content&quot;&gt;
+                Nothing went well.
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;button type=&#39;button&#39; class=&quot;olt-Notification-close&quot;&gt;
+            &lt;i class=&quot;olt-Icon olt-Icon--medium olt-Icon-navigation-close&quot;&gt;&lt;/i&gt;
+        &lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;olt-NotificationContainer&quot;&gt;
+    &lt;div class=&quot;olt-Notification olt-Notification--info&quot;&gt;
+        &lt;div class=&quot;olt-Notification-dialog&quot;&gt;
+            &lt;header class=&quot;olt-Notification-header&quot;&gt;Info Notification&lt;/header&gt;
+            &lt;div class=&quot;olt-Notification-content&quot;&gt;
+                Everything went well.
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;button type=&#39;button&#39; class=&quot;olt-Notification-close&quot;&gt;
+            &lt;i class=&quot;olt-Icon olt-Icon--medium olt-Icon-navigation-close&quot;&gt;&lt;/i&gt;
+        &lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;olt-Notification olt-Notification--error&quot;&gt;
+        &lt;div class=&quot;olt-Notification-dialog&quot;&gt;
+            &lt;header class=&quot;olt-Notification-header&quot;&gt;Error Notification&lt;/header&gt;
+            &lt;div class=&quot;olt-Notification-content&quot;&gt;
+                Nothing went well.
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;button type=&#39;button&#39; class=&quot;olt-Notification-close&quot;&gt;
+            &lt;i class=&quot;olt-Icon olt-Icon--medium olt-Icon-navigation-close&quot;&gt;&lt;/i&gt;
+        &lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+	</div>
+</div><div id="states" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#states" class="icon-link i-section__link -heading"></a>States</h2></div><p>A <em>Notification</em> is hidden by default. It can be rendered by adding <code>is-open</code>
+state class at the main element. It will then animate into the bottom of the
+page.</p>
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang "> html</button>
+	<div class="i-code-block__content ">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;olt-NotificationContainer&quot;&gt;
+    &lt;div class=&quot;olt-Notification olt-Notification--info is-open&quot;&gt;
+        &lt;div class=&quot;olt-Notification-dialog&quot;&gt;
+            &lt;header class=&quot;olt-Notification-header&quot;&gt;Info Notification&lt;/header&gt;
+            &lt;div class=&quot;olt-Notification-content&quot;&gt;
+                Everything went well.
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;button type=&#39;button&#39; class=&quot;olt-Notification-close&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;olt-Notification olt-Notification--error is-open&quot;&gt;
+        &lt;div class=&quot;olt-Notification-dialog&quot;&gt;
+            &lt;header class=&quot;olt-Notification-header&quot;&gt;Error Notification&lt;/header&gt;
+            &lt;div class=&quot;olt-Notification-content&quot;&gt;
+                Nothing went well.
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;button type=&#39;button&#39; class=&quot;olt-Notification-close&quot; /&gt;
+    &lt;/div&gt;
+&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;olt-NotificationContainer&quot;&gt;
+    &lt;div class=&quot;olt-Notification olt-Notification--info is-open&quot;&gt;
+        &lt;div class=&quot;olt-Notification-dialog&quot;&gt;
+            &lt;header class=&quot;olt-Notification-header&quot;&gt;Info Notification&lt;/header&gt;
+            &lt;div class=&quot;olt-Notification-content&quot;&gt;
+                Everything went well.
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;button type=&#39;button&#39; class=&quot;olt-Notification-close&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;olt-Notification olt-Notification--error is-open&quot;&gt;
+        &lt;div class=&quot;olt-Notification-dialog&quot;&gt;
+            &lt;header class=&quot;olt-Notification-header&quot;&gt;Error Notification&lt;/header&gt;
+            &lt;div class=&quot;olt-Notification-content&quot;&gt;
+                Nothing went well.
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;button type=&#39;button&#39; class=&quot;olt-Notification-close&quot; /&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+	</div>
+</div><div id="related-javascript" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#related-javascript" class="icon-link i-section__link -heading"></a>Related Javascript</h2></div><p>The following JS snippet is used to show, hide and close notifications for the demo in this guide.</p>
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> js</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;script&gt;
+  /**
+   * Add closing functionality for a notification
+   */
+  window.addEventListener(&#39;load&#39;, () =&gt; {
+    document
+      .querySelectorAll(&#39;div.olt-Notification&#39;)
+      .forEach((notificationEl) =&gt; {
+        const closeEl = notificationEl.querySelector(&#39;label.olt-Notification-close&#39;);
+        if (closeEl) closeEl.addEventListener(&#39;click&#39;, () =&gt; {
+          notificationEl.classList.remove(&#39;is-open&#39;);
+        });
+      });
+  });
+
+
+  /**
+   * Adds demo functionality to show stack of notifications
+   */
+  showNotifications = () =&gt; {
+    const notificationsList = [
+      ...document.querySelector(&#39;div.olt-NotificationContainer&#39;).children,
+    ].reverse();
+    notificationsList.forEach((notification, index) =&gt; {
+      setTimeout(() =&gt; {
+        notification.classList.add(&#39;is-open&#39;);
+      }, 1000 * index);
+      setTimeout(() =&gt; {
+        notification.classList.remove(&#39;is-open&#39;);
+      }, 3000 + 1000 * index);
+    });
+  };
+&lt;/script&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;script&gt;
+  /**
+   * Add closing functionality for a notification
+   */
+  window.addEventListener(&#39;load&#39;, () =&gt; {
+    document
+      .querySelectorAll(&#39;div.olt-Notification&#39;)
+      .forEach((notificationEl) =&gt; {
+        const closeEl = notificationEl.querySelector(&#39;label.olt-Notification-close&#39;);
+        if (closeEl) closeEl.addEventListener(&#39;click&#39;, () =&gt; {
+          notificationEl.classList.remove(&#39;is-open&#39;);
+        });
+      });
+  });
+
+
+  /**
+   * Adds demo functionality to show stack of notifications
+   */
+  showNotifications = () =&gt; {
+    const notificationsList = [
+      ...document.querySelector(&#39;div.olt-NotificationContainer&#39;).children,
+    ].reverse();
+    notificationsList.forEach((notification, index) =&gt; {
+      setTimeout(() =&gt; {
+        notification.classList.add(&#39;is-open&#39;);
+      }, 1000 * index);
+      setTimeout(() =&gt; {
+        notification.classList.remove(&#39;is-open&#39;);
+      }, 3000 + 1000 * index);
+    });
+  };
+&lt;/script&gt;</code></pre>
 	</div>
 </div></div>
 </div>
@@ -5101,7 +6076,7 @@ names. Tag&#39;s content is always rendered with <code>uppercase</code> text tra
 &lt;span class=&quot;olt-Tag olt-Tag--outline olt-Tag--dark&quot;&gt;Dark&lt;/span&gt;
 &lt;span class=&quot;olt-Tag olt-Tag--outline olt-Tag--white&quot;&gt;White&lt;/span&gt;</code></pre>
 	</div>
-</div><h3>Tags with icons</h3><p>Additional icon can be added to the tag by adding <code>data-icon</code> attribute on
+</div><h3>Tags with icons</h3><p>Additional icon can be added to the tag by adding a <code>olt-Tag-icon</code> class to
 the tag element or nesting an <a href="/#icon">Icon</a> component inside.</p>
 <div class="i-example">
                     <h5 class="i-example__heading">
@@ -5132,32 +6107,32 @@ the tag element or nesting an <a href="/#icon">Icon</a> component inside.</p>
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;span class=&quot;olt-Tag&quot; data-icon=&quot;settings&quot;&gt;Tag&lt;/span&gt;
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;span class=&quot;olt-Tag olt-Tag-icon olt-Icon-action-settings&quot;&gt;Tag&lt;/span&gt;
 &lt;span class=&quot;olt-Tag&quot;&gt;
-  &lt;i class=&quot;olt-Tag-icon olt-Icon&quot; data-icon=&quot;ac_unit&quot;&gt;&lt;/i&gt; Tag
+  &lt;i class=&quot;olt-Tag-icon olt-Icon olt-Icon-data-temperature&quot;&gt;&lt;/i&gt; Tag
 &lt;/span&gt;
 &lt;br /&gt;&lt;br /&gt;
-&lt;span class=&quot;olt-Tag olt-Tag--primary&quot; data-icon=&quot;settings&quot;&gt;Primary&lt;/span&gt;
-&lt;span class=&quot;olt-Tag olt-Tag--secondary&quot; data-icon=&quot;settings&quot;&gt;Secondary&lt;/span&gt;
-&lt;span class=&quot;olt-Tag olt-Tag--info&quot; data-icon=&quot;settings&quot;&gt;Info&lt;/span&gt;
-&lt;span class=&quot;olt-Tag olt-Tag--error&quot; data-icon=&quot;settings&quot;&gt;Error&lt;/span&gt;
-&lt;span class=&quot;olt-Tag olt-Tag--success&quot; data-icon=&quot;settings&quot;&gt;Success&lt;/span&gt;
-&lt;span class=&quot;olt-Tag olt-Tag--dark&quot; data-icon=&quot;settings&quot;&gt;Dark&lt;/span&gt;
-&lt;span class=&quot;olt-Tag olt-Tag--white&quot; data-icon=&quot;settings&quot;&gt;White&lt;/span&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;span class=&quot;olt-Tag&quot; data-icon=&quot;settings&quot;&gt;Tag&lt;/span&gt;
+&lt;span class=&quot;olt-Tag olt-Tag--primary olt-Tag-icon olt-Icon-action-settings&quot;&gt;Primary&lt;/span&gt;
+&lt;span class=&quot;olt-Tag olt-Tag--secondary olt-Tag-icon olt-Icon-action-settings&quot;&gt;Secondary&lt;/span&gt;
+&lt;span class=&quot;olt-Tag olt-Tag--info olt-Tag-icon olt-Icon-action-settings&quot;&gt;Info&lt;/span&gt;
+&lt;span class=&quot;olt-Tag olt-Tag--error olt-Tag-icon olt-Icon-action-settings&quot;&gt;Error&lt;/span&gt;
+&lt;span class=&quot;olt-Tag olt-Tag--success olt-Tag-icon olt-Icon-action-settings&quot;&gt;Success&lt;/span&gt;
+&lt;span class=&quot;olt-Tag olt-Tag--dark olt-Tag-icon olt-Icon-action-settings&quot;&gt;Dark&lt;/span&gt;
+&lt;span class=&quot;olt-Tag olt-Tag--white olt-Tag-icon olt-Icon-action-settings&quot;&gt;White&lt;/span&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;span class=&quot;olt-Tag olt-Tag-icon olt-Icon-action-settings&quot;&gt;Tag&lt;/span&gt;
 &lt;span class=&quot;olt-Tag&quot;&gt;
-  &lt;i class=&quot;olt-Tag-icon olt-Icon&quot; data-icon=&quot;ac_unit&quot;&gt;&lt;/i&gt; Tag
+  &lt;i class=&quot;olt-Tag-icon olt-Icon olt-Icon-data-temperature&quot;&gt;&lt;/i&gt; Tag
 &lt;/span&gt;
 &lt;br /&gt;&lt;br /&gt;
-&lt;span class=&quot;olt-Tag olt-Tag--primary&quot; data-icon=&quot;settings&quot;&gt;Primary&lt;/span&gt;
-&lt;span class=&quot;olt-Tag olt-Tag--secondary&quot; data-icon=&quot;settings&quot;&gt;Secondary&lt;/span&gt;
-&lt;span class=&quot;olt-Tag olt-Tag--info&quot; data-icon=&quot;settings&quot;&gt;Info&lt;/span&gt;
-&lt;span class=&quot;olt-Tag olt-Tag--error&quot; data-icon=&quot;settings&quot;&gt;Error&lt;/span&gt;
-&lt;span class=&quot;olt-Tag olt-Tag--success&quot; data-icon=&quot;settings&quot;&gt;Success&lt;/span&gt;
-&lt;span class=&quot;olt-Tag olt-Tag--dark&quot; data-icon=&quot;settings&quot;&gt;Dark&lt;/span&gt;
-&lt;span class=&quot;olt-Tag olt-Tag--white&quot; data-icon=&quot;settings&quot;&gt;White&lt;/span&gt;</code></pre>
+&lt;span class=&quot;olt-Tag olt-Tag--primary olt-Tag-icon olt-Icon-action-settings&quot;&gt;Primary&lt;/span&gt;
+&lt;span class=&quot;olt-Tag olt-Tag--secondary olt-Tag-icon olt-Icon-action-settings&quot;&gt;Secondary&lt;/span&gt;
+&lt;span class=&quot;olt-Tag olt-Tag--info olt-Tag-icon olt-Icon-action-settings&quot;&gt;Info&lt;/span&gt;
+&lt;span class=&quot;olt-Tag olt-Tag--error olt-Tag-icon olt-Icon-action-settings&quot;&gt;Error&lt;/span&gt;
+&lt;span class=&quot;olt-Tag olt-Tag--success olt-Tag-icon olt-Icon-action-settings&quot;&gt;Success&lt;/span&gt;
+&lt;span class=&quot;olt-Tag olt-Tag--dark olt-Tag-icon olt-Icon-action-settings&quot;&gt;Dark&lt;/span&gt;
+&lt;span class=&quot;olt-Tag olt-Tag--white olt-Tag-icon olt-Icon-action-settings&quot;&gt;White&lt;/span&gt;</code></pre>
 	</div>
-</div><h3>Tags with close icon</h3><p>There is a special <code>data-close</code> attribute, which simply adds a close icon
+</div><h3>Tags with close icon</h3><p>There is a special <code>olt-Tag-close</code> class, which simply adds a close icon
 to the tag, but instead of adding it to the left side of the tag it will be
 added to the right.</p>
 <div class="i-example">
@@ -5189,10 +6164,10 @@ added to the right.</p>
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;span class=&quot;olt-Tag&quot; data-close&gt;Tag&lt;/span&gt;
-&lt;span class=&quot;olt-Tag&quot; data-icon=&quot;close&quot;&gt;Tag&lt;/span&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;span class=&quot;olt-Tag&quot; data-close&gt;Tag&lt;/span&gt;
-&lt;span class=&quot;olt-Tag&quot; data-icon=&quot;close&quot;&gt;Tag&lt;/span&gt;</code></pre>
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;span class=&quot;olt-Tag olt-Tag-close&quot; data-close&gt;Tag&lt;/span&gt;
+&lt;span class=&quot;olt-Tag olt-Tag-icon olt-Icon-navigation-close olt-Icon--small&quot;&gt;Tag&lt;/span&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;span class=&quot;olt-Tag olt-Tag-close&quot; data-close&gt;Tag&lt;/span&gt;
+&lt;span class=&quot;olt-Tag olt-Tag-icon olt-Icon-navigation-close olt-Icon--small&quot;&gt;Tag&lt;/span&gt;</code></pre>
 	</div>
 </div><h3>Selectable Tags</h3><p>Selectable <em>Tag</em> are tags with <code>--selectable</code> modifier added as a class name.
 They receive <code>:hover</code> state, as well as clickable mouse icon. They can be
@@ -5227,11 +6202,11 @@ combined with <code>--outline</code> modifier</p>
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;olt-Tag&quot; data-icon=&quot;grade&quot;&gt;Tag&lt;/button&gt;
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;olt-Tag olt-Tag-icon olt-Icon-action-favorite-filled&quot;&gt;Tag&lt;/button&gt;
 &lt;a class=&quot;olt-Tag&quot; href=&quot;#&quot;&gt;Tag&lt;/a&gt;
-&lt;span class=&quot;olt-Tag olt-Tag--selectable&quot;&gt;Tag &lt;i class=&quot;olt-Tag-icon olt-Icon&quot; data-icon=&quot;close&quot;&gt;&lt;/i&gt;&lt;/span&gt;
-&lt;span class=&quot;olt-Tag olt-Tag--selectable olt-Tag--primary&quot;&gt;Tag &lt;i class=&quot;olt-Tag-icon olt-Icon&quot; data-icon=&quot;close&quot;&gt;&lt;/i&gt;&lt;/span&gt;
-&lt;span class=&quot;olt-Tag olt-Tag--selectable olt-Tag--secondary&quot;&gt;Tag &lt;i class=&quot;olt-Tag-icon olt-Icon&quot; data-icon=&quot;close&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+&lt;span class=&quot;olt-Tag olt-Tag--selectable&quot;&gt;Tag &lt;i class=&quot;olt-Tag-icon olt-Icon olt-Icon-navigation-close olt-Icon--small&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+&lt;span class=&quot;olt-Tag olt-Tag--selectable olt-Tag--primary&quot;&gt;Tag &lt;i class=&quot;olt-Tag-icon olt-Icon olt-Icon-navigation-close olt-Icon--small&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+&lt;span class=&quot;olt-Tag olt-Tag--selectable olt-Tag--secondary&quot;&gt;Tag &lt;i class=&quot;olt-Tag-icon olt-Icon olt-Icon-navigation-close olt-Icon--small&quot;&gt;&lt;/i&gt;&lt;/span&gt;
 &lt;br /&gt;&lt;br /&gt;
 &lt;span class=&quot;olt-Tag olt-Tag--selectable olt-Tag--primary&quot;&gt;Primary&lt;/span&gt;
 &lt;span class=&quot;olt-Tag olt-Tag--selectable olt-Tag--secondary&quot;&gt;Secondary&lt;/span&gt;
@@ -5248,11 +6223,11 @@ combined with <code>--outline</code> modifier</p>
 &lt;span class=&quot;olt-Tag olt-Tag--outline olt-Tag--selectable olt-Tag--success&quot;&gt;Success&lt;/span&gt;
 &lt;span class=&quot;olt-Tag olt-Tag--outline olt-Tag--selectable olt-Tag--dark&quot;&gt;Dark&lt;/span&gt;
 &lt;span class=&quot;olt-Tag olt-Tag--outline olt-Tag--selectable olt-Tag--white&quot;&gt;White&lt;/span&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;olt-Tag&quot; data-icon=&quot;grade&quot;&gt;Tag&lt;/button&gt;
+		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;olt-Tag olt-Tag-icon olt-Icon-action-favorite-filled&quot;&gt;Tag&lt;/button&gt;
 &lt;a class=&quot;olt-Tag&quot; href=&quot;#&quot;&gt;Tag&lt;/a&gt;
-&lt;span class=&quot;olt-Tag olt-Tag--selectable&quot;&gt;Tag &lt;i class=&quot;olt-Tag-icon olt-Icon&quot; data-icon=&quot;close&quot;&gt;&lt;/i&gt;&lt;/span&gt;
-&lt;span class=&quot;olt-Tag olt-Tag--selectable olt-Tag--primary&quot;&gt;Tag &lt;i class=&quot;olt-Tag-icon olt-Icon&quot; data-icon=&quot;close&quot;&gt;&lt;/i&gt;&lt;/span&gt;
-&lt;span class=&quot;olt-Tag olt-Tag--selectable olt-Tag--secondary&quot;&gt;Tag &lt;i class=&quot;olt-Tag-icon olt-Icon&quot; data-icon=&quot;close&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+&lt;span class=&quot;olt-Tag olt-Tag--selectable&quot;&gt;Tag &lt;i class=&quot;olt-Tag-icon olt-Icon olt-Icon-navigation-close olt-Icon--small&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+&lt;span class=&quot;olt-Tag olt-Tag--selectable olt-Tag--primary&quot;&gt;Tag &lt;i class=&quot;olt-Tag-icon olt-Icon olt-Icon-navigation-close olt-Icon--small&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+&lt;span class=&quot;olt-Tag olt-Tag--selectable olt-Tag--secondary&quot;&gt;Tag &lt;i class=&quot;olt-Tag-icon olt-Icon olt-Icon-navigation-close olt-Icon--small&quot;&gt;&lt;/i&gt;&lt;/span&gt;
 &lt;br /&gt;&lt;br /&gt;
 &lt;span class=&quot;olt-Tag olt-Tag--selectable olt-Tag--primary&quot;&gt;Primary&lt;/span&gt;
 &lt;span class=&quot;olt-Tag olt-Tag--selectable olt-Tag--secondary&quot;&gt;Secondary&lt;/span&gt;
@@ -5440,13 +6415,11 @@ elements and occupy the <code>olt-V2Button*</code> class names.</p>
             </div>
             <div class="demo-content">
               <button 
-                data-icon-left="add"
-                class="olt-V2Button">Label</button>
+                class="olt-V2Button olt-V2Button-icon-left olt-Icon-action-add-default olt-Icon--small">Label</button>
             </div>
             <div class="demo-content">
               <button 
-                data-icon-right="add"
-                class="olt-V2Button">Label</button>
+                class="olt-V2Button olt-V2Button-icon-right olt-Icon-action-add-default olt-Icon--small">Label</button>
             </div>
             <div class="demo-content">
               <button 
@@ -5471,17 +6444,17 @@ elements and occupy the <code>olt-V2Button*</code> class names.</p>
             </div>
             <div class="demo-content">
               <button 
-                data-icon-left="add"
                 class="
                     olt-V2Button 
-                    olt-V2Button--secondary">Label</button>
+                    olt-V2Button--secondary
+                     olt-V2Button-icon-left olt-Icon-action-add-default olt-Icon--small">Label</button>
             </div>
             <div class="demo-content">
               <button 
-                data-icon-right="add"
                 class="
                     olt-V2Button 
-                    olt-V2Button--secondary">Label</button>
+                    olt-V2Button--secondary
+                     olt-V2Button-icon-right olt-Icon-action-add-default olt-Icon--small">Label</button>
             </div>
             <div class="demo-content">
               <button 
@@ -5508,15 +6481,14 @@ elements and occupy the <code>olt-V2Button*</code> class names.</p>
             </div>
             <div class="demo-content">
               <button 
-                data-icon-left="add"
-                class="olt-V2Button">Label</button>
+                class="olt-V2Button olt-V2Button-icon-left olt-Icon-action-add-default olt-Icon--small">Label</button>
             </div>
             <div class="demo-content">
               <button 
-                data-icon-right="add"
                 class="
                     olt-V2Button 
                     olt-V2Button--tertiary 
+                    olt-V2Button-icon-right olt-Icon-action-add-default olt-Icon--small
                     ">Label</button>
             </div>
             <div class="demo-content">
@@ -5547,20 +6519,20 @@ elements and occupy the <code>olt-V2Button*</code> class names.</p>
             </div>
             <div class="demo-content">
               <button 
-                data-icon-left="add"
                 class="
                     olt-V2Button 
                     olt-V2Button--action 
                     olt-V2Button--tertiary 
+                    olt-V2Button-icon-left olt-Icon-action-add-default olt-Icon--small
                     ">Label</button>
             </div>
             <div class="demo-content">
               <button 
-                data-icon-right="add"
                 class="
                     olt-V2Button 
                     olt-V2Button--action 
                     olt-V2Button--tertiary 
+                     olt-V2Button-icon-right olt-Icon-action-add-default olt-Icon--small
                     ">Label</button>
             </div>
             <div class="demo-content">
@@ -5615,17 +6587,17 @@ elements and occupy the <code>olt-V2Button*</code> class names.</p>
             </div>
             <div class="demo-content">
               <button 
-                data-icon-left="add"
                 class="
                     olt-V2Button 
-                    olt-V2Button--dark">Label</button>
+                    olt-V2Button--dark
+                    olt-V2Button-icon-left olt-Icon-action-add-default olt-Icon--small">Label</button>
             </div>
             <div class="demo-content">
               <button 
-                data-icon-right="add"
                 class="
                     olt-V2Button 
-                    olt-V2Button--dark">Label</button>
+                    olt-V2Button--dark
+                    olt-V2Button-icon-right olt-Icon-action-add-default olt-Icon--small">Label</button>
             </div>
             <div class="demo-content">
               <button 
@@ -5653,19 +6625,19 @@ elements and occupy the <code>olt-V2Button*</code> class names.</p>
             </div>
             <div class="demo-content">
               <button 
-                data-icon-left="add"
                 class="
                     olt-V2Button 
                     olt-V2Button--secondary 
-                    olt-V2Button--dark">Label</button>
+                    olt-V2Button--dark
+                    olt-V2Button-icon-left olt-Icon-action-add-default olt-Icon--small">Label</button>
             </div>
             <div class="demo-content">
               <button 
-                data-icon-right="add"
                 class="
                     olt-V2Button 
                     olt-V2Button--secondary 
-                    olt-V2Button--dark">Label</button>
+                    olt-V2Button--dark
+                    olt-V2Button-icon-right olt-Icon-action-add-default olt-Icon--small">Label</button>
             </div>
             <div class="demo-content">
               <button 
@@ -5694,19 +6666,19 @@ elements and occupy the <code>olt-V2Button*</code> class names.</p>
             </div>
             <div class="demo-content">
               <button 
-                data-icon-left="add"
                 class="
                     olt-V2Button 
                     olt-V2Button--tertiary 
-                    olt-V2Button--dark">Label</button>
+                    olt-V2Button--dark
+                    olt-V2Button-icon-left olt-Icon-action-add-default olt-Icon--small">Label</button>
             </div>
             <div class="demo-content">
               <button 
-                data-icon-right="add"
                 class="
                     olt-V2Button 
                     olt-V2Button--tertiary 
-                    olt-V2Button--dark">Label</button>
+                    olt-V2Button--dark
+                    olt-V2Button-icon-right olt-Icon-action-add-default olt-Icon--small">Label</button>
             </div>
             <div class="demo-content">
               <button 
@@ -5736,21 +6708,21 @@ elements and occupy the <code>olt-V2Button*</code> class names.</p>
             </div>
             <div class="demo-content">
               <button 
-                data-icon-left="add"
                 class="
                     olt-V2Button 
                     olt-V2Button--action 
                     olt-V2Button--tertiary 
-                    olt-V2Button--dark">Label</button>
+                    olt-V2Button--dark
+                     olt-V2Button-icon-left olt-Icon-action-add-default olt-Icon--small">Label</button>
             </div>
             <div class="demo-content">
               <button 
-                data-icon-right="add"
                 class="
                     olt-V2Button 
                     olt-V2Button--action 
                     olt-V2Button--tertiary 
-                    olt-V2Button--dark">Label</button>
+                    olt-V2Button--dark
+                    olt-V2Button-icon-right olt-Icon-action-add-default olt-Icon--small">Label</button>
             </div>
             <div class="demo-content">
               <button 
@@ -5810,10 +6782,10 @@ elements and occupy the <code>olt-V2Button*</code> class names.</p>
             </div>
             <div class="demo-content">
               <button 
-                data-icon-left="add"
                 class="
                     olt-V2Button 
-                    olt-V2Button--destructive">Label</button>
+                    olt-V2Button--destructive
+                    olt-V2Button-icon-left olt-Icon-action-add-default olt-Icon--small">Label</button>
             </div>
             <div class="demo-content">
             </div>
@@ -5843,11 +6815,11 @@ elements and occupy the <code>olt-V2Button*</code> class names.</p>
             </div>
             <div class="demo-content">
               <button 
-                data-icon-left="add"
                 class="
                     olt-V2Button 
                     olt-V2Button--destructive 
-                    olt-V2Button--secondary">Label</button>
+                    olt-V2Button--secondary
+                    olt-V2Button-icon-left olt-Icon-action-add-default olt-Icon--small">Label</button>
             </div>
             <div class="demo-content">
             </div>
@@ -5878,19 +6850,19 @@ elements and occupy the <code>olt-V2Button*</code> class names.</p>
             </div>
             <div class="demo-content">
               <button 
-                data-icon-left="add"
                 class="
                     olt-V2Button 
                     olt-V2Button--destructive 
-                    olt-V2Button--tertiary">Label</button>
+                    olt-V2Button--tertiary
+                    olt-V2Button-icon-left olt-Icon-action-add-default olt-Icon--small">Label</button>
             </div>
             <div class="demo-content">
               <button 
-                data-icon-right="add"
                 class="
                     olt-V2Button 
                     olt-V2Button--destructive 
-                    olt-V2Button--tertiary">Label</button>
+                    olt-V2Button--tertiary
+                    olt-V2Button-icon-right olt-Icon-action-add-default olt-Icon--small">Label</button>
             </div>
             <div class="demo-content">
               <button 
@@ -5944,11 +6916,11 @@ elements and occupy the <code>olt-V2Button*</code> class names.</p>
             </div>
             <div class="demo-content">
               <button 
-                data-icon-left="add"
                 class="
                     olt-V2Button 
                     olt-V2Button--destructive 
-                    olt-V2Button--dark">Label</button>
+                    olt-V2Button--dark
+                    olt-V2Button-icon-left olt-Icon-action-add-default olt-Icon--small">Label</button>
             </div>
             <div class="demo-content">
             </div>
@@ -5980,12 +6952,12 @@ elements and occupy the <code>olt-V2Button*</code> class names.</p>
             </div>
             <div class="demo-content">
               <button 
-                data-icon-left="add"
                 class="
                     olt-V2Button 
                     olt-V2Button--destructive 
                     olt-V2Button--secondary 
-                    olt-V2Button--dark">Label</button>
+                    olt-V2Button--dark
+                    olt-V2Button-icon-left olt-Icon-action-add-default olt-Icon--small">Label</button>
             </div>
             <div class="demo-content">
             </div>
@@ -6018,21 +6990,21 @@ elements and occupy the <code>olt-V2Button*</code> class names.</p>
             </div>
             <div class="demo-content">
               <button 
-                data-icon-left="add"
                 class="
                     olt-V2Button 
                     olt-V2Button--destructive 
                     olt-V2Button--tertiary 
-                    olt-V2Button--dark">Label</button>
+                    olt-V2Button--dark
+                    olt-V2Button-icon-left olt-Icon-action-add-default olt-Icon--small">Label</button>
             </div>
             <div class="demo-content">
               <button 
-                data-icon-right="add"
                 class="
                     olt-V2Button 
                     olt-V2Button--destructive 
                     olt-V2Button--tertiary 
-                    olt-V2Button--dark">Label</button>
+                    olt-V2Button--dark
+                    olt-V2Button-icon-right olt-Icon-action-add-default olt-Icon--small">Label</button>
             </div>
             <div class="demo-content">
               <button 
@@ -6091,10 +7063,10 @@ elements and occupy the <code>olt-V2Button*</code> class names.</p>
             </div>
             <div class="demo-content">
               <button 
-                data-icon-left="add"
                 class="
                     olt-V2Button 
-                    olt-V2Button--confirmative">Label</button>
+                    olt-V2Button--confirmative
+                    olt-V2Button-icon-left olt-Icon-action-add-default olt-Icon--small">Label</button>
             </div>
             <div class="demo-content">
             </div>
@@ -6124,11 +7096,11 @@ elements and occupy the <code>olt-V2Button*</code> class names.</p>
             </div>
             <div class="demo-content">
               <button 
-                data-icon-left="add"
                 class="
                     olt-V2Button 
                     olt-V2Button--confirmative 
-                    olt-V2Button--secondary">Label</button>
+                    olt-V2Button--secondary
+                    olt-V2Button-icon-left olt-Icon-action-add-default olt-Icon--small">Label</button>
             </div>
             <div class="demo-content">
             </div>
@@ -6159,19 +7131,19 @@ elements and occupy the <code>olt-V2Button*</code> class names.</p>
             </div>
             <div class="demo-content">
               <button 
-                data-icon-left="add"
                 class="
                     olt-V2Button 
                     olt-V2Button--confirmative 
-                    olt-V2Button--tertiary">Label</button>
+                    olt-V2Button--tertiary
+                    olt-V2Button-icon-left olt-Icon-action-add-default olt-Icon--small">Label</button>
             </div>
             <div class="demo-content">
               <button 
-                data-icon-right="add"
                 class="
                     olt-V2Button 
                     olt-V2Button--confirmative 
-                    olt-V2Button--tertiary">Label</button>
+                    olt-V2Button--tertiary
+                    olt-V2Button-icon-right olt-Icon-action-add-default olt-Icon--small">Label</button>
             </div>
             <div class="demo-content">
               <button 
@@ -6225,11 +7197,11 @@ elements and occupy the <code>olt-V2Button*</code> class names.</p>
             </div>
             <div class="demo-content">
               <button 
-                data-icon-left="add"
                 class="
                     olt-V2Button 
                     olt-V2Button--confirmative 
-                    olt-V2Button--dark">Label</button>
+                    olt-V2Button--dark
+                    olt-V2Button-icon-left olt-Icon-action-add-default olt-Icon--small">Label</button>
             </div>
             <div class="demo-content">
             </div>
@@ -6261,12 +7233,12 @@ elements and occupy the <code>olt-V2Button*</code> class names.</p>
             </div>
             <div class="demo-content">
               <button 
-                data-icon-left="add"
                 class="
                     olt-V2Button 
                     olt-V2Button--confirmative 
                     olt-V2Button--secondary 
-                    olt-V2Button--dark">Label</button>
+                    olt-V2Button--dark
+                    olt-V2Button-icon-left olt-Icon-action-add-default olt-Icon--small">Label</button>
             </div>
             <div class="demo-content">
             </div>
@@ -6299,21 +7271,21 @@ elements and occupy the <code>olt-V2Button*</code> class names.</p>
             </div>
             <div class="demo-content">
               <button 
-                data-icon-left="add"
                 class="
                     olt-V2Button 
                     olt-V2Button--confirmative 
                     olt-V2Button--tertiary 
-                    olt-V2Button--dark">Label</button>
+                    olt-V2Button--dark
+                    olt-V2Button-icon-left olt-Icon-action-add-default olt-Icon--small">Label</button>
             </div>
             <div class="demo-content">
               <button 
-                data-icon-right="add"
                 class="
                     olt-V2Button 
                     olt-V2Button--confirmative 
                     olt-V2Button--tertiary 
-                    olt-V2Button--dark">Label</button>
+                    olt-V2Button--dark
+                    olt-V2Button-icon-right olt-Icon-action-add-default olt-Icon--small">Label</button>
             </div>
             <div class="demo-content">
               <button 
@@ -6491,7 +7463,7 @@ elements and occupy the <code>olt-V2Button*</code> class names.</p>
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;olt-V2Button olt-V2Button--default&quot; disabled&gt;Default&lt;/button&gt;">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;olt-V2Button olt-V2Button--default&quot; disabled&gt;Default&lt;/button&gt;</code></pre>
 	</div>
-</div><div id="decorations" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#decorations" class="icon-link i-section__link -heading"></a>Decorations</h2></div><p>To show decorations inside a button, use the <code>data-icon-left</code> and <code>data-icon-right</code> attribute. This will show an icon on the left or right of the label.</p>
+</div><div id="decorations" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#decorations" class="icon-link i-section__link -heading"></a>Decorations</h2></div><p>To show decorations inside a button, use the <code>olt-V2Button-icon-left</code> and <code>olt-V2Button-icon-right</code> class. This will show an icon on the left or right of the label.</p>
 <div class="i-example">
                     <h5 class="i-example__heading">
                         <a
@@ -6521,16 +7493,205 @@ elements and occupy the <code>olt-V2Button*</code> class names.</p>
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;olt-V2Button olt-V2Button--default&quot; data-icon-left=&quot;add&quot;&gt;Default&lt;/button&gt;
-&lt;button class=&quot;olt-V2Button olt-V2Button--default&quot; data-icon-right=&quot;add&quot;&gt;Default&lt;/button&gt;
-&lt;button class=&quot;olt-V2Button olt-V2Button--secondary&quot; data-icon-left=&quot;add&quot;&gt;Default&lt;/button&gt;
-&lt;button class=&quot;olt-V2Button olt-V2Button--secondary&quot; data-icon-right=&quot;add&quot;&gt;Default&lt;/button&gt;
-&lt;button class=&quot;olt-V2Button olt-V2Button--tertiary&quot; data-icon-right=&quot;add&quot;&gt;Default&lt;/button&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;olt-V2Button olt-V2Button--default&quot; data-icon-left=&quot;add&quot;&gt;Default&lt;/button&gt;
-&lt;button class=&quot;olt-V2Button olt-V2Button--default&quot; data-icon-right=&quot;add&quot;&gt;Default&lt;/button&gt;
-&lt;button class=&quot;olt-V2Button olt-V2Button--secondary&quot; data-icon-left=&quot;add&quot;&gt;Default&lt;/button&gt;
-&lt;button class=&quot;olt-V2Button olt-V2Button--secondary&quot; data-icon-right=&quot;add&quot;&gt;Default&lt;/button&gt;
-&lt;button class=&quot;olt-V2Button olt-V2Button--tertiary&quot; data-icon-right=&quot;add&quot;&gt;Default&lt;/button&gt;</code></pre>
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;button class=&quot;olt-V2Button olt-V2Button--default olt-V2Button-icon-left olt-Icon-action-add-default olt-Icon--small&quot;&gt;Default&lt;/button&gt;
+&lt;button class=&quot;olt-V2Button olt-V2Button--default olt-V2Button-icon-right olt-Icon-action-add-default olt-Icon--small&quot;&gt;Default&lt;/button&gt;
+&lt;button class=&quot;olt-V2Button olt-V2Button--secondary olt-V2Button-icon-left olt-Icon-action-add-default olt-Icon--small&quot;&gt;Default&lt;/button&gt;
+&lt;button class=&quot;olt-V2Button olt-V2Button--secondary olt-V2Button-icon-right olt-Icon-action-add-default olt-Icon--small&quot;&gt;Default&lt;/button&gt;
+&lt;button class=&quot;olt-V2Button olt-V2Button--tertiary olt-V2Button-icon-right olt-Icon-action-add-default olt-Icon--small&quot;&gt;Default&lt;/button&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;olt-V2Button olt-V2Button--default olt-V2Button-icon-left olt-Icon-action-add-default olt-Icon--small&quot;&gt;Default&lt;/button&gt;
+&lt;button class=&quot;olt-V2Button olt-V2Button--default olt-V2Button-icon-right olt-Icon-action-add-default olt-Icon--small&quot;&gt;Default&lt;/button&gt;
+&lt;button class=&quot;olt-V2Button olt-V2Button--secondary olt-V2Button-icon-left olt-Icon-action-add-default olt-Icon--small&quot;&gt;Default&lt;/button&gt;
+&lt;button class=&quot;olt-V2Button olt-V2Button--secondary olt-V2Button-icon-right olt-Icon-action-add-default olt-Icon--small&quot;&gt;Default&lt;/button&gt;
+&lt;button class=&quot;olt-V2Button olt-V2Button--tertiary olt-V2Button-icon-right olt-Icon-action-add-default olt-Icon--small&quot;&gt;Default&lt;/button&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="v-2-tabs" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">V2Tabs</h1>
+	<span class="theme-content-element-source">
+		<span class="theme-content-element-source-label">Source:</span>
+		<span class="theme-content-element-source-path">components/V2Tabs/V2Tabs.md</span>
+	</span>
+	<div class="theme-content-element-description"><div id="description" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#description" class="icon-link i-section__link -heading"></a>Description</h2></div><p><em>V2Tabs</em> render a tab-like navigation, with links that can point to the tab content.</p>
+<ul>
+<li><code>olt-V2Tabs</code> - The tab bar</li>
+<li><code>olt-V2Tabs-link</code> - The tab link</li>
+</ul>
+<p>The <em>V2Tabs</em> are centered on large screens and right aligned on small screens.
+The active tab is decorated via <code>is-active</code> state class name.</p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="v-2-tabs-newnavigation.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="v-2-tabs-newnavigation.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;olt-V2Tabs&quot;&gt;
+  &lt;a class=&quot;olt-V2Tabs-link is-active&quot;&gt;Link One&lt;/a&gt;
+  &lt;a class=&quot;olt-V2Tabs-link&quot;&gt;Link Two&lt;/a&gt;
+  &lt;a class=&quot;olt-V2Tabs-link&quot;&gt;Link Three&lt;/a&gt;
+  &lt;a class=&quot;olt-V2Tabs-link&quot;&gt;Link Four&lt;/a&gt;
+  &lt;a class=&quot;olt-V2Tabs-link&quot;&gt;Link Five&lt;/a&gt;
+&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;olt-V2Tabs&quot;&gt;
+  &lt;a class=&quot;olt-V2Tabs-link is-active&quot;&gt;Link One&lt;/a&gt;
+  &lt;a class=&quot;olt-V2Tabs-link&quot;&gt;Link Two&lt;/a&gt;
+  &lt;a class=&quot;olt-V2Tabs-link&quot;&gt;Link Three&lt;/a&gt;
+  &lt;a class=&quot;olt-V2Tabs-link&quot;&gt;Link Four&lt;/a&gt;
+  &lt;a class=&quot;olt-V2Tabs-link&quot;&gt;Link Five&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+	</div>
+</div><p>Use the --forceScroll modifier to ensure the menu does not overflow, but scrolls whenever it is too large for the screen.</p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="v-2-tabs-newnavigationforce.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="v-2-tabs-newnavigationforce.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;olt-V2Tabs--forceScroll&quot;&gt;
+  &lt;a class=&quot;olt-V2Tabs-link is-active&quot;&gt;Link One&lt;/a&gt;
+  &lt;a class=&quot;olt-V2Tabs-link&quot;&gt;Link Two&lt;/a&gt;
+  &lt;a class=&quot;olt-V2Tabs-link&quot;&gt;Link Three&lt;/a&gt;
+  &lt;a class=&quot;olt-V2Tabs-link&quot;&gt;Link Four&lt;/a&gt;
+  &lt;a class=&quot;olt-V2Tabs-link&quot;&gt;Link Five&lt;/a&gt;
+  &lt;a class=&quot;olt-V2Tabs-link&quot;&gt;Link Six&lt;/a&gt;
+  &lt;a class=&quot;olt-V2Tabs-link&quot;&gt;Link Seven&lt;/a&gt;
+  &lt;a class=&quot;olt-V2Tabs-link&quot;&gt;Link Eight&lt;/a&gt;
+  &lt;a class=&quot;olt-V2Tabs-link&quot;&gt;Link Nine&lt;/a&gt;
+  &lt;a class=&quot;olt-V2Tabs-link&quot;&gt;Link Ten&lt;/a&gt;
+&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;olt-V2Tabs--forceScroll&quot;&gt;
+  &lt;a class=&quot;olt-V2Tabs-link is-active&quot;&gt;Link One&lt;/a&gt;
+  &lt;a class=&quot;olt-V2Tabs-link&quot;&gt;Link Two&lt;/a&gt;
+  &lt;a class=&quot;olt-V2Tabs-link&quot;&gt;Link Three&lt;/a&gt;
+  &lt;a class=&quot;olt-V2Tabs-link&quot;&gt;Link Four&lt;/a&gt;
+  &lt;a class=&quot;olt-V2Tabs-link&quot;&gt;Link Five&lt;/a&gt;
+  &lt;a class=&quot;olt-V2Tabs-link&quot;&gt;Link Six&lt;/a&gt;
+  &lt;a class=&quot;olt-V2Tabs-link&quot;&gt;Link Seven&lt;/a&gt;
+  &lt;a class=&quot;olt-V2Tabs-link&quot;&gt;Link Eight&lt;/a&gt;
+  &lt;a class=&quot;olt-V2Tabs-link&quot;&gt;Link Nine&lt;/a&gt;
+  &lt;a class=&quot;olt-V2Tabs-link&quot;&gt;Link Ten&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+	</div>
+</div><p>To add a gradient to show that there are more elements available, use <code>has-gradient-left</code> and <code>has-gradient-right</code> state class name. The gradient overlay on either side is used to indicate that more content is available outside of the visible area. note: you need a relatively positions container around the navigation for this.</p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="v-2-tabs-newnavigationgradient.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="v-2-tabs-newnavigationgradient.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div style=&quot;position: relative&quot;&gt;
+  &lt;div class=&quot;olt-V2Tabs&quot;&gt;
+    &lt;a class=&quot;olt-V2Tabs-link is-active&quot;&gt;Link One&lt;/a&gt;
+    &lt;a class=&quot;olt-V2Tabs-link&quot;&gt;Link Two&lt;/a&gt;
+    &lt;a class=&quot;olt-V2Tabs-link&quot;&gt;Link Three&lt;/a&gt;
+    &lt;a class=&quot;olt-V2Tabs-link&quot;&gt;Link Four&lt;/a&gt;
+    &lt;a class=&quot;olt-V2Tabs-link&quot;&gt;Link Five&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div style=&quot;position: relative&quot;&gt;
+  &lt;div class=&quot;olt-V2Tabs&quot;&gt;
+    &lt;a class=&quot;olt-V2Tabs-link is-active&quot;&gt;Link One&lt;/a&gt;
+    &lt;a class=&quot;olt-V2Tabs-link&quot;&gt;Link Two&lt;/a&gt;
+    &lt;a class=&quot;olt-V2Tabs-link&quot;&gt;Link Three&lt;/a&gt;
+    &lt;a class=&quot;olt-V2Tabs-link&quot;&gt;Link Four&lt;/a&gt;
+    &lt;a class=&quot;olt-V2Tabs-link&quot;&gt;Link Five&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+	</div>
+</div>
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> js</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="const tabs = document.querySelector(&quot;.olt-V2Tabs&quot;)
+var overflows = tabs.scrollWidth&gt;tabs.clientWidth;
+if (overflows) tabs.classList.add(&quot;has-gradient-right&quot;);
+
+tabs.addEventListener(&#39;scroll&#39;, () =&gt; {
+  var hasScrolledLeft = tabs.scrollLeft &gt; 0;
+  tabs.classList.toggle(&quot;has-gradient-left&quot;, hasScrolledLeft);
+  var canScrollRight = tabs.scrollWidth-tabs.scrollLeft-tabs.clientWidth &gt; 0; 
+  tabs.classList.toggle(&quot;has-gradient-right&quot;, canScrollRight);
+});">Copy</button>
+		<pre class="mb-0"><code class="lang-">const tabs = document.querySelector(&quot;.olt-V2Tabs&quot;)
+var overflows = tabs.scrollWidth&gt;tabs.clientWidth;
+if (overflows) tabs.classList.add(&quot;has-gradient-right&quot;);
+
+tabs.addEventListener(&#39;scroll&#39;, () =&gt; {
+  var hasScrolledLeft = tabs.scrollLeft &gt; 0;
+  tabs.classList.toggle(&quot;has-gradient-left&quot;, hasScrolledLeft);
+  var canScrollRight = tabs.scrollWidth-tabs.scrollLeft-tabs.clientWidth &gt; 0; 
+  tabs.classList.toggle(&quot;has-gradient-right&quot;, canScrollRight);
+});</code></pre>
 	</div>
 </div></div>
 </div>
@@ -8079,8 +9240,8 @@ is represented as a list of cards on tablet and mobile. The component occupies
       &lt;div class=&quot;olt-DataCards-headItem&quot;&gt;Name / ID&lt;/div&gt;
       &lt;div class=&quot;olt-DataCards-headItem olt-DataCards--alignCenter&quot;&gt;Floor&lt;/div&gt;
       &lt;div class=&quot;olt-DataCards-headItem olt-DataCards--alignCenter&quot;&gt;Room&lt;/div&gt;
-      &lt;div class=&quot;olt-DataCards-headItem olt-DataCards--alignCenter&quot;&gt;Temperature&amp;nbsp;&lt;i class=&quot;olt-Icon olt-Icon--dark&quot; data-icon=&quot;keyboard_arrow_up&quot;&gt;&lt;/i&gt;&lt;/div&gt;
-      &lt;div class=&quot;olt-DataCards-headItem olt-DataCards--alignCenter&quot;&gt;Occupancy&amp;nbsp;&lt;i class=&quot;olt-Icon olt-Icon--dark&quot; data-icon=&quot;keyboard_arrow_down&quot;&gt;&lt;/i&gt;&lt;/div&gt;
+      &lt;div class=&quot;olt-DataCards-headItem olt-DataCards--alignCenter&quot;&gt;Temperature&amp;nbsp;&lt;i class=&quot;olt-Icon olt-Icon--dark olt-Icon-arrows-chevron-up olt-Icon--small&quot;&gt;&lt;/i&gt;&lt;/div&gt;
+      &lt;div class=&quot;olt-DataCards-headItem olt-DataCards--alignCenter&quot;&gt;Occupancy&amp;nbsp;&lt;i class=&quot;olt-Icon olt-Icon--dark olt-Icon-arrows-chevron-down olt-Icon--small&quot;&gt;&lt;/i&gt;&lt;/div&gt;
       &lt;div class=&quot;olt-DataCards-headItem olt-DataCards--alignCenter&quot;&gt;Last Motion&lt;/div&gt;
       &lt;div class=&quot;olt-DataCards-headItem olt-DataCards--alignCenter&quot;&gt;Power&lt;/div&gt;
       &lt;div class=&quot;olt-DataCards-headItem olt-DataCards--alignCenter&quot;&gt;Brightness&lt;/div&gt;
@@ -8165,8 +9326,8 @@ is represented as a list of cards on tablet and mobile. The component occupies
       &lt;div class=&quot;olt-DataCards-headItem&quot;&gt;Name / ID&lt;/div&gt;
       &lt;div class=&quot;olt-DataCards-headItem olt-DataCards--alignCenter&quot;&gt;Floor&lt;/div&gt;
       &lt;div class=&quot;olt-DataCards-headItem olt-DataCards--alignCenter&quot;&gt;Room&lt;/div&gt;
-      &lt;div class=&quot;olt-DataCards-headItem olt-DataCards--alignCenter&quot;&gt;Temperature&amp;nbsp;&lt;i class=&quot;olt-Icon olt-Icon--dark&quot; data-icon=&quot;keyboard_arrow_up&quot;&gt;&lt;/i&gt;&lt;/div&gt;
-      &lt;div class=&quot;olt-DataCards-headItem olt-DataCards--alignCenter&quot;&gt;Occupancy&amp;nbsp;&lt;i class=&quot;olt-Icon olt-Icon--dark&quot; data-icon=&quot;keyboard_arrow_down&quot;&gt;&lt;/i&gt;&lt;/div&gt;
+      &lt;div class=&quot;olt-DataCards-headItem olt-DataCards--alignCenter&quot;&gt;Temperature&amp;nbsp;&lt;i class=&quot;olt-Icon olt-Icon--dark olt-Icon-arrows-chevron-up olt-Icon--small&quot;&gt;&lt;/i&gt;&lt;/div&gt;
+      &lt;div class=&quot;olt-DataCards-headItem olt-DataCards--alignCenter&quot;&gt;Occupancy&amp;nbsp;&lt;i class=&quot;olt-Icon olt-Icon--dark olt-Icon-arrows-chevron-down olt-Icon--small&quot;&gt;&lt;/i&gt;&lt;/div&gt;
       &lt;div class=&quot;olt-DataCards-headItem olt-DataCards--alignCenter&quot;&gt;Last Motion&lt;/div&gt;
       &lt;div class=&quot;olt-DataCards-headItem olt-DataCards--alignCenter&quot;&gt;Power&lt;/div&gt;
       &lt;div class=&quot;olt-DataCards-headItem olt-DataCards--alignCenter&quot;&gt;Brightness&lt;/div&gt;
@@ -10092,7 +11253,7 @@ horizontally scrollable.</p>
           &lt;p class=&quot;olt-Paragraph olt-u-fontMono olt-u-fontSizeXxSmall&quot;&gt;0123456789&lt;/p&gt;
         &lt;/td&gt;
         &lt;td class=&quot;olt-Table-data olt-u-fontMono&quot;&gt;
-          &lt;i class=&quot;olt-Icon olt-u-textPrimary&quot; data-icon=&quot;exit_to_app&quot;&gt;&lt;/i&gt; &lt;span class=&quot;olt-u-fontSizeXSmall&quot;&gt;Gateway&lt;/span&gt;
+          &lt;i class=&quot;olt-Icon olt-u-textPrimary olt-Icon-link-external olt-Icon--large&quot;&gt;&lt;/i&gt; &lt;span class=&quot;olt-u-fontSizeXSmall&quot;&gt;Gateway&lt;/span&gt;
         &lt;/td&gt;
         &lt;td class=&quot;olt-Table-data olt-u-textPrimary olt-u-fontSizeSmall&quot;&gt;DEV2S&lt;/td&gt;
         &lt;td class=&quot;olt-Table-data&quot;&gt;
@@ -10124,7 +11285,7 @@ horizontally scrollable.</p>
           &lt;p class=&quot;olt-Paragraph olt-u-fontMono olt-u-fontSizeXxSmall&quot;&gt;0123456789&lt;/p&gt;
         &lt;/td&gt;
         &lt;td class=&quot;olt-Table-data olt-u-fontMono&quot;&gt;
-          &lt;i class=&quot;olt-Icon olt-u-textPrimary&quot; data-icon=&quot;exit_to_app&quot;&gt;&lt;/i&gt; &lt;span class=&quot;olt-u-fontSizeXSmall&quot;&gt;Gateway&lt;/span&gt;
+          &lt;i class=&quot;olt-Icon olt-u-textPrimary olt-Icon-link-external olt-Icon--large&quot;&gt;&lt;/i&gt; &lt;span class=&quot;olt-u-fontSizeXSmall&quot;&gt;Gateway&lt;/span&gt;
         &lt;/td&gt;
         &lt;td class=&quot;olt-Table-data olt-u-textPrimary olt-u-fontSizeSmall&quot;&gt;DEV2S&lt;/td&gt;
         &lt;td class=&quot;olt-Table-data&quot;&gt;
@@ -10385,6 +11546,52 @@ without using JavaScript.</p>
 &lt;div class=&quot;olt-Checkbox&quot;&gt;
   &lt;input id=&quot;indeterminate-checkbox&quot; type=&quot;checkbox&quot; disabled checked class=&quot;olt-Checkbox-input&quot;/&gt;
   &lt;label for=&quot;indeterminate-checkbox&quot; class=&quot;olt-Label olt-Checkbox-label olt-Checkbox--indeterminate&quot;&gt;Disabled Indeterminate Checkbox&lt;/label&gt;
+&lt;/div&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="copyable" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Copyable</h1>
+	<span class="theme-content-element-source">
+		<span class="theme-content-element-source-label">Source:</span>
+		<span class="theme-content-element-source-path">controls/Copyable/Copyable.md</span>
+	</span>
+	<div class="theme-content-element-description"><div id="description" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#description" class="icon-link i-section__link -heading"></a>Description</h2></div><p><em>Copyable</em> occupies <code>olt-Copyable*</code> class names and adds a copy-to-clipboard icon to any element</p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="copyable-clipboard.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="copyable-clipboard.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;olt-Copyable&quot;&gt;
+  I can easily copy this to the clipboard
+&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;olt-Copyable&quot;&gt;
+  I can easily copy this to the clipboard
 &lt;/div&gt;</code></pre>
 	</div>
 </div></div>
@@ -12006,7 +13213,7 @@ text field. </p>
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 	</div>
-</div><h3>With icon</h3><p>You can adding an icon to the text field, which will be rendered on the right
+</div><h3>With icon</h3><p>You can add an icon to the text field, which will be rendered on the right
 side of the input itself. Combine that with <a href="/#icon">Icon</a> inside a nested
 element containing <code>olt-TextField-icon</code>.</p>
 <div class="i-example">
@@ -12040,7 +13247,7 @@ element containing <code>olt-TextField-icon</code>.</p>
 	<div class="i-code-block__content hidden">
 		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;olt-TextField&quot;&gt;
   &lt;div class=&quot;olt-TextField-icon&quot;&gt;
-    &lt;i class=&quot;olt-Icon olt-Icon--error&quot; data-icon=&quot;error&quot;&gt;&lt;/i&gt;
+    &lt;i class=&quot;olt-Icon olt-Icon--error olt-Icon-feedback-warning-low-filled&quot;&gt;&lt;/i&gt;
   &lt;/div&gt;
   &lt;label class=&quot;olt-Label olt-TextField-label&quot;&gt;Username&lt;/label&gt;
   &lt;input class=&quot;olt-Input olt-TextField-input is-error&quot; value=&quot;bill&quot;/&gt;
@@ -12051,7 +13258,7 @@ element containing <code>olt-TextField-icon</code>.</p>
 &lt;/div&gt;">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;olt-TextField&quot;&gt;
   &lt;div class=&quot;olt-TextField-icon&quot;&gt;
-    &lt;i class=&quot;olt-Icon olt-Icon--error&quot; data-icon=&quot;error&quot;&gt;&lt;/i&gt;
+    &lt;i class=&quot;olt-Icon olt-Icon--error olt-Icon-feedback-warning-low-filled&quot;&gt;&lt;/i&gt;
   &lt;/div&gt;
   &lt;label class=&quot;olt-Label olt-TextField-label&quot;&gt;Username&lt;/label&gt;
   &lt;input class=&quot;olt-Input olt-TextField-input is-error&quot; value=&quot;bill&quot;/&gt;
@@ -12650,7 +13857,7 @@ apply <code>disable</code>, <code>checked</code> attributes directly to the inpu
                 <input class="olt-V2Input" type="text" value="Lorem ipsum" />
                 <span class="olt-V2Label-text">Enter your data</span>
                 <div class="olt-V2Label-icon">
-                  <i class="olt-Icon" data-icon="edit"></i>
+                  <i class="olt-Icon olt-Icon-action-edit"></i>
                 </div>
               </label>
             </div>
@@ -12733,7 +13940,7 @@ apply <code>disable</code>, <code>checked</code> attributes directly to the inpu
                 <input class="olt-V2Input" type="text" value="Lorem ipsum" />
                 <span class="olt-V2Label-text">Enter your data</span>
                 <div class="olt-V2Label-icon">
-                  <i class="olt-Icon" data-icon="edit"></i>
+                  <i class="olt-Icon olt-Icon-action-edit"></i>
                 </div>
               </label>
             </div>
@@ -13001,42 +14208,42 @@ colors when the input is empty, contains a value or is disabled.</p>
   &lt;input class=&quot;olt-V2Input&quot; type=&quot;text&quot; /&gt;
   &lt;span class=&quot;olt-V2Label-text&quot;&gt;Enter your data&lt;/span&gt;
   &lt;div class=&quot;olt-V2Label-icon&quot;&gt;
-    &lt;i class=&quot;olt-Icon&quot; data-icon=&quot;edit&quot;&gt;&lt;/i&gt;
+    &lt;i class=&quot;olt-Icon olt-Icon-action-edit&quot;&gt;&lt;/i&gt;
   &lt;/div&gt;
 &lt;/label&gt;
 &lt;label class=&quot;olt-V2Label&quot;&gt;
   &lt;input class=&quot;olt-V2Input&quot; type=&quot;text&quot; value=&quot;Lorem ipsum&quot; /&gt;
   &lt;span class=&quot;olt-V2Label-text&quot;&gt;Enter your data&lt;/span&gt;
   &lt;div class=&quot;olt-V2Label-icon&quot;&gt;
-    &lt;i class=&quot;olt-Icon&quot; data-icon=&quot;edit&quot;&gt;&lt;/i&gt;
+    &lt;i class=&quot;olt-Icon olt-Icon-action-edit&quot;&gt;&lt;/i&gt;
   &lt;/div&gt;
 &lt;/label&gt;
 &lt;label class=&quot;olt-V2Label&quot;&gt;
   &lt;input class=&quot;olt-V2Input&quot; type=&quot;text&quot; value=&quot;Lorem ipsum&quot; disabled /&gt;
   &lt;span class=&quot;olt-V2Label-text&quot;&gt;Enter your data&lt;/span&gt;
   &lt;div class=&quot;olt-V2Label-icon&quot;&gt;
-    &lt;i class=&quot;olt-Icon&quot; data-icon=&quot;edit&quot;&gt;&lt;/i&gt;
+    &lt;i class=&quot;olt-Icon olt-Icon-action-edit&quot;&gt;&lt;/i&gt;
   &lt;/div&gt;
 &lt;/label&gt;">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;label class=&quot;olt-V2Label&quot;&gt;
   &lt;input class=&quot;olt-V2Input&quot; type=&quot;text&quot; /&gt;
   &lt;span class=&quot;olt-V2Label-text&quot;&gt;Enter your data&lt;/span&gt;
   &lt;div class=&quot;olt-V2Label-icon&quot;&gt;
-    &lt;i class=&quot;olt-Icon&quot; data-icon=&quot;edit&quot;&gt;&lt;/i&gt;
+    &lt;i class=&quot;olt-Icon olt-Icon-action-edit&quot;&gt;&lt;/i&gt;
   &lt;/div&gt;
 &lt;/label&gt;
 &lt;label class=&quot;olt-V2Label&quot;&gt;
   &lt;input class=&quot;olt-V2Input&quot; type=&quot;text&quot; value=&quot;Lorem ipsum&quot; /&gt;
   &lt;span class=&quot;olt-V2Label-text&quot;&gt;Enter your data&lt;/span&gt;
   &lt;div class=&quot;olt-V2Label-icon&quot;&gt;
-    &lt;i class=&quot;olt-Icon&quot; data-icon=&quot;edit&quot;&gt;&lt;/i&gt;
+    &lt;i class=&quot;olt-Icon olt-Icon-action-edit&quot;&gt;&lt;/i&gt;
   &lt;/div&gt;
 &lt;/label&gt;
 &lt;label class=&quot;olt-V2Label&quot;&gt;
   &lt;input class=&quot;olt-V2Input&quot; type=&quot;text&quot; value=&quot;Lorem ipsum&quot; disabled /&gt;
   &lt;span class=&quot;olt-V2Label-text&quot;&gt;Enter your data&lt;/span&gt;
   &lt;div class=&quot;olt-V2Label-icon&quot;&gt;
-    &lt;i class=&quot;olt-Icon&quot; data-icon=&quot;edit&quot;&gt;&lt;/i&gt;
+    &lt;i class=&quot;olt-Icon olt-Icon-action-edit&quot;&gt;&lt;/i&gt;
   &lt;/div&gt;
 &lt;/label&gt;</code></pre>
 	</div>
@@ -13153,7 +14360,7 @@ change. The error messsage can be displayed below the input.</p>
   &lt;input class=&quot;olt-V2Input&quot; type=&quot;text&quot; value=&quot;Lorem ipsum&quot; /&gt;
   &lt;span class=&quot;olt-V2Label-text&quot;&gt;Enter your data&lt;/span&gt;
   &lt;div class=&quot;olt-V2Label-icon&quot;&gt;
-    &lt;i class=&quot;olt-Icon&quot; data-icon=&quot;edit&quot;&gt;&lt;/i&gt;
+    &lt;i class=&quot;olt-Icon olt-Icon-action-edit&quot;&gt;&lt;/i&gt;
   &lt;/div&gt;
   &lt;div class=&quot;olt-V2Label-footer&quot;&gt;
     &lt;span class=&quot;olt-V2Label-error&quot;&gt;
@@ -13177,7 +14384,7 @@ change. The error messsage can be displayed below the input.</p>
   &lt;input class=&quot;olt-V2Input&quot; type=&quot;text&quot; value=&quot;Lorem ipsum&quot; /&gt;
   &lt;span class=&quot;olt-V2Label-text&quot;&gt;Enter your data&lt;/span&gt;
   &lt;div class=&quot;olt-V2Label-icon&quot;&gt;
-    &lt;i class=&quot;olt-Icon&quot; data-icon=&quot;edit&quot;&gt;&lt;/i&gt;
+    &lt;i class=&quot;olt-Icon olt-Icon-action-edit&quot;&gt;&lt;/i&gt;
   &lt;/div&gt;
   &lt;div class=&quot;olt-V2Label-footer&quot;&gt;
     &lt;span class=&quot;olt-V2Label-error&quot;&gt;
@@ -13233,7 +14440,7 @@ for better user experience.</p>
   &lt;input class=&quot;olt-V2Input&quot; type=&quot;text&quot; value=&quot;Lorem ipsum&quot; /&gt;
   &lt;span class=&quot;olt-V2Label-text&quot;&gt;Enter your data&lt;/span&gt;
   &lt;div class=&quot;olt-V2Label-icon&quot;&gt;
-    &lt;i class=&quot;olt-Icon&quot; data-icon=&quot;edit&quot;&gt;&lt;/i&gt;
+    &lt;i class=&quot;olt-Icon olt-Icon-action-edit&quot;&gt;&lt;/i&gt;
   &lt;/div&gt;
   &lt;div class=&quot;olt-V2Label-footer&quot;&gt;
     &lt;span class=&quot;olt-V2Label-hint&quot;&gt;
@@ -13257,7 +14464,7 @@ for better user experience.</p>
   &lt;input class=&quot;olt-V2Input&quot; type=&quot;text&quot; value=&quot;Lorem ipsum&quot; /&gt;
   &lt;span class=&quot;olt-V2Label-text&quot;&gt;Enter your data&lt;/span&gt;
   &lt;div class=&quot;olt-V2Label-icon&quot;&gt;
-    &lt;i class=&quot;olt-Icon&quot; data-icon=&quot;edit&quot;&gt;&lt;/i&gt;
+    &lt;i class=&quot;olt-Icon olt-Icon-action-edit&quot;&gt;&lt;/i&gt;
   &lt;/div&gt;
   &lt;div class=&quot;olt-V2Label-footer&quot;&gt;
     &lt;span class=&quot;olt-V2Label-hint&quot;&gt;
@@ -16806,12 +18013,20 @@ utility.</p>
 <th style="text-align:left">Sets color to</th>
 </tr>
 </thead><tbody><tr>
-<td style="text-align:left"><code>olt-u-colorSecondary</code></td>
+<td style="text-align:left"><code>olt-u-colorPrimary</code></td>
 <td style="text-align:left"><div class="olt-u-backgroundColorPrimary demo-circle"></div></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>olt-u-colorSecondary</code></td>
+<td style="text-align:left"><div class="olt-u-backgroundColorSecondary demo-circle"></div></td>
 </tr>
 <tr>
 <td style="text-align:left"><code>olt-u-colorInfo</code></td>
 <td style="text-align:left"><div class="olt-u-backgroundColorInfo demo-circle"></div></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>olt-u-colorWarning</code></td>
+<td style="text-align:left"><div class="olt-u-backgroundColorWarning demo-circle"></div></td>
 </tr>
 <tr>
 <td style="text-align:left"><code>olt-u-colorError</code></td>
@@ -18410,7 +19625,7 @@ it can be very handy :</p>
 			style=""
 		>
 			<h1 class="i-sidebar-title h4 mt-4 theme-sidebar-header">
-					<img class="i-sidebar-logo mr-2 theme-sidebar-header-logo" src="./src/theme-logo.png" height="40" alt="">
+					<img class="i-sidebar-logo mr-2 theme-sidebar-header-logo" src="./src/assets/theme-logo.png" height="40" alt="">
 				<span class="theme-sidebar-header-title">Lightelligence Styles</span>
 			</h1>
 			
@@ -18465,7 +19680,7 @@ it can be very handy :</p>
 			
 						<h5
 							class="pt-4 mb-1 theme-sidebar-category-title"
-							data-filter-value=" Avatar  Button  Card  Chip  Dropdown  Icon  Menu  Modal  Navbar  Snackbar  Spinner  Stepper  Tabs  Tag  Tooltip  V2Button "
+							data-filter-value=" Avatar  Button  Card  Chip  Dropdown  Icon  Menu  Modal  Navbar  Notification  Snackbar  Spinner  Stepper  Tabs  Tag  Tooltip  V2Button  V2Tabs "
 						>
 							<a href="#category-component" class="i-sidebar-list-item">
 								<b>Component</b>
@@ -18537,6 +19752,13 @@ it can be very handy :</p>
 									<span>Navbar</span>
 								</a>
 								<a
+									href="#notification"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Notification"
+								>
+									<span>Notification</span>
+								</a>
+								<a
 									href="#snackbar"
 									class="i-sidebar-list-item theme-sidebar-element"
 									data-filter-value="Snackbar"
@@ -18584,6 +19806,13 @@ it can be very handy :</p>
 									data-filter-value="V2Button"
 								>
 									<span>V2Button</span>
+								</a>
+								<a
+									href="#v-2-tabs"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="V2Tabs"
+								>
+									<span>V2Tabs</span>
 								</a>
 						</div>
 			
@@ -18663,7 +19892,7 @@ it can be very handy :</p>
 			
 						<h5
 							class="pt-4 mb-1 theme-sidebar-category-title"
-							data-filter-value=" Checkbox  FormField  Input  Label  Radio  Select  TextArea  TextField  Toggle  V2Checkbox  V2Input  V2Label  V2Radio  V2Select "
+							data-filter-value=" Checkbox  Copyable  FormField  Input  Label  Radio  Select  TextArea  TextField  Toggle  V2Checkbox  V2Input  V2Label  V2Radio  V2Select "
 						>
 							<a href="#category-controls" class="i-sidebar-list-item">
 								<b>Controls</b>
@@ -18677,6 +19906,13 @@ it can be very handy :</p>
 									data-filter-value="Checkbox"
 								>
 									<span>Checkbox</span>
+								</a>
+								<a
+									href="#copyable"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Copyable"
+								>
+									<span>Copyable</span>
 								</a>
 								<a
 									href="#form-field"
