@@ -1630,7 +1630,7 @@ states.</p>
 		<span class="theme-content-element-source-label">Source:</span>
 		<span class="theme-content-element-source-path">components/Card/Card.md</span>
 	</span>
-	<div class="theme-content-element-description"><div id="description" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#description" class="icon-link i-section__link -heading"></a>Description</h2></div><p>You can use the <em>Card</em> component to wrap content inside a card-like block. This 
+	<div class="theme-content-element-description"><div id="description" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#description" class="icon-link i-section__link -heading"></a>Description</h2></div><p>You can use the <em>Card</em> component to wrap content inside a card-like block. This
 component occupies <code>olt-Card*</code> class names.</p>
 <p>The card can be a <code>div</code>, <code>button</code> or an <code>a</code> element, which makes it suitable
 for actions on click, hover, etc.</p>
@@ -1768,7 +1768,7 @@ for drop down menu or additional context actions.</p>
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 	</div>
-</div><h3>Card with <em>title</em>, <em>description</em>, <em>content</em> and <em>context icon</em></h3><p>Any <em>Card</em> can contain additional content inside <code>.olt-Card-content</code> if 
+</div><h3>Card with <em>title</em>, <em>description</em>, <em>content</em> and <em>context icon</em></h3><p>Any <em>Card</em> can contain additional content inside <code>.olt-Card-content</code> if
 provided.</p>
 <div class="i-example">
                     <h5 class="i-example__heading">
@@ -1882,7 +1882,7 @@ name.</p>
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 	</div>
-</div><div id="colors" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#colors" class="icon-link i-section__link -heading"></a>Colors</h2></div><p>The <em>Cards</em> can be rendered with 
+</div><div id="colors" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#colors" class="icon-link i-section__link -heading"></a>Colors</h2></div><p>The <em>Cards</em> can be rendered with
 <a href="/#concepts-colors">any of our conceptual colors</a> :</p>
 <div class="i-example">
                     <h5 class="i-example__heading">
@@ -2023,6 +2023,66 @@ add additional <code>:hover</code> and <code>:active</code> states to it.</p>
     Content
   &lt;/div&gt;
 &lt;/button&gt;</code></pre>
+	</div>
+</div><div id="edit-card" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#edit-card" class="icon-link i-section__link -heading"></a>Edit Card</h2></div><p>By adding <code>olt-Card--edit</code> you can make a card &quot;edit&quot;, which will
+add an additional edit button at the top right corner as well as <code>:hover</code> and <code>:active</code> states to it.</p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="card-edit.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="card-edit.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;olt-Card olt-Card--edit olt-ActionButton--proximity-area&quot;&gt;
+  &lt;div class=&quot;olt-Card-header&quot;&gt;
+    &lt;h4 class=&quot;olt-Card-title&quot;&gt;Title&lt;/h4&gt;
+    &lt;div class=&quot;olt-Card-description&quot;&gt;Description&lt;/div&gt;
+    &lt;div class=&quot;olt-Card-action&quot;&gt;
+      &lt;button class=&quot;olt-ActionButton olt-ActionButton-icon-right olt-Icon-action-edit&quot;&gt;
+        &lt;div class=&quot;olt-ActionButton-label&quot;&gt;Edit&lt;/div&gt;
+      &lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;olt-Card-content&quot;&gt;
+    Content
+  &lt;/div&gt;
+&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;olt-Card olt-Card--edit olt-ActionButton--proximity-area&quot;&gt;
+  &lt;div class=&quot;olt-Card-header&quot;&gt;
+    &lt;h4 class=&quot;olt-Card-title&quot;&gt;Title&lt;/h4&gt;
+    &lt;div class=&quot;olt-Card-description&quot;&gt;Description&lt;/div&gt;
+    &lt;div class=&quot;olt-Card-action&quot;&gt;
+      &lt;button class=&quot;olt-ActionButton olt-ActionButton-icon-right olt-Icon-action-edit&quot;&gt;
+        &lt;div class=&quot;olt-ActionButton-label&quot;&gt;Edit&lt;/div&gt;
+      &lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;olt-Card-content&quot;&gt;
+    Content
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
 	</div>
 </div></div>
 </div>
