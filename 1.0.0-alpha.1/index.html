@@ -46,6 +46,7 @@
 									<option value="tag">Tag</option>
 									<option value="tooltip">Tooltip</option>
 									<option value="v-2-button">V2Button</option>
+									<option value="v-2-modal">V2Modal</option>
 									<option value="v-2-tabs">V2Tabs</option>
 							</optgroup>
 							<optgroup label="Content">
@@ -7536,6 +7537,559 @@ elements and occupy the <code>olt-V2Button*</code> class names.</p>
 &lt;button class=&quot;olt-V2Button olt-V2Button--pagination-next&quot;&gt;next&lt;/button&gt;">Copy</button>
 		<pre class="mb-0"><code class="lang-">&lt;button class=&quot;olt-V2Button olt-V2Button--pagination-prev&quot;&gt;prev&lt;/button&gt;
 &lt;button class=&quot;olt-V2Button olt-V2Button--pagination-next&quot;&gt;next&lt;/button&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="v-2-modal" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">V2Modal</h1>
+	<span class="theme-content-element-source">
+		<span class="theme-content-element-source-label">Source:</span>
+		<span class="theme-content-element-source-path">components/V2Modal/V2Modal.md</span>
+	</span>
+	<div class="theme-content-element-description"><div id="description" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#description" class="icon-link i-section__link -heading"></a>Description</h2></div><p>V2Modals are used with <code>&lt;div&gt;</code> elements and render a popup.</p>
+<div class="olt-Card olt-u-padding5">
+  <div class="olt-u-marginAuto">
+    <input data-toggle="v2modal" id="demo-1" type="checkbox">
+    <label class="olt-V2Button" for="v-2-modal-demo-1">Open</label>
+    <div class="olt-V2Modal">
+      <div class="olt-V2Modal-dialog">
+        <header class="olt-V2Modal-header">
+          This is a modal
+        </header>
+        <div class="olt-V2Modal-content">
+          You should really check the configuration
+        </div>
+        <footer class="olt-V2Modal-footer">
+          <label class="olt-V2Button olt-V2Button--tertiary" for="v-2-modal-demo-1">Cancel</label>
+          <label class="olt-V2Button" for="v-2-modal-demo-1">Ok</label>
+        </footer>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang "> html</button>
+	<div class="i-code-block__content ">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;input data-toggle=&quot;v2modal&quot; id=&quot;v2modal-toggle-1&quot; type=&quot;checkbox&quot;&gt;
+&lt;label class=&quot;olt-V2Button&quot; for=&quot;v-2-modal-toggle-1&quot;&gt;Open&lt;/label&gt;
+&lt;div class=&quot;olt-V2Modal&quot;&gt;
+  &lt;div class=&quot;olt-V2Modal-dialog&quot;&gt;
+    &lt;header class=&quot;olt-V2Modal-header&quot;&gt;
+      This is a modal
+    &lt;/header&gt;
+    &lt;div class=&quot;olt-V2Modal-content&quot;&gt;
+      You should really check the configuration
+    &lt;/div&gt;
+    &lt;footer class=&quot;olt-V2Modal-footer&quot;&gt;
+          &lt;label class=&quot;olt-V2Button olt-V2Button--tertiary&quot; for=&quot;v-2-modal-demo-1&quot;&gt;Cancel&lt;/label&gt;
+      &lt;label class=&quot;olt-V2Button&quot; for=&quot;v-2-modal-toggle-1&quot;&gt;Ok&lt;/label&gt;
+    &lt;/footer&gt;
+  &lt;/div&gt;
+&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;input data-toggle=&quot;v2modal&quot; id=&quot;v2modal-toggle-1&quot; type=&quot;checkbox&quot;&gt;
+&lt;label class=&quot;olt-V2Button&quot; for=&quot;v-2-modal-toggle-1&quot;&gt;Open&lt;/label&gt;
+&lt;div class=&quot;olt-V2Modal&quot;&gt;
+  &lt;div class=&quot;olt-V2Modal-dialog&quot;&gt;
+    &lt;header class=&quot;olt-V2Modal-header&quot;&gt;
+      This is a modal
+    &lt;/header&gt;
+    &lt;div class=&quot;olt-V2Modal-content&quot;&gt;
+      You should really check the configuration
+    &lt;/div&gt;
+    &lt;footer class=&quot;olt-V2Modal-footer&quot;&gt;
+          &lt;label class=&quot;olt-V2Button olt-V2Button--tertiary&quot; for=&quot;v-2-modal-demo-1&quot;&gt;Cancel&lt;/label&gt;
+      &lt;label class=&quot;olt-V2Button&quot; for=&quot;v-2-modal-toggle-1&quot;&gt;Ok&lt;/label&gt;
+    &lt;/footer&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+	</div>
+</div><div id="context-variations" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#context-variations" class="icon-link i-section__link -heading"></a>Context variations</h2></div><p>The <em>V2Modal</em> can be rendered with different variations based on the context.</p>
+<p>We support the following modifiers :</p>
+<ul>
+<li><code>olt-V2Modal--error</code></li>
+<li><code>olt-V2Modal--warning</code></li>
+<li><code>olt-V2Modal--info</code></li>
+<li><code>olt-V2Modal--success</code></li>
+<li><code>olt-V2Modal--action</code></li>
+</ul>
+<h3>Critical modal</h3><p>Use the critical <em>V2Modal</em> whenever you want to communicate an critical or error state to the
+user. Especially when proceeding will likely lead to an undesired outcome for the user that he is probably not aware of. E.g.: Deleting a role will lead to users being deleted from the tenant because they have no role afterward.</p>
+<div class="olt-Card olt-u-padding5">
+  <div class="olt-u-marginAuto">
+    <input data-toggle="v2modal" id="demo-2" type="checkbox">
+    <label class="olt-V2Button" for="v-2-modal-demo-2">Open</label>
+    <div class="olt-V2Modal olt-V2Modal--critical">
+      <div class="olt-V2Modal-dialog">
+        <header class="olt-V2Modal-header">
+          Oh no! This is critical!
+        </header>
+        <div class="olt-V2Modal-content">
+          <p>You should really check the configuration</p>
+        </div>
+        <div class="olt-V2Modal-footer">
+          <label class="olt-V2Button olt-V2Button--destructive" for="v-2-modal-demo-2">Yes, show me</label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang "> html</button>
+	<div class="i-code-block__content ">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;input data-toggle=&quot;v2modal&quot; id=&quot;v2modal-toggle-2&quot; type=&quot;checkbox&quot;&gt;
+&lt;label class=&quot;olt-V2Button&quot; for=&quot;v-2-modal-toggle-2&quot;&gt;Open&lt;/label&gt;
+&lt;div class=&quot;olt-V2Modal olt-V2Modal--critical&quot;&gt;
+  &lt;div class=&quot;olt-V2Modal-dialog&quot;&gt;
+    &lt;header class=&quot;olt-V2Modal-header&quot;&gt;
+      Oh no! This is critical!
+    &lt;/header&gt;
+    &lt;div class=&quot;olt-V2Modal-content&quot;&gt;
+      &lt;p&gt;You should really check the configuration&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;olt-V2Modal-footer&quot;&gt;
+      &lt;label class=&quot;olt-V2Button olt-V2Button--destructive&quot; for=&quot;v-2-modal-toggle-2&quot;&gt;Yes, show me&lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;input data-toggle=&quot;v2modal&quot; id=&quot;v2modal-toggle-2&quot; type=&quot;checkbox&quot;&gt;
+&lt;label class=&quot;olt-V2Button&quot; for=&quot;v-2-modal-toggle-2&quot;&gt;Open&lt;/label&gt;
+&lt;div class=&quot;olt-V2Modal olt-V2Modal--critical&quot;&gt;
+  &lt;div class=&quot;olt-V2Modal-dialog&quot;&gt;
+    &lt;header class=&quot;olt-V2Modal-header&quot;&gt;
+      Oh no! This is critical!
+    &lt;/header&gt;
+    &lt;div class=&quot;olt-V2Modal-content&quot;&gt;
+      &lt;p&gt;You should really check the configuration&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;olt-V2Modal-footer&quot;&gt;
+      &lt;label class=&quot;olt-V2Button olt-V2Button--destructive&quot; for=&quot;v-2-modal-toggle-2&quot;&gt;Yes, show me&lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+	</div>
+</div><h3>Warning modal</h3><p>The warning <em>V2Modal</em> is used when needing to show information critical in preventing errors.
+e.g.: 15 of your devices have not responded, check your device management.</p>
+<div class="olt-Card olt-u-padding5">
+  <div class="olt-u-marginAuto">
+    <input data-toggle="v2modal" id="demo-3" type="checkbox">
+    <label class="olt-V2Button" for="v-2-modal-demo-3">Open</label>
+    <div class="olt-V2Modal olt-V2Modal--warning">
+      <div class="olt-V2Modal-dialog">
+        <div class="olt-V2Modal-header">
+          Attention! Here&#39;s a warning for you
+        </div>
+        <div class="olt-V2Modal-content">
+          <p>We detected a problem in your configuration</p>
+        </div>
+        <div class="olt-V2Modal-footer">
+          <label class="olt-V2Button olt-V2Button--warning" for="v-2-modal-demo-3">Ok, show me</label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang "> html</button>
+	<div class="i-code-block__content ">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;input data-toggle=&quot;v2modal&quot; id=&quot;v2modal-toggle-3&quot; type=&quot;checkbox&quot;&gt;
+&lt;label class=&quot;olt-V2Button&quot; for=&quot;v-2-modal-toggle-3&quot;&gt;Open&lt;/label&gt;
+&lt;div class=&quot;olt-V2Modal olt-V2Modal--warning&quot;&gt;
+  &lt;div class=&quot;olt-V2Modal-dialog&quot;&gt;
+    &lt;div class=&quot;olt-V2Modal-header&quot;&gt;
+      Attention! Here&#39;s a warning for you
+    &lt;/div&gt;
+    &lt;div class=&quot;olt-V2Modal-content&quot;&gt;
+      &lt;p&gt;We detected a problem in your configuration&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;olt-V2Modal-footer&quot;&gt;
+      &lt;label class=&quot;olt-V2Button olt-V2Button--warning&quot; for=&quot;v-2-modal-toggle-3&quot;&gt;Ok, show me&lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;input data-toggle=&quot;v2modal&quot; id=&quot;v2modal-toggle-3&quot; type=&quot;checkbox&quot;&gt;
+&lt;label class=&quot;olt-V2Button&quot; for=&quot;v-2-modal-toggle-3&quot;&gt;Open&lt;/label&gt;
+&lt;div class=&quot;olt-V2Modal olt-V2Modal--warning&quot;&gt;
+  &lt;div class=&quot;olt-V2Modal-dialog&quot;&gt;
+    &lt;div class=&quot;olt-V2Modal-header&quot;&gt;
+      Attention! Here&#39;s a warning for you
+    &lt;/div&gt;
+    &lt;div class=&quot;olt-V2Modal-content&quot;&gt;
+      &lt;p&gt;We detected a problem in your configuration&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;olt-V2Modal-footer&quot;&gt;
+      &lt;label class=&quot;olt-V2Button olt-V2Button--warning&quot; for=&quot;v-2-modal-toggle-3&quot;&gt;Ok, show me&lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+	</div>
+</div><h3>Info modal</h3><p>The info <em>V2Modal</em> can be used whenever an additional non-critical information
+should be provided to the user. The info will not have negative results no matter the users choice.
+e.g.: You have been invited to a tenant, accept or decline.</p>
+<div class="olt-Card olt-u-padding5">
+  <div class="olt-u-marginAuto">
+    <input data-toggle="v2modal" id="demo-4" type="checkbox">
+    <label class="olt-V2Button" for="v-2-modal-demo-4">Open</label>
+    <div class="olt-V2Modal olt-V2Modal--info">
+      <div class="olt-V2Modal-dialog">
+        <div class="olt-V2Modal-header">
+          Oh! Here&#39;s some info for you
+        </div>
+        <div class="olt-V2Modal-content">
+          <p>You should really check the configuration</p>
+        </div>
+        <div class="olt-V2Modal-footer">
+          <label class="olt-V2Button" for="v-2-modal-demo-4">Yes, show me</label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang "> html</button>
+	<div class="i-code-block__content ">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;input data-toggle=&quot;v2modal&quot; id=&quot;v2modal-toggle-4&quot; type=&quot;checkbox&quot;&gt;
+&lt;label class=&quot;olt-V2Button&quot; for=&quot;v-2-modal-toggle-4&quot;&gt;Open&lt;/label&gt;
+&lt;div class=&quot;olt-V2Modal olt-V2Modal--info&quot;&gt;
+  &lt;div class=&quot;olt-V2Modal-dialog&quot;&gt;
+    &lt;div class=&quot;olt-V2Modal-header&quot;&gt;
+      Oh! Here&#39;s some info for you
+    &lt;/div&gt;
+    &lt;div class=&quot;olt-V2Modal-content&quot;&gt;
+      &lt;p&gt;You should really check the configuration&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;olt-V2Modal-footer&quot;&gt;
+      &lt;label class=&quot;olt-V2Button&quot; for=&quot;v-2-modal-toggle-4&quot;&gt;Yes, show me&lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;input data-toggle=&quot;v2modal&quot; id=&quot;v2modal-toggle-4&quot; type=&quot;checkbox&quot;&gt;
+&lt;label class=&quot;olt-V2Button&quot; for=&quot;v-2-modal-toggle-4&quot;&gt;Open&lt;/label&gt;
+&lt;div class=&quot;olt-V2Modal olt-V2Modal--info&quot;&gt;
+  &lt;div class=&quot;olt-V2Modal-dialog&quot;&gt;
+    &lt;div class=&quot;olt-V2Modal-header&quot;&gt;
+      Oh! Here&#39;s some info for you
+    &lt;/div&gt;
+    &lt;div class=&quot;olt-V2Modal-content&quot;&gt;
+      &lt;p&gt;You should really check the configuration&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;olt-V2Modal-footer&quot;&gt;
+      &lt;label class=&quot;olt-V2Button&quot; for=&quot;v-2-modal-toggle-4&quot;&gt;Yes, show me&lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+	</div>
+</div><h3>Success modal</h3><p>Use the success <em>V2Modal</em> to communicate a success message the user has to be made aware of.</p>
+<div class="olt-Card olt-u-padding5">
+  <div class="olt-u-marginAuto">
+    <input data-toggle="v2modal" id="demo-5" type="checkbox">
+    <label class="olt-V2Button" for="v-2-modal-demo-5">Open</label>
+    <div class="olt-V2Modal olt-V2Modal--success">
+      <div class="olt-V2Modal-dialog">
+        <header class="olt-V2Modal-header">
+          Oh yes! Success!
+        </header>
+        <div class="olt-V2Modal-content">
+          <p>Your configuration was approved</p>
+        </div>
+        <div class="olt-V2Modal-footer">
+          <label class="olt-V2Button olt-V2Button--confirmative" for="v-2-modal-demo-5">Yes, show me</label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang "> html</button>
+	<div class="i-code-block__content ">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;input data-toggle=&quot;v2modal&quot; id=&quot;v2modal-toggle-5&quot; type=&quot;checkbox&quot;&gt;
+&lt;label class=&quot;olt-V2Button&quot; for=&quot;v-2-modal-toggle-5&quot;&gt;Open&lt;/label&gt;
+&lt;div class=&quot;olt-V2Modal olt-V2Modal--success&quot;&gt;
+  &lt;div class=&quot;olt-V2Modal-dialog&quot;&gt;
+    &lt;header class=&quot;olt-V2Modal-header&quot;&gt;
+      Oh yes! Success!
+    &lt;/header&gt;
+    &lt;div class=&quot;olt-V2Modal-content&quot;&gt;
+      &lt;p&gt;Your configuration was approved.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;olt-V2Modal-footer&quot;&gt;
+      &lt;label class=&quot;olt-V2Button olt-V2Button--confirmative&quot; for=&quot;v-2-modal-toggle-6&quot;&gt;Yes, show me&lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;input data-toggle=&quot;v2modal&quot; id=&quot;v2modal-toggle-5&quot; type=&quot;checkbox&quot;&gt;
+&lt;label class=&quot;olt-V2Button&quot; for=&quot;v-2-modal-toggle-5&quot;&gt;Open&lt;/label&gt;
+&lt;div class=&quot;olt-V2Modal olt-V2Modal--success&quot;&gt;
+  &lt;div class=&quot;olt-V2Modal-dialog&quot;&gt;
+    &lt;header class=&quot;olt-V2Modal-header&quot;&gt;
+      Oh yes! Success!
+    &lt;/header&gt;
+    &lt;div class=&quot;olt-V2Modal-content&quot;&gt;
+      &lt;p&gt;Your configuration was approved.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;olt-V2Modal-footer&quot;&gt;
+      &lt;label class=&quot;olt-V2Button olt-V2Button--confirmative&quot; for=&quot;v-2-modal-toggle-6&quot;&gt;Yes, show me&lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+	</div>
+</div><h3>Action modal</h3><p>Use the action <em>V2Modal</em> for changes that demand active user input.
+e.g.: Edit the description of a tenant.</p>
+<div class="olt-Card olt-u-padding5">
+  <div class="olt-u-marginAuto">
+    <input data-toggle="v2modal" id="demo-6" type="checkbox">
+    <label class="olt-V2Button" for="v-2-modal-demo-6">Open</label>
+    <div class="olt-V2Modal olt-V2Modal--action">
+      <div class="olt-V2Modal-dialog">
+        <header class="olt-V2Modal-header">
+          Action!!
+        </header>
+        <div class="olt-V2Modal-content">
+          <p>Start acting now!</p>
+        </div>
+        <div class="olt-V2Modal-footer">
+          <label class="olt-V2Button olt-V2Button--success" for="v-2-modal-demo-6">Action</label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang "> html</button>
+	<div class="i-code-block__content ">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;input data-toggle=&quot;v2modal&quot; id=&quot;v2modal-toggle-6&quot; type=&quot;checkbox&quot;&gt;
+&lt;label class=&quot;olt-V2Button&quot; for=&quot;v-2-modal-toggle-6&quot;&gt;Open&lt;/label&gt;
+&lt;div class=&quot;olt-V2Modal olt-V2Modal--action&quot;&gt;
+  &lt;div class=&quot;olt-V2Modal-dialog&quot;&gt;
+    &lt;header class=&quot;olt-V2Modal-header&quot;&gt;
+       Action!!
+    &lt;/header&gt;
+    &lt;div class=&quot;olt-V2Modal-content&quot;&gt;
+      &lt;p&gt;Start acting now!&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;olt-V2Modal-footer&quot;&gt;
+      &lt;label class=&quot;olt-V2Button olt-V2Button--success&quot; for=&quot;v-2-modal-toggle-5&quot;&gt;Action&lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;input data-toggle=&quot;v2modal&quot; id=&quot;v2modal-toggle-6&quot; type=&quot;checkbox&quot;&gt;
+&lt;label class=&quot;olt-V2Button&quot; for=&quot;v-2-modal-toggle-6&quot;&gt;Open&lt;/label&gt;
+&lt;div class=&quot;olt-V2Modal olt-V2Modal--action&quot;&gt;
+  &lt;div class=&quot;olt-V2Modal-dialog&quot;&gt;
+    &lt;header class=&quot;olt-V2Modal-header&quot;&gt;
+       Action!!
+    &lt;/header&gt;
+    &lt;div class=&quot;olt-V2Modal-content&quot;&gt;
+      &lt;p&gt;Start acting now!&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;olt-V2Modal-footer&quot;&gt;
+      &lt;label class=&quot;olt-V2Button olt-V2Button--success&quot; for=&quot;v-2-modal-toggle-5&quot;&gt;Action&lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+	</div>
+</div><div id="custom-header-modals" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#custom-header-modals" class="icon-link i-section__link -heading"></a>Custom Header Modals</h2></div><p>In rare occasions the icon and background color of the header can be individually changed. If you use the <code>--custom</code> modifier with the <code>olt-V2Modal-header</code> element, you <strong>have to</strong> provide an icon as in the examples below. <em>Use with care!</em></p>
+<div class="olt-Card olt-u-padding5">
+  <div class="olt-u-marginAuto">
+    <input data-toggle="v2modal" id="demo-7" type="checkbox">
+    <label class="olt-V2Button" for="v-2-modal-demo-7">Open</label>
+    <div class="olt-V2Modal">
+      <div class="olt-V2Modal-dialog">
+    <header class="olt-V2Modal-header olt-V2Modal-header--custom olt-u-backgroundColorGray500">
+          <i class="olt-Icon olt-Icon-security-visibility"></i>
+          Oh yes! Success!
+        </header>
+        <div class="olt-V2Modal-content">
+          <p>Your configuration was approved</p>
+        </div>
+        <div class="olt-V2Modal-footer">
+          <label class="olt-V2Button olt-V2Button--success" for="v-2-modal-demo-7">Yes, show me</label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang "> html</button>
+	<div class="i-code-block__content ">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;input data-toggle=&quot;v2modal&quot; id=&quot;v2modal-toggle-7&quot; type=&quot;checkbox&quot;&gt;
+&lt;label class=&quot;olt-V2Button&quot; for=&quot;v-2-modal-toggle-7&quot;&gt;Open&lt;/label&gt;
+&lt;div class=&quot;olt-V2Modal olt-V2Modal--action&quot;&gt;
+  &lt;div class=&quot;olt-V2Modal-dialog&quot;&gt;
+    &lt;header class=&quot;olt-V2Modal-header olt-V2Modal-header--custom olt-u-backgroundColorGray500&quot;&gt;
+      &lt;i class=&quot;olt-Icon olt-Icon-security-visibility&quot;&gt;&lt;/i&gt;
+        Oh yes! Success!
+    &lt;/header&gt;
+    &lt;div class=&quot;olt-V2Modal-content&quot;&gt;
+      &lt;p&gt;Your configuration was approved&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;olt-V2Modal-footer&quot;&gt;
+      &lt;label class=&quot;olt-V2Button olt-V2Button--success&quot; for=&quot;v-2-modal-toggle-7&quot;&gt;Yes, show me&lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;input data-toggle=&quot;v2modal&quot; id=&quot;v2modal-toggle-7&quot; type=&quot;checkbox&quot;&gt;
+&lt;label class=&quot;olt-V2Button&quot; for=&quot;v-2-modal-toggle-7&quot;&gt;Open&lt;/label&gt;
+&lt;div class=&quot;olt-V2Modal olt-V2Modal--action&quot;&gt;
+  &lt;div class=&quot;olt-V2Modal-dialog&quot;&gt;
+    &lt;header class=&quot;olt-V2Modal-header olt-V2Modal-header--custom olt-u-backgroundColorGray500&quot;&gt;
+      &lt;i class=&quot;olt-Icon olt-Icon-security-visibility&quot;&gt;&lt;/i&gt;
+        Oh yes! Success!
+    &lt;/header&gt;
+    &lt;div class=&quot;olt-V2Modal-content&quot;&gt;
+      &lt;p&gt;Your configuration was approved&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;olt-V2Modal-footer&quot;&gt;
+      &lt;label class=&quot;olt-V2Button olt-V2Button--success&quot; for=&quot;v-2-modal-toggle-7&quot;&gt;Yes, show me&lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+	</div>
+</div><h3>Custom Header Icons</h3><p>The icon can be changed while keeping the remaining styles. <em>Also use with care!</em></p>
+<div class="olt-Card olt-u-padding5">
+  <div class="olt-u-marginAuto">
+    <input data-toggle="v2modal" id="demo-8" type="checkbox">
+    <label class="olt-V2Button" for="v-2-modal-demo-8">Open</label>
+    <div class="olt-V2Modal olt-V2Modal--action">
+      <div class="olt-V2Modal-dialog">
+        <header class="olt-V2Modal-header olt-V2Modal-header--custom">
+          <i class="olt-Icon olt-Icon-security-visibility"></i>
+          Action!
+        </header>
+        <div class="olt-V2Modal-content">
+          <p>... but watch out!</p>
+        </div>
+        <div class="olt-V2Modal-footer">
+          <label class="olt-V2Button olt-V2Button--action" for="v-2-modal-demo-8">I&#39;ll be careful</label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang "> html</button>
+	<div class="i-code-block__content ">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;input data-toggle=&quot;v2modal&quot; id=&quot;v2modal-toggle-8&quot; type=&quot;checkbox&quot;&gt;
+&lt;label class=&quot;olt-V2Button&quot; for=&quot;v-2-modal-toggle-8&quot;&gt;Open&lt;/label&gt;
+&lt;div class=&quot;olt-V2Modal olt-V2Modal--action&quot;&gt;
+  &lt;div class=&quot;olt-V2Modal-dialog&quot;&gt;
+    &lt;header class=&quot;olt-V2Modal-header olt-V2Modal-header--custom&quot;&gt;
+      &lt;i class=&quot;olt-Icon olt-Icon-security-visibility&quot;&gt;&lt;/i&gt;
+        Action!
+    &lt;/header&gt;
+    &lt;div class=&quot;olt-V2Modal-content&quot;&gt;
+      &lt;p&gt;... but watch out!&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;olt-V2Modal-footer&quot;&gt;
+      &lt;label class=&quot;olt-V2Button olt-V2Button--action&quot; for=&quot;v-2-modal-demo-8&quot;&gt;I&#39;ll be careful&lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;input data-toggle=&quot;v2modal&quot; id=&quot;v2modal-toggle-8&quot; type=&quot;checkbox&quot;&gt;
+&lt;label class=&quot;olt-V2Button&quot; for=&quot;v-2-modal-toggle-8&quot;&gt;Open&lt;/label&gt;
+&lt;div class=&quot;olt-V2Modal olt-V2Modal--action&quot;&gt;
+  &lt;div class=&quot;olt-V2Modal-dialog&quot;&gt;
+    &lt;header class=&quot;olt-V2Modal-header olt-V2Modal-header--custom&quot;&gt;
+      &lt;i class=&quot;olt-Icon olt-Icon-security-visibility&quot;&gt;&lt;/i&gt;
+        Action!
+    &lt;/header&gt;
+    &lt;div class=&quot;olt-V2Modal-content&quot;&gt;
+      &lt;p&gt;... but watch out!&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;olt-V2Modal-footer&quot;&gt;
+      &lt;label class=&quot;olt-V2Button olt-V2Button--action&quot; for=&quot;v-2-modal-demo-8&quot;&gt;I&#39;ll be careful&lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+	</div>
+</div><div id="wide-modals" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#wide-modals" class="icon-link i-section__link -heading"></a>Wide Modals</h2></div><p>There is an additional wide <em>V2Modal</em> which takes more space when rendered.</p>
+<div class="olt-Card olt-u-padding5">
+  <div class="olt-u-marginAuto">
+    <input data-toggle="v2modal" id="demo-9" type="checkbox">
+    <label class="olt-V2Button" for="v-2-modal-demo-9">Open</label>
+    <div class="olt-V2Modal olt-V2Modal--wide">
+      <div class="olt-V2Modal-dialog">
+        <header class="olt-V2Modal-header">
+          This is a wide modal
+        </header>
+        <div class="olt-V2Modal-content">
+            <p>This is wide modal, it can accommodate more content than the smaller modal.</p>
+            <p>You can add more complex content like forms, etc.</p>
+            <p>It will scroll the content if needed.</p>
+            <p>It will also not shrink on mobile devices.</p>
+            <p><br/><br/></p>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        </div>
+        <footer class="olt-V2Modal-footer">
+          <label class="olt-V2Button olt-V2Button--tertiary" for="v-2-modal-demo-9">Cancel</label>
+          <label class="olt-V2Button" for="v-2-modal-demo-9">Ok</label>
+        </footer>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang "> html</button>
+	<div class="i-code-block__content ">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;input data-toggle=&quot;v2modal&quot; id=&quot;v2modal-toggle-9&quot; type=&quot;checkbox&quot;&gt;
+&lt;label class=&quot;olt-V2Button&quot; for=&quot;v-2-modal-toggle-9&quot;&gt;Open&lt;/label&gt;
+&lt;div class=&quot;olt-V2Modal olt-V2Modal--wide&quot;&gt;
+  &lt;div class=&quot;olt-V2Modal-dialog&quot;&gt;
+    &lt;header class=&quot;olt-V2Modal-header&quot;&gt;
+      This is a wide modal
+    &lt;/header&gt;
+    &lt;div class=&quot;olt-V2Modal-content&quot;&gt;
+      &lt;p&gt;This is wide modal, it can accommodate more content than the smaller modal.&lt;/p&gt;
+      &lt;p&gt;You can add more complex content like forms, etc.&lt;/p&gt;
+      &lt;p&gt;It will also not shrink on mobile devices.&lt;/p&gt;
+      &lt;p&gt;Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;footer class=&quot;olt-V2Modal-footer&quot;&gt;
+          &lt;label class=&quot;olt-V2Button olt-V2Button--tertiary&quot; for=&quot;v-2-modal-demo-9&quot;&gt;Cancel&lt;/label&gt;
+      &lt;label class=&quot;olt-V2Button&quot; for=&quot;v-2-modal-toggle-9&quot;&gt;Ok&lt;/label&gt;
+    &lt;/footer&gt;
+  &lt;/div&gt;
+&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;input data-toggle=&quot;v2modal&quot; id=&quot;v2modal-toggle-9&quot; type=&quot;checkbox&quot;&gt;
+&lt;label class=&quot;olt-V2Button&quot; for=&quot;v-2-modal-toggle-9&quot;&gt;Open&lt;/label&gt;
+&lt;div class=&quot;olt-V2Modal olt-V2Modal--wide&quot;&gt;
+  &lt;div class=&quot;olt-V2Modal-dialog&quot;&gt;
+    &lt;header class=&quot;olt-V2Modal-header&quot;&gt;
+      This is a wide modal
+    &lt;/header&gt;
+    &lt;div class=&quot;olt-V2Modal-content&quot;&gt;
+      &lt;p&gt;This is wide modal, it can accommodate more content than the smaller modal.&lt;/p&gt;
+      &lt;p&gt;You can add more complex content like forms, etc.&lt;/p&gt;
+      &lt;p&gt;It will also not shrink on mobile devices.&lt;/p&gt;
+      &lt;p&gt;Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;footer class=&quot;olt-V2Modal-footer&quot;&gt;
+          &lt;label class=&quot;olt-V2Button olt-V2Button--tertiary&quot; for=&quot;v-2-modal-demo-9&quot;&gt;Cancel&lt;/label&gt;
+      &lt;label class=&quot;olt-V2Button&quot; for=&quot;v-2-modal-toggle-9&quot;&gt;Ok&lt;/label&gt;
+    &lt;/footer&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
 	</div>
 </div></div>
 </div>
@@ -19505,7 +20059,7 @@ it can be very handy :</p>
 			
 						<h5
 							class="pt-4 mb-1 theme-sidebar-category-title"
-							data-filter-value=" Avatar  Button  Card  Chip  Dropdown  Icon  Menu  Modal  Navbar  Notification  Snackbar  Spinner  Stepper  Tabs  Tag  Tooltip  V2Button  V2Tabs "
+							data-filter-value=" Avatar  Button  Card  Chip  Dropdown  Icon  Menu  Modal  Navbar  Notification  Snackbar  Spinner  Stepper  Tabs  Tag  Tooltip  V2Button  V2Modal  V2Tabs "
 						>
 							<a href="#category-component" class="i-sidebar-list-item">
 								<b>Component</b>
@@ -19631,6 +20185,13 @@ it can be very handy :</p>
 									data-filter-value="V2Button"
 								>
 									<span>V2Button</span>
+								</a>
+								<a
+									href="#v-2-modal"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="V2Modal"
+								>
+									<span>V2Modal</span>
 								</a>
 								<a
 									href="#v-2-tabs"
