@@ -34,6 +34,7 @@
 									<option value="button">Button</option>
 									<option value="card">Card</option>
 									<option value="chip">Chip</option>
+									<option value="dialog">Dialog</option>
 									<option value="dropdown">Dropdown</option>
 									<option value="icon">Icon</option>
 									<option value="menu">Menu</option>
@@ -1021,25 +1022,120 @@ you will need to transpile your css for getting it to work, e.g. using
 <div class="i-code-block">
 	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
 	<div class="i-code-block__content hidden">
-		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;olt-ActionButton--proximity-area&quot; style=&quot;padding: 20px&quot;&gt;
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;olt-ActionButton--proximity-area&quot; style=&quot;padding: 20px; border: 1px dotted lightgrey&quot;&gt;
 &lt;button class=&quot;olt-ActionButton olt-ActionButton--primary olt-ActionButton-icon-left olt-Icon-action-edit&quot;&gt;
   &lt;div class=&quot;olt-ActionButton-label&quot;&gt;Edit&lt;/div&gt;
 &lt;/button&gt;
 &lt;/div&gt;
-&lt;div class=&quot;olt-ActionButton--proximity-area&quot; style=&quot;padding: 20px&quot;&gt;
+&lt;div class=&quot;olt-ActionButton--proximity-area&quot; style=&quot;padding: 20px; border: 1px dotted lightgrey&quot;&gt;
 &lt;button class=&quot;olt-ActionButton olt-ActionButton--fixed olt-ActionButton--primary olt-ActionButton-icon-left olt-Icon-action-edit&quot;&gt;
   &lt;div class=&quot;olt-ActionButton-label&quot;&gt;Edit (fixed label)&lt;/div&gt;
 &lt;/button&gt;
 &lt;/div&gt;">Copy</button>
-		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;olt-ActionButton--proximity-area&quot; style=&quot;padding: 20px&quot;&gt;
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;olt-ActionButton--proximity-area&quot; style=&quot;padding: 20px; border: 1px dotted lightgrey&quot;&gt;
 &lt;button class=&quot;olt-ActionButton olt-ActionButton--primary olt-ActionButton-icon-left olt-Icon-action-edit&quot;&gt;
   &lt;div class=&quot;olt-ActionButton-label&quot;&gt;Edit&lt;/div&gt;
 &lt;/button&gt;
 &lt;/div&gt;
-&lt;div class=&quot;olt-ActionButton--proximity-area&quot; style=&quot;padding: 20px&quot;&gt;
+&lt;div class=&quot;olt-ActionButton--proximity-area&quot; style=&quot;padding: 20px; border: 1px dotted lightgrey&quot;&gt;
 &lt;button class=&quot;olt-ActionButton olt-ActionButton--fixed olt-ActionButton--primary olt-ActionButton-icon-left olt-Icon-action-edit&quot;&gt;
   &lt;div class=&quot;olt-ActionButton-label&quot;&gt;Edit (fixed label)&lt;/div&gt;
 &lt;/button&gt;
+&lt;/div&gt;</code></pre>
+	</div>
+</div><div id="disabled" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#disabled" class="icon-link i-section__link -heading"></a>Disabled</h2></div><p>The button can be disabled using the <code>--disabled</code> modifier. This overrides any colors being set through other modifiers.</p>
+<div class="i-example">
+                    <h5 class="i-example__heading">
+                        <a
+                            href="action-button-disabled.html"
+                            target="_blank"
+                            class="plain-link"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            title="Open in a new window"
+                        >
+                            <i class="fa fa-external-link-square fa-fw"></i>
+                            Example
+                        </a>
+                    </h5>
+                    <div class="i-example__body">
+                        <div
+                            class="i-example__iframe"
+                            lazyframe
+                            data-src="action-button-disabled.html"
+                            data-initinview="true"
+                            data-title="Loading..." 
+                        ></div>
+                    </div>
+                </div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang -collapsible"><i class="fa fa-caret-right fa-fw"></i> html</button>
+	<div class="i-code-block__content hidden">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;div class=&quot;demo-content&quot;&gt;
+  &lt;button
+    class=&quot;olt-ActionButton olt-ActionButton-icon-left olt-Icon-action-edit olt-ActionButton--disabled&quot;&gt;
+      &lt;div class=&quot;olt-ActionButton-label&quot;&gt;
+        Label
+      &lt;/div&gt;
+    &lt;/button&gt;
+&lt;/div&gt;
+&lt;div class=&quot;demo-content&quot;&gt;
+  &lt;button
+    class=&quot;olt-ActionButton olt-ActionButton--fixed olt-ActionButton-icon-left olt-Icon-action-edit olt-ActionButton--disabled&quot;&gt;
+      &lt;div class=&quot;olt-ActionButton-label&quot;&gt;
+        Label
+      &lt;/div&gt;
+    &lt;/button&gt;
+&lt;/div&gt;
+&lt;div class=&quot;demo-content&quot;&gt;
+  &lt;button
+    class=&quot;olt-ActionButton olt-ActionButton-icon-left olt-Icon-action-edit olt-ActionButton--disabled olt-ActionButton--base&quot;&gt;
+      &lt;div class=&quot;olt-ActionButton-label&quot;&gt;
+        Label
+      &lt;/div&gt;
+    &lt;/button&gt;
+&lt;/div&gt;
+&lt;div class=&quot;demo-content&quot;&gt;
+  &lt;button
+    class=&quot;olt-ActionButton olt-ActionButton-icon-left olt-Icon-action-edit olt-ActionButton--disabled olt-ActionButton--standalone olt-ActionButton--base&quot;&gt;
+      &lt;div class=&quot;olt-ActionButton-label&quot;&gt;
+        Label
+      &lt;/div&gt;
+    &lt;/button&gt;
+&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;div class=&quot;demo-content&quot;&gt;
+  &lt;button
+    class=&quot;olt-ActionButton olt-ActionButton-icon-left olt-Icon-action-edit olt-ActionButton--disabled&quot;&gt;
+      &lt;div class=&quot;olt-ActionButton-label&quot;&gt;
+        Label
+      &lt;/div&gt;
+    &lt;/button&gt;
+&lt;/div&gt;
+&lt;div class=&quot;demo-content&quot;&gt;
+  &lt;button
+    class=&quot;olt-ActionButton olt-ActionButton--fixed olt-ActionButton-icon-left olt-Icon-action-edit olt-ActionButton--disabled&quot;&gt;
+      &lt;div class=&quot;olt-ActionButton-label&quot;&gt;
+        Label
+      &lt;/div&gt;
+    &lt;/button&gt;
+&lt;/div&gt;
+&lt;div class=&quot;demo-content&quot;&gt;
+  &lt;button
+    class=&quot;olt-ActionButton olt-ActionButton-icon-left olt-Icon-action-edit olt-ActionButton--disabled olt-ActionButton--base&quot;&gt;
+      &lt;div class=&quot;olt-ActionButton-label&quot;&gt;
+        Label
+      &lt;/div&gt;
+    &lt;/button&gt;
+&lt;/div&gt;
+&lt;div class=&quot;demo-content&quot;&gt;
+  &lt;button
+    class=&quot;olt-ActionButton olt-ActionButton-icon-left olt-Icon-action-edit olt-ActionButton--disabled olt-ActionButton--standalone olt-ActionButton--base&quot;&gt;
+      &lt;div class=&quot;olt-ActionButton-label&quot;&gt;
+        Label
+      &lt;/div&gt;
+    &lt;/button&gt;
 &lt;/div&gt;</code></pre>
 	</div>
 </div></div>
@@ -2978,6 +3074,99 @@ bubble&#39;s element. They only work with the default <em>Chip</em>.</p>
   Error with icon
   &lt;span class=&quot;olt-Chip-bubble olt-Chip-bubble--error olt-Chip-bubble-icon olt-Icon-action-add-default olt-Icon--small&quot;&gt;&lt;/span&gt;
 &lt;/span&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="dialog" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">Dialog</h1>
+	<span class="theme-content-element-source">
+		<span class="theme-content-element-source-label">Source:</span>
+		<span class="theme-content-element-source-path">components/Dialog/Dialog.md</span>
+	</span>
+	<div class="theme-content-element-description"><div id="description" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#description" class="icon-link i-section__link -heading"></a>Description</h2></div><p><em>Dialog</em> occupies <code>olt-Dialog*</code> class names. It provides a modal dialog to show any kind of content and is also utilized for dynamic lists and steppers.</p>
+<p>The dialog changes to full screen on mobile and tablet devices.</p>
+<div class="olt-Card olt-u-padding5">
+  <div class="olt-u-marginAuto">
+    <input data-toggle="dialog" id="demo-1" type="checkbox">
+    <label class="olt-V2Button" for="dialog-demo-1">Open</label>
+    <div class="olt-Dialog">
+      <div class="olt-Dialog-window">
+        <label class="olt-Dialog-close" for="dialog-demo-1"></label>
+        <div class="olt-Dialog-title">Dialog Title</div>
+        <div class="olt-Dialog-description">This is the dialog description.</div>
+        <div class="olt-Dialog-content">
+          <div class="olt-Card">
+            <div class="olt-Card-header">
+              <h4 class="olt-Card-title">
+                A title of a card
+              </h4>
+              <p class="olt-Card-description">
+                Lorem ipsum dolor
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="olt-Dialog-footer">
+          <label class="olt-V2Button" for="dialog-demo-1">Finish</label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang "> html</button>
+	<div class="i-code-block__content ">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;input data-toggle=&quot;dialog&quot; id=&quot;dialog-toggle-1&quot; type=&quot;checkbox&quot;&gt;
+&lt;label class=&quot;olt-V2Button&quot; for=&quot;dialog-toggle-1&quot;&gt;Open&lt;/label&gt;
+&lt;div class=&quot;olt-Dialog&quot;&gt;
+  &lt;div class=&quot;olt-Dialog-window&quot;&gt;
+    &lt;label class=&quot;olt-Dialog-close&quot; for=&quot;dialog-toggle-1&quot;&gt;&lt;/label&gt;
+    &lt;div class=&quot;olt-Dialog-title&quot;&gt;Dialog Title&lt;/div&gt;
+    &lt;div class=&quot;olt-Dialog-description&quot;&gt;This is the dialog description.&lt;/div&gt;
+    &lt;div class=&quot;olt-Dialog-content&quot;&gt;
+      &lt;div class=&quot;olt-Card&quot;&gt;
+        &lt;div class=&quot;olt-Card-header&quot;&gt;
+          &lt;h4 class=&quot;olt-Card-title&quot;&gt;
+            A title of a card
+          &lt;/h4&gt;
+          &lt;p class=&quot;olt-Card-description&quot;&gt;
+            Lorem ipsum dolor
+          &lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;olt-Dialog-footer&quot;&gt;
+        &lt;label class=&quot;olt-V2Button&quot; for=&quot;dialog-toggle-1&quot;&gt;Finish&lt;/label&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;input data-toggle=&quot;dialog&quot; id=&quot;dialog-toggle-1&quot; type=&quot;checkbox&quot;&gt;
+&lt;label class=&quot;olt-V2Button&quot; for=&quot;dialog-toggle-1&quot;&gt;Open&lt;/label&gt;
+&lt;div class=&quot;olt-Dialog&quot;&gt;
+  &lt;div class=&quot;olt-Dialog-window&quot;&gt;
+    &lt;label class=&quot;olt-Dialog-close&quot; for=&quot;dialog-toggle-1&quot;&gt;&lt;/label&gt;
+    &lt;div class=&quot;olt-Dialog-title&quot;&gt;Dialog Title&lt;/div&gt;
+    &lt;div class=&quot;olt-Dialog-description&quot;&gt;This is the dialog description.&lt;/div&gt;
+    &lt;div class=&quot;olt-Dialog-content&quot;&gt;
+      &lt;div class=&quot;olt-Card&quot;&gt;
+        &lt;div class=&quot;olt-Card-header&quot;&gt;
+          &lt;h4 class=&quot;olt-Card-title&quot;&gt;
+            A title of a card
+          &lt;/h4&gt;
+          &lt;p class=&quot;olt-Card-description&quot;&gt;
+            Lorem ipsum dolor
+          &lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;olt-Dialog-footer&quot;&gt;
+        &lt;label class=&quot;olt-V2Button&quot; for=&quot;dialog-toggle-1&quot;&gt;Finish&lt;/label&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
 	</div>
 </div></div>
 </div>
@@ -6961,7 +7150,7 @@ elements and occupy the <code>olt-V2Button*</code> class names.</p>
             </div>
             <div class="demo-content">
               <button
-                class="olt-V2Button olt-V2Button-icon-left olt-Icon-action-add-default olt-Icon--small">Label</button>
+                class="olt-V2Button olt-V2Button--tertiary olt-V2Button-icon-left olt-Icon-action-add-default olt-Icon--small">Label</button>
             </div>
             <div class="demo-content">
               <button
@@ -20540,7 +20729,7 @@ it can be very handy :</p>
 			
 						<h5
 							class="pt-4 mb-1 theme-sidebar-category-title"
-							data-filter-value=" ActionButton  Avatar  Button  Card  Chip  Dropdown  Icon  Menu  Modal  Navbar  Notification  Snackbar  Spinner  Stepper  Tabs  Tag  Tooltip  V2Button  V2Modal  V2Tabs "
+							data-filter-value=" ActionButton  Avatar  Button  Card  Chip  Dialog  Dropdown  Icon  Menu  Modal  Navbar  Notification  Snackbar  Spinner  Stepper  Tabs  Tag  Tooltip  V2Button  V2Modal  V2Tabs "
 						>
 							<a href="#category-component" class="i-sidebar-list-item">
 								<b>Component</b>
@@ -20582,6 +20771,13 @@ it can be very handy :</p>
 									data-filter-value="Chip"
 								>
 									<span>Chip</span>
+								</a>
+								<a
+									href="#dialog"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="Dialog"
+								>
+									<span>Dialog</span>
 								</a>
 								<a
 									href="#dropdown"

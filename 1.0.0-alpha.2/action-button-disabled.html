@@ -52,25 +52,69 @@
 		
 	</head>
 
-	<body>					<div class='olt-Frame'><div class="olt-ActionButton--proximity-area" style="padding: 20px; border: 1px dotted lightgrey">
-<button class="olt-ActionButton olt-ActionButton--primary olt-ActionButton-icon-left olt-Icon-action-edit">
-  <div class="olt-ActionButton-label">Edit</div>
-</button>
+	<body>					<div class='olt-Frame'><div class="demo-content">
+  <button
+    class="olt-ActionButton olt-ActionButton-icon-left olt-Icon-action-edit olt-ActionButton--disabled">
+      <div class="olt-ActionButton-label">
+        Label
+      </div>
+    </button>
 </div>
-<div class="olt-ActionButton--proximity-area" style="padding: 20px; border: 1px dotted lightgrey">
-<button class="olt-ActionButton olt-ActionButton--fixed olt-ActionButton--primary olt-ActionButton-icon-left olt-Icon-action-edit">
-  <div class="olt-ActionButton-label">Edit (fixed label)</div>
-</button>
+<div class="demo-content">
+  <button
+    class="olt-ActionButton olt-ActionButton--fixed olt-ActionButton-icon-left olt-Icon-action-edit olt-ActionButton--disabled">
+      <div class="olt-ActionButton-label">
+        Label
+      </div>
+    </button>
+</div>
+<div class="demo-content">
+  <button
+    class="olt-ActionButton olt-ActionButton-icon-left olt-Icon-action-edit olt-ActionButton--disabled olt-ActionButton--base">
+      <div class="olt-ActionButton-label">
+        Label
+      </div>
+    </button>
+</div>
+<div class="demo-content">
+  <button
+    class="olt-ActionButton olt-ActionButton-icon-left olt-Icon-action-edit olt-ActionButton--disabled olt-ActionButton--standalone olt-ActionButton--base">
+      <div class="olt-ActionButton-label">
+        Label
+      </div>
+    </button>
 </div></div>
-			<script type="text/x-stylemark" data-language="html"><div class="olt-ActionButton--proximity-area" style="padding: 20px; border: 1px dotted lightgrey">
-<button class="olt-ActionButton olt-ActionButton--primary olt-ActionButton-icon-left olt-Icon-action-edit">
-  <div class="olt-ActionButton-label">Edit</div>
-</button>
+			<script type="text/x-stylemark" data-language="html"><div class="demo-content">
+  <button
+    class="olt-ActionButton olt-ActionButton-icon-left olt-Icon-action-edit olt-ActionButton--disabled">
+      <div class="olt-ActionButton-label">
+        Label
+      </div>
+    </button>
 </div>
-<div class="olt-ActionButton--proximity-area" style="padding: 20px; border: 1px dotted lightgrey">
-<button class="olt-ActionButton olt-ActionButton--fixed olt-ActionButton--primary olt-ActionButton-icon-left olt-Icon-action-edit">
-  <div class="olt-ActionButton-label">Edit (fixed label)</div>
-</button>
+<div class="demo-content">
+  <button
+    class="olt-ActionButton olt-ActionButton--fixed olt-ActionButton-icon-left olt-Icon-action-edit olt-ActionButton--disabled">
+      <div class="olt-ActionButton-label">
+        Label
+      </div>
+    </button>
+</div>
+<div class="demo-content">
+  <button
+    class="olt-ActionButton olt-ActionButton-icon-left olt-Icon-action-edit olt-ActionButton--disabled olt-ActionButton--base">
+      <div class="olt-ActionButton-label">
+        Label
+      </div>
+    </button>
+</div>
+<div class="demo-content">
+  <button
+    class="olt-ActionButton olt-ActionButton-icon-left olt-Icon-action-edit olt-ActionButton--disabled olt-ActionButton--standalone olt-ActionButton--base">
+      <div class="olt-ActionButton-label">
+        Label
+      </div>
+    </button>
 </div></script>
 
 		<!--
@@ -104,10 +148,10 @@
 					}
 					else {
 						// Creates a new module
-						module = angular.module('stylemark-action-button-example', []);
+						module = angular.module('stylemark-action-button-disabled', []);
 					}
 
-					module.controller('stylemark-action-button-example-' + index, function($scope) {
+					module.controller('stylemark-action-button-disabled-' + index, function($scope) {
 						$scope.$eval(block);
 					});
 				});
