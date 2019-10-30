@@ -44,6 +44,7 @@
 									<option value="snackbar">Snackbar</option>
 									<option value="spinner">Spinner</option>
 									<option value="stepper">Stepper</option>
+									<option value="stepper-dialog">StepperDialog</option>
 									<option value="tabs">Tabs</option>
 									<option value="tag">Tag</option>
 									<option value="tooltip">Tooltip</option>
@@ -6471,6 +6472,147 @@ navigation and control the active step via <code>is-active</code> state class na
   &lt;a class=&quot;olt-Stepper-header is-active&quot;&gt;Link One&lt;/a&gt;
   &lt;a class=&quot;olt-Stepper-header&quot;&gt;Link Two&lt;/a&gt;
   &lt;a class=&quot;olt-Stepper-header&quot;&gt;Link Three&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+	</div>
+</div></div>
+</div>
+
+						<div id="stepper-dialog" class="i-library theme-content-element">
+	<h1 class="display-4 theme-content-element-title">StepperDialog</h1>
+	<span class="theme-content-element-source">
+		<span class="theme-content-element-source-label">Source:</span>
+		<span class="theme-content-element-source-path">components/StepperDialog/StepperDialog.md</span>
+	</span>
+	<div class="theme-content-element-description"><div id="description" class="i-pad-top-5 i-section"><h2 class="i-pad-top-3 i-position-container"><a href="#description" class="icon-link i-section__link -heading"></a>Description</h2></div><p><em>StepperDialog</em> occupies <code>olt-StepperDialog*</code> class names. It provides a modal dialog to show any kind of content and is also utilized for dynamic lists and steppers.</p>
+<p>The dialog changes to full screen on mobile and tablet devices.</p>
+<div class="olt-Card olt-u-padding5">
+  <div class="olt-u-marginAuto">
+    <input data-toggle="stepperdialog" id="demo-1" type="checkbox">
+    <label class="olt-V2Button" for="stepper-dialog-demo-1">Open</label>
+    <div class="olt-StepperDialog">
+      <div class="olt-StepperDialog-window">
+        <div class="olt-StepperDialog-stepper">
+          <div class="olt-StepperDialog-stepper-header">Create Device Type Category</div>
+          <div class="olt-StepperDialog-stepper-counter">
+            2/5
+          </div>
+          <div class="olt-StepperDialog-stepper-step olt-StepperDialog-stepper-step--done">Select Type</div>
+          <div class="olt-StepperDialog-stepper-step olt-StepperDialog-stepper-step--current">Create Device</div>
+          <div class="olt-StepperDialog-stepper-step">Add Info</div>
+          <div class="olt-StepperDialog-stepper-step">Define Parameters</div>
+          <div class="olt-StepperDialog-stepper-step olt-StepperDialog-stepper-step--last">Set up monitoring</div>
+        </div>
+        <div class="olt-StepperDialog-content">
+          <label class="olt-Dialog-close" for="stepper-dialog-demo-1"></label>
+          <div class="olt-Dialog-title">Create the Device</div>
+          <div class="olt-Dialog-description">This is the dialog description. This is the dialog description. This is the dialog description.</div>
+          <div class="olt-Dialog-content">
+            <label class="olt-V2Label">
+              <input class="olt-V2Input" type="text" placeholder="Device Name" />
+              <span class="olt-V2Label-text">Name</span>
+            </label>
+            <label class="olt-V2Label">
+              <input class="olt-V2Input" type="text" placeholder="Device Location" />
+              <span class="olt-V2Label-text">Location</span>
+            </label>
+            <label class="olt-V2Label">
+              <textarea class="olt-TextArea" placeholder="Description"></textarea>
+              <span class="olt-V2Label-text">Description</span>
+            </label>
+          </div>
+          <div class="olt-Dialog-footer">
+            <label class="olt-StepperDialog-back" for="stepper-dialog-demo-1">Back</label>
+            <label class="olt-StepperDialog-proceed" for="stepper-dialog-demo-1">Proceed</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="i-code-block">
+	<button type="button" class="i-code-block__lang "> html</button>
+	<div class="i-code-block__content ">
+		<button type="button" class="btn btn-outline-primary btn-sm i-copy-button" data-clipboard-text="&lt;input data-toggle=&quot;stepperdialog&quot; id=&quot;demo-1&quot; type=&quot;checkbox&quot;&gt;
+&lt;label class=&quot;olt-V2Button&quot; for=&quot;stepper-dialog-demo-1&quot;&gt;Open&lt;/label&gt;
+&lt;div class=&quot;olt-StepperDialog&quot;&gt;
+  &lt;div class=&quot;olt-StepperDialog-window&quot;&gt;
+    &lt;div class=&quot;olt-StepperDialog-stepper&quot;&gt;
+      &lt;div class=&quot;olt-StepperDialog-stepper-header&quot;&gt;Create Device Type Category&lt;/div&gt;
+      &lt;div class=&quot;olt-StepperDialog-stepper-counter&quot;&gt;
+        2/5
+      &lt;/div&gt;
+      &lt;div class=&quot;olt-StepperDialog-stepper-step olt-StepperDialog-stepper-step--done&quot;&gt;Select Type&lt;/div&gt;
+      &lt;div class=&quot;olt-StepperDialog-stepper-step olt-StepperDialog-stepper-step--current&quot;&gt;Create Device&lt;/div&gt;
+      &lt;div class=&quot;olt-StepperDialog-stepper-step&quot;&gt;Add Info&lt;/div&gt;
+      &lt;div class=&quot;olt-StepperDialog-stepper-step&quot;&gt;Define Parameters&lt;/div&gt;
+      &lt;div class=&quot;olt-StepperDialog-stepper-step olt-StepperDialog-stepper-step--last&quot;&gt;Set up monitoring&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;olt-StepperDialog-content&quot;&gt;
+      &lt;label class=&quot;olt-Dialog-close&quot; for=&quot;stepper-dialog-demo-1&quot;&gt;&lt;/label&gt;
+      &lt;div class=&quot;olt-Dialog-title&quot;&gt;Create the Device&lt;/div&gt;
+      &lt;div class=&quot;olt-Dialog-description&quot;&gt;This is the dialog description. This is the dialog description. This is the dialog description.&lt;/div&gt;
+      &lt;div class=&quot;olt-Dialog-content&quot;&gt;
+        &lt;label class=&quot;olt-V2Label&quot;&gt;
+          &lt;input class=&quot;olt-V2Input&quot; type=&quot;text&quot; placeholder=&quot;Device Name&quot; /&gt;
+          &lt;span class=&quot;olt-V2Label-text&quot;&gt;Name&lt;/span&gt;
+        &lt;/label&gt;
+        &lt;label class=&quot;olt-V2Label&quot;&gt;
+          &lt;input class=&quot;olt-V2Input&quot; type=&quot;text&quot; placeholder=&quot;Device Location&quot; /&gt;
+          &lt;span class=&quot;olt-V2Label-text&quot;&gt;Location&lt;/span&gt;
+        &lt;/label&gt;
+        &lt;label class=&quot;olt-V2Label&quot;&gt;
+          &lt;textarea class=&quot;olt-TextArea&quot; placeholder=&quot;Description&quot;&gt;&lt;/textarea&gt;
+          &lt;span class=&quot;olt-V2Label-text&quot;&gt;Description&lt;/span&gt;
+        &lt;/label&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;olt-Dialog-footer&quot;&gt;
+        &lt;label class=&quot;olt-StepperDialog-back&quot; for=&quot;stepper-dialog-demo-1&quot;&gt;Back&lt;/label&gt;
+        &lt;label class=&quot;olt-StepperDialog-proceed&quot; for=&quot;stepper-dialog-demo-1&quot;&gt;Proceed&lt;/label&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;">Copy</button>
+		<pre class="mb-0"><code class="lang-">&lt;input data-toggle=&quot;stepperdialog&quot; id=&quot;demo-1&quot; type=&quot;checkbox&quot;&gt;
+&lt;label class=&quot;olt-V2Button&quot; for=&quot;stepper-dialog-demo-1&quot;&gt;Open&lt;/label&gt;
+&lt;div class=&quot;olt-StepperDialog&quot;&gt;
+  &lt;div class=&quot;olt-StepperDialog-window&quot;&gt;
+    &lt;div class=&quot;olt-StepperDialog-stepper&quot;&gt;
+      &lt;div class=&quot;olt-StepperDialog-stepper-header&quot;&gt;Create Device Type Category&lt;/div&gt;
+      &lt;div class=&quot;olt-StepperDialog-stepper-counter&quot;&gt;
+        2/5
+      &lt;/div&gt;
+      &lt;div class=&quot;olt-StepperDialog-stepper-step olt-StepperDialog-stepper-step--done&quot;&gt;Select Type&lt;/div&gt;
+      &lt;div class=&quot;olt-StepperDialog-stepper-step olt-StepperDialog-stepper-step--current&quot;&gt;Create Device&lt;/div&gt;
+      &lt;div class=&quot;olt-StepperDialog-stepper-step&quot;&gt;Add Info&lt;/div&gt;
+      &lt;div class=&quot;olt-StepperDialog-stepper-step&quot;&gt;Define Parameters&lt;/div&gt;
+      &lt;div class=&quot;olt-StepperDialog-stepper-step olt-StepperDialog-stepper-step--last&quot;&gt;Set up monitoring&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;olt-StepperDialog-content&quot;&gt;
+      &lt;label class=&quot;olt-Dialog-close&quot; for=&quot;stepper-dialog-demo-1&quot;&gt;&lt;/label&gt;
+      &lt;div class=&quot;olt-Dialog-title&quot;&gt;Create the Device&lt;/div&gt;
+      &lt;div class=&quot;olt-Dialog-description&quot;&gt;This is the dialog description. This is the dialog description. This is the dialog description.&lt;/div&gt;
+      &lt;div class=&quot;olt-Dialog-content&quot;&gt;
+        &lt;label class=&quot;olt-V2Label&quot;&gt;
+          &lt;input class=&quot;olt-V2Input&quot; type=&quot;text&quot; placeholder=&quot;Device Name&quot; /&gt;
+          &lt;span class=&quot;olt-V2Label-text&quot;&gt;Name&lt;/span&gt;
+        &lt;/label&gt;
+        &lt;label class=&quot;olt-V2Label&quot;&gt;
+          &lt;input class=&quot;olt-V2Input&quot; type=&quot;text&quot; placeholder=&quot;Device Location&quot; /&gt;
+          &lt;span class=&quot;olt-V2Label-text&quot;&gt;Location&lt;/span&gt;
+        &lt;/label&gt;
+        &lt;label class=&quot;olt-V2Label&quot;&gt;
+          &lt;textarea class=&quot;olt-TextArea&quot; placeholder=&quot;Description&quot;&gt;&lt;/textarea&gt;
+          &lt;span class=&quot;olt-V2Label-text&quot;&gt;Description&lt;/span&gt;
+        &lt;/label&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;olt-Dialog-footer&quot;&gt;
+        &lt;label class=&quot;olt-StepperDialog-back&quot; for=&quot;stepper-dialog-demo-1&quot;&gt;Back&lt;/label&gt;
+        &lt;label class=&quot;olt-StepperDialog-proceed&quot; for=&quot;stepper-dialog-demo-1&quot;&gt;Proceed&lt;/label&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 	</div>
 </div></div>
@@ -20729,7 +20871,7 @@ it can be very handy :</p>
 			
 						<h5
 							class="pt-4 mb-1 theme-sidebar-category-title"
-							data-filter-value=" ActionButton  Avatar  Button  Card  Chip  Dialog  Dropdown  Icon  Menu  Modal  Navbar  Notification  Snackbar  Spinner  Stepper  Tabs  Tag  Tooltip  V2Button  V2Modal  V2Tabs "
+							data-filter-value=" ActionButton  Avatar  Button  Card  Chip  Dialog  Dropdown  Icon  Menu  Modal  Navbar  Notification  Snackbar  Spinner  Stepper  StepperDialog  Tabs  Tag  Tooltip  V2Button  V2Modal  V2Tabs "
 						>
 							<a href="#category-component" class="i-sidebar-list-item">
 								<b>Component</b>
@@ -20841,6 +20983,13 @@ it can be very handy :</p>
 									data-filter-value="Stepper"
 								>
 									<span>Stepper</span>
+								</a>
+								<a
+									href="#stepper-dialog"
+									class="i-sidebar-list-item theme-sidebar-element"
+									data-filter-value="StepperDialog"
+								>
+									<span>StepperDialog</span>
 								</a>
 								<a
 									href="#tabs"
