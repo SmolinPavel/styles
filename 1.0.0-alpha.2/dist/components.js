@@ -631,6 +631,7 @@ exports.CardDescription = 'olt-Card-description';
 exports.CardAction = 'olt-Card-action';
 exports.CardImage = 'olt-Card-image';
 exports.CardIcon = 'olt-Card-icon';
+exports.CardPopup = 'olt-Card--popup';
 exports.CardEdit = 'olt-Card--edit';
 exports.CardSelectable = 'olt-Card--selectable';
 exports.Menu = 'olt-Menu';
